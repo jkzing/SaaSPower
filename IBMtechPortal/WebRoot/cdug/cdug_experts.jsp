@@ -14,7 +14,7 @@
 <head>
 	<base href="<%=basePath%>
 	">
-	<title>专家|CDUG</title>
+	<title>专家 | CDUG</title>
 
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -30,7 +30,7 @@
 	<div class="container">
 		<s:include value="../layout/cdug_header.jsp" />
 		<div class="expert-wrapper">
-			<h1>专家队伍</h1>
+			<h1>专家</h1>
 			<p class="byline">这里汇聚了国内外知名DB2方面专家</p>
 			<div class="clearfix">
 				<%

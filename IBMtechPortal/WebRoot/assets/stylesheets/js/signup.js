@@ -1,5 +1,6 @@
 var formIdCount = 0;
 var formCount = 1;
+var validation = true;
 
 $(document).ready(function(){
 	var array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
@@ -12,6 +13,7 @@ $(document).ready(function(){
 		var i = event.data.i;
 		$('#showFormIcon_' + i).toggleClass("icon-chevron-down").toggleClass("icon-chevron-right");
 		$('#signupFormDiv_' + i).toggle(300);
+		alert($(this).parent().children('#inputName_' + i).val());
 		if ($('#inputName_' + i).val() == "") {
 			$('#displayName_' + i).text("请输入姓名...");
 		} else {
@@ -24,21 +26,25 @@ $(document).ready(function(){
 		if ($(this).val().length < 1) {
 			$('#icon-name-' + i).removeClass("icon-ok").addClass("icon-remove").show();
 			$('#tip-name-' + i).text("姓名不能为空");
+			validation = validation && false;
 		} else {
 			$('#icon-name-' + i).removeClass("icon-remove").addClass("icon-ok").show();
 			$('#tip-name-' + i).text("");
+			validation = validation && true;
 		}
 	}
 	
 	$('.inputMobile').live("change", function() {
 		var index = $(this).parent().attr('id');
 		var mobileRegex =  /^([0-9]{11})?$/;
-		if (!mobileRegex.test($(this).val())) {
+		if (!(mobileRegex.test($(this).val()) && $(this).val().length >= 1)) {
 			$('#icon-mobile-' + index).removeClass("icon-ok").addClass("icon-remove").show();
 			$('#tip-mobile-' + index).text("请输入正确的手机号");
+			validation = validation && false;
 		} else {
 			$('#icon-mobile-' + index).removeClass("icon-remove").addClass("icon-ok").show();
 			$('#tip-mobile-' + index).text("");
+			validation = validation && true;
 		}
 	});
 	
@@ -48,9 +54,11 @@ $(document).ready(function(){
 		if (!emailRegex.test($(this).val())) {
 			$('#icon-email-' + index).removeClass("icon-ok").addClass("icon-remove").show();
 			$('#tip-email-' + index).text("请输入正确的邮箱地址");
+			validation = validation && false;
 		} else {
 			$('#icon-email-' + index).removeClass("icon-remove").addClass("icon-ok").show();
 			$('#tip-email-' + index).text("");
+			validation = validation && true;
 		}
 	});
 	
@@ -59,9 +67,11 @@ $(document).ready(function(){
 		if ($(this).val().length < 1) {
 			$('#icon-company-' + index).removeClass("icon-ok").addClass("icon-remove").show();
 			$('#tip-company-' + index).text("工作单位不能为空");
+			validation = validation && false;
 		} else {
 			$('#icon-company-' + index).removeClass("icon-remove").addClass("icon-ok").show();
 			$('#tip-company-' + index).text("");
+			validation = validation && true;
 		}
 	});
 	
@@ -71,9 +81,11 @@ $(document).ready(function(){
 		if (!postcodeRegex.test($(this).val())) {
 			$('#icon-postcode-' + index).removeClass("icon-ok").addClass("icon-remove").show();
 			$('#tip-postcode-' + index).text("请输入正确的邮政编码");
+			validation = validation && false;
 		} else {
 			$('#icon-postcode-' + index).removeClass("icon-remove").addClass("icon-ok").show();
 			$('#tip-postcode-' + index).text("");
+			validation = validation && true;
 		}
 	});
 	
@@ -82,9 +94,11 @@ $(document).ready(function(){
 		if ($(this).val().length < 1) {
 			$('#icon-address-' + index).removeClass("icon-ok").addClass("icon-remove").show();
 			$('#tip-address-' + index).text("地址不能为空");
+			validation = validation && false;
 		} else {
 			$('#icon-address-' + index).removeClass("icon-remove").addClass("icon-ok").show();
 			$('#tip-address-' + index).text("");
+			validation = validation && true;
 		}
 	});
 
@@ -103,9 +117,15 @@ $(document).ready(function(){
 	
 });
 
-// $('#submitFormBtn').click(function() {
-// 	//submitForm();
-// });
+$('#submitFormBtn').click(function() {
+
+	if (validation) {
+		alert("pass");
+	} else {
+		alert("fail");
+	}
+	
+});
 
 // function submitForm(){
 // 	for (var i = 0; i <= formIdCount; ++i) {

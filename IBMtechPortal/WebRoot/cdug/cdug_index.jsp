@@ -12,7 +12,7 @@
 <head>
 	<base href="<%=basePath%>
 	">
-	<title>CDUG</title>
+	<title>CDUG - 中国DB2用户组</title>
 
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -32,8 +32,8 @@
 			</div>
 			<ul class="topbar-menu unstyled">
 				<li>
-					<a href="#">登录</a> <b>-</b>
-					<a href="#">注册</a>
+					<a data-toggle="modal" href="#signin" data-keyboard="false" data-backdrop="false">登录</a> <b>-</b>
+					<a href="cdug/regist">注册</a>
 				</li>
 			</ul>
 		</div>

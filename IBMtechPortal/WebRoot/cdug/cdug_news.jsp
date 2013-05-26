@@ -11,9 +11,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<base href="<%=basePath%>
-	">
-<title>新闻|CDUG</title>
+<base href="<%=basePath%>">
+<title>新闻 | CDUG</title>
 
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">

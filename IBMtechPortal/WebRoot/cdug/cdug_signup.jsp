@@ -12,7 +12,7 @@
 <head>
 	<base href="<%=basePath%>
 	">
-	<title>报名|CDUG</title>
+	<title>报名 | CDUG</title>
 
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -130,7 +130,7 @@
 						</a>
 					</div>
 					<div class="sf-submit">
-						<button type="submit" class="btn btn-primary" id="submitFormBtn">提交</button>
+						<button class="btn btn-primary" id="submitFormBtn">提交</button>
 						<button type="reset" class="btn btn-warning">重置</button>
 					</div>
 				</form>

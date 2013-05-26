@@ -16,7 +16,7 @@
 			</h1>
 			<p id="h-meta">
 				<span>
-					<a href="#">登录</a>
+					<a data-toggle="modal" href="#signin" data-keyboard="false" data-backdrop="false">登录</a>
 					 - 
 					<a href="cdug/regist">注册</a>
 				</span>

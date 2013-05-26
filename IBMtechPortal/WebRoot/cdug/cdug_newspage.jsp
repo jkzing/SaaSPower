@@ -6,6 +6,7 @@
 			String basePath = request.getScheme() + "://"
 					+ request.getServerName() + ":" + request.getServerPort()
 					+ path + "/";
+	News news = NewsDAO.getNews(Integer.parseInt(request.getParameter("id")));
 %>
 <%@taglib prefix="s" uri="/struts-tags"%>
 
@@ -14,7 +15,7 @@
 <head>
 	<base href="<%=basePath%>
 	">
-	<title>注册|CDUG</title>
+	<title><%=news.getTitle()%> | CDUG</title>
 
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -31,9 +32,6 @@
 		<s:include value="../layout/cdug_header.jsp" />
 		<div class="snews-wrapper">
 			<div class="span8 snews-inner">
-				<%
-					News news = NewsDAO.getNews(Integer.parseInt(request.getParameter("id")));
-				%>
 				<div class="snews-title">
 					<h1><%=news.getTitle() %></h1>
 					<strong><%=news.getCreateTime() %></strong>

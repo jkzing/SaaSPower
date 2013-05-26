@@ -2,8 +2,9 @@
 <%@page import="edu.tongji.sse.ibm.pojo.CDUG_expert"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	CDUG_expert expert = CDUG_expertDAO.getExpert(Integer.parseInt(request.getParameter("id")));
 %>
 <%@taglib prefix="s" uri="/struts-tags"%>
 
@@ -12,7 +13,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 	<base href="<%=basePath%>
 	">
-	<title>注册|CDUG</title>
+	<title><%=expert.getName()%> | CDUG</title>
 
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -28,9 +29,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="container">
 		<s:include value="../layout/cdug_header.jsp" />
 		<div class="sexp-wrapper">
-			<%
-					CDUG_expert expert = CDUG_expertDAO.getExpert(Integer.parseInt(request.getParameter("id")));
-			%>
 			<div class="sexp-inner">
 				<div class="sexp-name">
 					<h1><%=expert.getName() %></h1>
@@ -39,7 +37,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<img src="<%=expert.getPicURL() %>">
 				</div>
 				<div class="sexp-profile">
-					<p><%=expert.getProfile() %></p>
+					<p><%=expert.getProfile() %><%=expert.getProfile() %><%=expert.getProfile() %><%=expert.getProfile() %></p>
 				</div>
 			</div>
 		</div>

@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 	<base href="<%=basePath%>
 	">
-	<title>注册|CDUG</title>
+	<title>注册 | CDUG</title>
 
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -25,10 +25,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 	<div class="container">
 		<s:include value="../layout/cdug_header.jsp"/>
-		<div class="hero-unit register-block">
-			<div class="row well register-inner" id="registerForm">
-				<h4>个人注册</h4>
-				<div class="span7">
+		<div class="register-wrapper">
+			<div class="" id="registerForm">
+				<div class="row" id="r-title">
+					<h1>个人注册</h1>
+				</div>
+				<div class="register-inner">
 					<form class="form-horizontal" method="post" action="cdug/user/register">
 						<div class="control-group pull-left">
 							<label class="control-label" for="inputEmail">邮箱</label>
@@ -65,9 +67,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</div>
 						</div>
 						<div class="control-group pull-left">
-							<label class="control-label" for="inputSubmit"></label>
 							<div class="controls">
-								<button type="submit" class="btn btn-primary btn-large" id="inputSubmit">立即注册</button>
+								<button type="submit" class="btn btn-primary" id="inputSubmit">立即注册</button>
 							</div>
 						</div>
 					</form>
