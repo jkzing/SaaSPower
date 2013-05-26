@@ -4,7 +4,6 @@ import java.util.List;
 
 import edu.tongji.sse.ibm.hibernateUtils.HibernateUtil;
 import edu.tongji.sse.ibm.pojo.CDUG_expert;
-import edu.tongji.sse.ibm.pojo.CDUG_signUpForm;
 
 public class CDUG_expertDAO {
 	

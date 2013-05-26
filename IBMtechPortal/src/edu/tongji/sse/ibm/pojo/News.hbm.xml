@@ -21,9 +21,9 @@
 			<column name="createTime"></column>
 		</property>
 
-		<set name="files" cascade="all" lazy="false">
-			<key column="file_id" />
-			<one-to-many class="File" />
+		<set name="resources" cascade="all" lazy="false">
+			<key column="news_id" />
+			<one-to-many class="Res" />
 		</set>
 	</class>
 </hibernate-mapping>

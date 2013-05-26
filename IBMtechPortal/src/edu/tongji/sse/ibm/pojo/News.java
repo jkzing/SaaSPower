@@ -9,7 +9,7 @@ public class News {
 	private String content;
 	private Date createTime;
 	private String sort;
-	private Set<File> files;
+	private Set<Res> resources;
 	public Integer getId() {
 		return id;
 	}
@@ -34,16 +34,16 @@ public class News {
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
-	public Set<File> getFiles() {
-		return files;
-	}
-	public void setFiles(Set<File> files) {
-		this.files = files;
-	}
 	public String getSort() {
 		return sort;
 	}
 	public void setSort(String sort) {
 		this.sort = sort;
+	}
+	public Set<Res> getResources() {
+		return resources;
+	}
+	public void setResources(Set<Res> resources) {
+		this.resources = resources;
 	}
 }

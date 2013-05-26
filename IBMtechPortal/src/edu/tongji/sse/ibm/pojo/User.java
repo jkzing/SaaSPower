@@ -7,7 +7,7 @@ public class User {
 	private String name;
 	private String sex;
 	private String username;
-	private String passwd;//not encrypted yet
+	private String passwd;
 	
 	private Set<CDUG_signUpForm> signUpForms;
 	private Set<CDUG_res> myResources;
