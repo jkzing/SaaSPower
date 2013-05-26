@@ -1,0 +1,132 @@
+.header:after,.header .action:after,.container:after,.row:after,.right_content:after,.bare-box:after,.appselect .popover ul li:after,.appselect .buttons:after,div.bluebox dd:after,form.blueform input:after,ul.form:after,.blueform ul.form li:after,ul.nice_list.horizontal:after,.nice_list>li:after
+	{
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.container {
+	clear: both;
+	margin-left:200px;
+	width:960px;
+	max-width: 1400px;
+	min-width: 1000px;
+}
+#wrap_main {
+	position:relative;
+	/*overflow:hidden;*/
+	width:100%;
+	background:url(../../img/t_bodybg.gif) repeat-x 0 0;
+	z-index:5;
+}
+
+.newstitle {
+	width: 360px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #134b83;
+    float: left;
+	height:28px;
+	line-height:26px;
+	background:url(../../img/title_bg_33.jpg) no-repeat left bottom;
+}
+.newstitle h4 {
+	float:left;
+	font-size:14px;
+	text-indent:5px;
+}
+.newstitle span {
+	float:right;
+	margin-top:-25px;
+}
+
+.news_text{
+	padding-top:8px;
+}
+
+.news_text li{
+	line-height:0px;
+	height:23px;
+	font-size:13px;
+	width:98%;
+}
+/* top Util */
+h1 {
+	position:absolute;
+	top:24px;
+	left:0;
+}
+.top-util {
+	float:right;
+	display:inline;
+	overflow:hidden;
+	margin-top:7px;
+	margin-right:200px;
+	/* margin-right:0px; */
+	height:12px;
+}
+	.top-util a {
+		float:left;
+		display:inline;
+		height:8px;
+		padding:0 6px 0 0;
+		margin:0 -1px 0 7px;
+		background:url(../../img/bl_toputil_bar.gif) no-repeat right 0;
+	}
+		.top-util a img {
+			float:left;
+		}
+/*ΩÃ ¶ΩÈ…‹*/		
+div.chairman {
+	overflow:hidden;
+	width:740px;
+	margin-bottom:36px;
+	padding-top:43px; 
+	color:#5b6066;
+}
+	div.chairman div.chief-img {
+		float:left;
+		width:272px;
+	}
+	div.chairman div.chief-txt {
+		float:left;
+		width:428px;
+		padding-left:39px;
+	}
+	div.chairman h5 {
+		padding:5px 0 14px 0;
+	}
+	p.chief-txt {
+		margin-top:22px;
+	}
+	div.chief-name {
+		overflow:hidden;
+		float:right;
+		width:189px;
+	}
+		div.chief-name p {
+			float:left;
+			padding-left:14px;
+		}
+div.name-box {
+	overflow:hidden;
+	width:740px;
+	margin-top:49px;
+}
+div.chairman div.name-box {
+	width:428px;
+	margin-top:0px;
+}
+div.chairman div.name-box div.chief-name {
+	width:182px;
+	padding-top:23px;
+}
+/*????? president*/
+div.chief-txt p {
+	padding-bottom:25px;
+}
+div.chairman strong {
+	padding-top:25px;
+	color:#4ea0ff;
+}
