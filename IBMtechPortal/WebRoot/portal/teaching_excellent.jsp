@@ -1,3 +1,4 @@
+<%@page import="edu.tongji.sse.ibm.pojo.Edu_courseInfo"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
@@ -32,126 +33,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
             <div class="link-cont link-cont-type2">
                 <ul>
+                
+                <%
+                List<Edu_courseInfo> courselist = (List<Edu_courseInfo>) request.getAttribute("courselist");
+                Iterator<Edu_courseInfo> it = courselist.iterator();
+					Edu_courseInfo info;
+					while(it.hasNext()){
+					info = it.next();
+                 %>
                     <li>
                         <h4>
-                            <img src="assets/img/teaching/course2.png" style="height:50px; width:190px;"></h4>
+                            <img src="<%=info.getURL() %>" style="height:50px; width:190px;"></h4>
                         <div>
-                            <p>
-                                本课程的主要目标是通过系统理论学习、课程实验和项目开发实践，全面理解J2EE的整个技术构架，领会J2EE编程思想的精髓，全面了解J2EE编程的各种基本技术，熟练掌握编程技能，提高工程开发能力。通过课程学习，要求熟练掌握Servlet/JSP原理与开发，XML基本概念与XML编程接口使用；理解EJB编程模型和Web Service原理，了解其基本的开发步骤；了解应用服务器的安装管理和应用程序部署。全面推行项目开发，以实际工程解决能力作为考核标准。
-                            </p>
+                            <%=info.getInfo() %>
                             <p class="link"> <strong><img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home"></strong>
-                                <a href="http://sse.tongji.edu.cn/j2ee/" target="_blank" title="J2EE企业级开发">http://sse.tongji.edu.cn/j2ee/</a>
+                                <a href="<%=info.getLink()%>" target="_blank" title="<%=info.getName()%>"><%=info.getLink()%></a>
                             </p>
                         </div>
                     </li>
-                    <li>
-                        <h4>
-                            <img src="assets/img/teaching/course4.png" style="height:50px; width:190px;"></h4>
-                        <div>
-                            <p>
-                                软件测试就是利用测试工具按照测试方案和流程对产品进行功能和性能测试，甚至根据需要编写不同的测试工具，设计和维护测试系统，对测试方案可能出现的问题进行分析和评估。执行测试用例后，需要跟踪故障，以确保开发的产品适合需求。能力作为考核标准。
-                            </p>
-                            <p class="link"> <strong><img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home"></strong>
-                                <a href="http://baike.baidu.com/view/16563.htm" target="_blank" title="软件测试">http://baike.baidu.com/view/16563.htm</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <h4>
-                            <img src="assets/img/teaching/course8.png" style="height:50px; width:190px;"></h4>
-                        <div>
-                            IT服务管理（ITSM）是一套帮助企业对IT系统的规划、研发、实施和运营进行有效管理的方法，是一套方法论。ITSM起源于ITIL（IT Infrastructure Library，IT基础架构标准库），ITIL是CCTA（英国国家电脑局）于1980年开发的一套IT服务管理标准库。它把英国在IT管理方面的方法归纳起来，变成规范，为企业的IT部门提供一套从计划、研发、实施到运维的标准方法。
-                        </p>
-                        <p class="link">
-                            <strong>
-                                <img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home"></strong>
-                            <a href="http://sse.tongji.edu.cn/ITSM/" target="_blank" title="IT服务管理">http://sse.tongji.edu.cn/ITSM/</a>
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <h4>
-                        <img src="assets/img/teaching/course9.png" style="height:50px; width:190px;"></h4>
-                    <div>
-                        <p>
-                            《云计算核心技术》是一门综合性、实践性和应用性的课程，是分布式计算专业方向的高级专业课程，开设本课程的目的以通过对云计算的架构、硬件和基础设施、访问云、云存储、云计算等应用知识的学习，以及对IBM SmartCloud平台的应用实践，帮助学生了解和掌握云计算相关技术，提高学生解决和处理实际问题的能力，为今后进一步研究和从事相关岗职业打下坚实基础。
-                        </p>
-                        <p class="link">
-                            <strong>
-                                <img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home"></strong>
-                            <a href="http://sse.tongji.edu.cn/Cloud/" target="_blank" title="云计算核心技术">http://sse.tongji.edu.cn/Cloud/</a>
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <h4>
-                        <img src="assets/img/teaching/course3.png" style="height:50px; width:190px;"></h4>
-                    <div>
-                        《大型主机系统管理技能》是一门综合性、实践性和应用性的课程，是主机技术专业方向的高级专业课程，开设本课程的目的是以通过对大型主机系统运行监控(RMF)、JCL批处理作业管理(JES)、目录管理(Catalog)、安全管理(RACF)、存储管理(DFSMS)、各种实用程序(Utility)、系统安装(SMP/E)、硬件配置(HCD)、系统脚本语言(REXX)等知识的学习，掌握主机系统管理的基本技能，提高学生解决和处理实际问题的能力，为日后从事主机系统程序员/管理员的相关工作打下坚实的基础。
-                    </p>
-                    <p class="link">
-                        <strong>
-                            <img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home"></strong>
-                        <a href="http://sse.tongji.edu.cn/zosadmin/" target="_blank" title="大型主机系统管理技能">http://sse.tongji.edu.cn/zosadmin/</a>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h4>
-                    <img src="assets/img/teaching/course1.png" style="height:40px; width:160px;"></h4>
-                <div>
-                    <p>
-                        《大型主机系统管理的案例分析与实践》是一门案例分析与实践性课程，是主机技术专业方向的高级专业课程，开设本课程的目的是以通过对大型主机系统运行监控(RMF)、JCL批处理作业管理(JES)、目录管理(Catalog)、安全管理(RACF)、存储管理(DFSMS)、各种实用程序(Utility)、系统安装(SMP/E)、硬件配置(HCD)、系统监控(RMF)等知识的学习，掌握主机系统管理的基本技能，提高学生解决和处理实际问题的能力，为日后从事主机系统程序员/管理员的相关工作打下坚实的基础。
-                    </p>
-                    <p class="link">
-                        <strong>
-                            <img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home"></strong>
-                        <a href="http://sse.tongji.edu.cn/zosadmincs/" target="_blank" title="大型主机系统管理的案例分析与实践">http://sse.tongji.edu.cn/zosadmincs/</a>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h4>
-                    <img src="assets/img/teaching/course5.png" style="height:40px; width:160px;"></h4>
-                <div>
-                    <p>
-                        同济大学软件学院大型主机专业方向应用类主干课程之一。课程从IBMLUW(Linux/UNIX/Windows)平台大型数据库DB2系统管理和应用开发课程演变而来，逐渐过渡到大型主机平台。本课程以数据库基本原理课程作为先修课程，属于技能性课程，更偏重于考查学生的实践理解、操作和编程能力。课程不再赘述通用的数据库原理，而是将重点放在大型主机平台的DB2数据库的具体实践上面。教学形式也相应地向实战方向倾斜，在各章节都安排了大量实验，最后考核除了书面考试外，另一大块是要求学生提交大量作业，并完成一个综合的数据库项目。
-                    </p>
-                    <p class="link">
-                        <strong>
-                            <img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home"></strong>
-                        <a href="http://sse.tongji.edu.cn/db2forzos/" target="_blank" title="大型主机系统数据库基础与应用开发">http://sse.tongji.edu.cn/db2forzos/</a>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h4>
-                    <img src="assets/img/teaching/course6.png" style="height:40px; width:160px;"></h4>
-                <div>
-                    <p>
-                        本课程是同济大学软件学院大型主机专业方向应用类主干课程之一。本课程以J2EE，大型机操作系统，大型机数据库系统及大型机中间件CICS等课程作为先修课程，属于技能性课程，更偏重于训练和考查学生的软件系统分析、设计和编程能力而非侧重理论知识。课程将重点放在大型主机应用中开放系统和中间件的应用上面，教学形式也相应地向实战方向倾斜，在各章节都安排了大量实验，最后考核除了书面考试外，另一大块是要求学生提交大量作业，以完成开放系统和大型主机中间件的四个应用案例。学生在学习完本门课程后，可以结合开放平台和大型机平台开发多个不同类型和规模的完整的实践项目，对自身的系统分析、设计和编程能力有很大的提高。
-                    </p>
-                    <p class="link">
-                        <strong>
-                            <img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home"></strong>
-                        <a href="http://sse.tongji.edu.cn/MFOpenSysandMiddleware/" target="_blank" title="大型主机应用上的开放系统和中间件">http://sse.tongji.edu.cn/MFOpenSysandMiddleware/</a>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h4>
-                    <img src="assets/img/teaching/course7.png" style="height:40px; width:160px;"></h4>
-                <div>
-                    课程简介：本课程是一门综合性、实践性和应用性的课程，是网络与主机软件专业方向的必修课。课程基于IBM DB2产品，覆盖DB2管理和DB2应用优化知识，并且涉及当前数据库领域的新技术和新动向的专业课程。它作为数据库基本原理以及应用开发的后续课程，同时作为软件工程专业的高阶课程，主要面向研究生和高年级本科生开设。课程主要介绍DB2的体系架构、数据库管理、安全机制、数据集成及性能优化、并且涉及当前数据库领域的新技术和新动向，包括pureXML技术，pureQuery技术以及Data as a Service等技术。课程帮助学生了解和掌握数据库管理、性能优化和整体数据集成方案，重点结合IBM Optim平台使学生了解和掌握DB2整体数据解决方案和相关技术。促进学生更深入学习数据库技术，充分了解数据库技术在企业级关键数据处理任务中所处的地位和发挥的作用，获得市场稀缺技能，为今后进一步研究数据库知识和从事相关岗位职业打下坚实基础。
-                </p>
-                <p class="link">
-                    <strong>
-                        <img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home"></strong>
-                    <a href="http://sse.tongji.edu.cn/DB2ADM/" target="_blank" title="大型企业级数据库管理与优化">http://sse.tongji.edu.cn/DB2ADM/</a>
-                </p>
-            </div>
-        </li>
-
+                  <%} %>
     </ul>
     </div>
     </div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="education_pages" location="225,10" size="280,245">
+    <action name="teacherList" location="65,57" size="150,68">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="teaching_teacher.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+    <action name="teacherInfo" location="65,162" size="150,67">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="teaching_teacher_mainpage.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="teaching_teacher.jsp" path="/portal/teaching_teacher.jsp" location="10,52" size="150,55" />
+  <webResource name="teaching_teacher_mainpage.jsp" path="/portal/teaching_teacher_mainpage.jsp" location="570,157" size="150,55" />
+</Struts2Diagram>
+

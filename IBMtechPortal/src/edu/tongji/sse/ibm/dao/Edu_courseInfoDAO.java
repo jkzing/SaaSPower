@@ -1,9 +1,14 @@
 package edu.tongji.sse.ibm.dao;
 
+import java.util.List;
+
 import edu.tongji.sse.ibm.hibernateUtils.HibernateUtil;
 import edu.tongji.sse.ibm.pojo.Edu_courseInfo;
 
 public class Edu_courseInfoDAO {
+	public static List<Edu_courseInfo> getlist(){
+		return HibernateUtil.executeQuery("from Edu_courseInfo", null);
+	}
 	
 	public static Edu_courseInfo getInfo(int id){
 		Edu_courseInfo info = new Edu_courseInfo();

@@ -20,5 +20,11 @@
 		<property name="info" type="java.lang.String">
 			<column name="info" sql-type="TEXT"></column>
 		</property>
+		<property name="URL" type="java.lang.String">
+			<column name="URL"></column>
+		</property>
+		<property name="link" type="java.lang.String">
+			<column name="link"></column>
+		</property>
 	</class>
 </hibernate-mapping>

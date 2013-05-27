@@ -4,8 +4,9 @@ import edu.tongji.sse.ibm.pojo.InnovationProject;
 
 public class InnovationProjectDAO extends BaseDAO {
 	
-	public static InnovationProject getProject(int id){
-		return (InnovationProject) get(id, "InnovationProject");
+	public static InnovationProject getProject(){
+		return (InnovationProject) getUnique("InnovationProject");
 	}
+	
 
 }

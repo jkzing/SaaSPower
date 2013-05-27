@@ -4,7 +4,7 @@
 	<include file="cdug_actions.xml"></include>
 	<include file="portal_actions.xml"></include>
 	<package name="global_pages" namespace="/" extends="interceptor">
-		<action name="ErrorPage" class="edu.tongji.sse.ibm.action.ErrorPageAction">
+		<action name="errorPage" class="edu.tongji.sse.ibm.action.ErrorPageAction">
 			<result name="success" type="dispatcher">
 				/errorPage.jsp
 			</result>

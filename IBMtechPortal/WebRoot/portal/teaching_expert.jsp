@@ -1,3 +1,4 @@
+<%@page import="edu.tongji.sse.ibm.pojo.Portal_info"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
@@ -30,21 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <h2>专家演讲</h2>
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
             <div class="commitment">
-                <div>
-                    <h4>服务工程</h4>
-                    <p>
-                        <img src="assets/img/teaching/img_motto.gif" alt="知德培養 初志一貫"></p>
-                </div>
-                <div>
-                    <h4>专业特色</h4>
-                    <p>
-                        <img src="assets/img/teaching/img_our02.gif" alt="时代在不断的更新，技术革新的巨浪在变化的历史潮流中翻腾。我们是历史的弄潮儿，为了实现更加美好繁荣的明天，进一步创造新的历史是我们的使命。我们不断的学习研究学问和专门职业技术，为了培育能够担当发展产业社会中枢作用的人才而为国家发展贡献我们的力量。"></p>
-                </div>
-                <div>
-                    <h4>课程体系结构</h4>
-                    <p>
-                        <img src="assets/img/teaching/img_goal.gif" alt=""></p>
-                </div>
+                <%=((Portal_info)request.getAttribute("info")).getContent()%>
             </div>
         </div>
     </div>

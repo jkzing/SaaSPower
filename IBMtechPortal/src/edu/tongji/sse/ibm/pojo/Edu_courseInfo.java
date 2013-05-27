@@ -7,6 +7,8 @@ public class Edu_courseInfo {
 	private String projectName;
 	private String year;
 	private String info;
+	private String URL;
+	private String link;
 	public Integer getId() {
 		return id;
 	}
@@ -36,6 +38,18 @@ public class Edu_courseInfo {
 	}
 	public void setInfo(String info) {
 		this.info = info;
+	}
+	public String getURL() {
+		return URL;
+	}
+	public void setURL(String uRL) {
+		URL = uRL;
+	}
+	public String getLink() {
+		return link;
+	}
+	public void setLink(String link) {
+		this.link = link;
 	}
 
 }

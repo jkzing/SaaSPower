@@ -1,12 +1,153 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-	<package name="education_pages" namespace="/edu" extends="interceptor">
-		<action name="teacher" class="edu.tongji.sse.ibm.action.Edu_teacherInfoAction">
+	<package name="education_pages" namespace="/edu" extends="struts-default">
+		<action name="teacherList" class="edu.tongji.sse.ibm.action.Edu_teacherListAction">
 			<result name="success" type="dispatcher">
 				/portal/teaching_teacher.jsp
 			</result>
-			<interceptor-ref name="myStack"></interceptor-ref>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+		<action name="teacherInfo" class="edu.tongji.sse.ibm.action.Edu_teacherInfoAction">
+			<result name="success" type="dispatcher">
+				/portal/teaching_teacher_mainpage.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+		<action name="research" class="edu.tongji.sse.ibm.action.Edu_researchAction">
+			<result name="success" type="dispatcher">
+				/portal/teaching_research.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+		<action name="textbook" class="edu.tongji.sse.ibm.action.Edu_textbookAction">
+			<result name="success" type="dispatcher">
+				/portal/teaching_textbook.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+		<action name="expert" class="edu.tongji.sse.ibm.action.Edu_expertAction">
+			<result name="success" type="dispatcher">
+				/portal/teaching_textbook.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+		<action name="excellent" class="edu.tongji.sse.ibm.action.Edu_excellentAction">
+			<result name="success" type="dispatcher">
+				/portal/teaching_excellent.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+		<action name="course" class="edu.tongji.sse.ibm.action.Edu_courseAction">
+			<result name="success" type="dispatcher">
+				/portal/teaching_course.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
 		</action>
 	</package>
-</struts>    
+	<package name="server_res" namespace="/server" extends="struts-default">
+		<action name="course" class="edu.tongji.sse.ibm.action.Server_ResAction">
+			<result name="success" type="dispatcher">
+				/portal/server_resource.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+	</package>
+	<package name="research" namespace="/research" extends="struts-default">
+		<action name="inresearchProjects"
+			class="edu.tongji.sse.ibm.action.Research_inresearchProjectAction">
+			<result name="success" type="dispatcher">
+				/portal/research_inresearch_project.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+		<action name="contestProject"
+			class="edu.tongji.sse.ibm.action.Research_contestProjectAction">
+			<result name="success" type="dispatcher">
+				/portal/research_contest_project.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+	</package>
+	<package name="club" namespace="/club" extends="struts-default">
+		<action name="news" class="edu.tongji.sse.ibm.action.Club_NewsAction">
+			<result name="success" type="dispatcher">
+				/portal/club_news.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+		<action name="info" class="edu.tongji.sse.ibm.action.Club_InfoAction">
+			<result name="success" type="dispatcher">
+				/portal/club_info.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+		<action name="contest" class="edu.tongji.sse.ibm.action.Club_ContestAction">
+			<result name="success" type="dispatcher">
+				/portal/club_contest.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+		<action name="innovationProject"
+			class="edu.tongji.sse.ibm.action.Club_InnovationProjectAction">
+			<result name="success" type="dispatcher">
+				/portal/club_innovation_project.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+	</package>
+	<package name="portal" namespace="/" extends="struts-default">
+		<action name="home" class="edu.tongji.sse.ibm.action.Portal_HomePageAction">
+			<result name="success" type="dispatcher">
+				/portal/homepage.jsp
+			</result>
+			<result name="error" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">errorPage</param>
+			</result>
+		</action>
+
+	</package>
+</struts>
