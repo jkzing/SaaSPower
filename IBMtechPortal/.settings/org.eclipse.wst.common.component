@@ -3,7 +3,7 @@
     <wb-module deploy-name="IBMtechProtal">
         <wb-resource deploy-path="/" source-path="/WebRoot"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="/IBMtechProtal"/>
         <property name="java-output-path" value="/IBMtechProtal/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="/IBMtechPortal"/>
     </wb-module>
 </project-modules>

@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Struts2Diagram version="2.0">
   <package name="global_pages" location="43,32" size="375,395">
-    <action name="ErrorPage" location="41,47" size="155,41">
+    <action name="ErrorPage" location="45,51" size="155,41">
       <result name="success">
         <resourceEdge source="success" routing="0" target="errorPage.jsp" />
       </result>
     </action>
   </package>
   <package name="global_service" location="503,35" size="391,398">
-    <action name="logout" location="82,50" size="120,41">
+    <action name="logout" location="86,54" size="120,41">
       <result name="success">
         <resourceEdge source="success" routing="0" target="test_success.jsp" />
       </result>
     </action>
+    <action name="logon" location="69,118" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_logon.jsp" />
+      </result>
+    </action>
   </package>
   <webResource name="errorPage.jsp" path="/errorPage.jsp" location="75,530" size="150,55" />
+  <webResource name="test_success.jsp" path="/test/test_success.jsp" location="595,507" size="150,55" />
+  <webResource name="cdug_logon.jsp" path="/cdug/cdug_logon.jsp" location="277,508" size="150,55" />
   <include file="cdug_actions.xml" location="239,626" size="150,30" />
   <include file="portal_actions.xml" location="60,627" size="150,30" />
-  <webResource name="test_success.jsp" path="/test/test_success.jsp" location="572,521" size="150,55" />
 </Struts2Diagram>
 
