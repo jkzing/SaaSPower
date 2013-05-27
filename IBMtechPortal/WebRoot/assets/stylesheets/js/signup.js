@@ -108,12 +108,10 @@ $(document).ready(function(){
 	});
 
 	$('#male').live("click", function() {
-		console.log($(this).parent().children('#ih-gender').val());
 		$(this).parent().children('#ih-gender').val("male");
 	})
 
 	$('#female').live("click", function() {
-		console.log($(this).parent().children('#ih-gender').val());
 		$(this).parent().children('#ih-gender').val("female");
 	})
 	
