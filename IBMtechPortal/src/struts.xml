@@ -16,6 +16,11 @@
 				/test/test_success.jsp
 			</result>
 		</action>
+		<action name="logon" class="edu.tongji.sse.ibm.action.PageAction">
+			<result name="success" type="dispatcher">
+				/cdug/cdug_logon.jsp
+			</result>
+		</action>
 	</package>
 	<include file="cdug_actions.xml"></include>
 	<include file="portal_actions.xml"></include>

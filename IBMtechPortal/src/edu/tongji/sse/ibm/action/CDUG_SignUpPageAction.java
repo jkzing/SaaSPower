@@ -23,10 +23,11 @@ public class CDUG_SignUpPageAction extends ActionSupport {
 			request = ServletActionContext.getRequest();
 			response = ServletActionContext.getResponse();
 			if ( null !=  request.getQueryString())
-				ActionContext.getContext().getSession().put( " redirectUrl " , request.getRequestURL().append( " ? ").append(request.getQueryString()).toString());
+				ActionContext.getContext().getSession().put( "redirectUrl" , request.getRequestURL().append("?").append(request.getQueryString()).toString());
 			else 
-				ActionContext.getContext().getSession().put( " redirectUrl " , request.getRequestURL().toString());
-			return "regist";
+				ActionContext.getContext().getSession().put( "redirectUrl" , request.getRequestURL().toString());
+			System.out.println( request.getRequestURL().toString());
+			return "logon";
 		}
 		return SUCCESS;
 	}

@@ -1,8 +1,10 @@
 package edu.tongji.sse.ibm.action;
 
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
+import edu.tongji.sse.ibm.dao.UserDAO;
 import edu.tongji.sse.ibm.service.CDUG_register;
 
 public class RegisterAction extends ActionSupport {
@@ -46,6 +48,8 @@ public class RegisterAction extends ActionSupport {
 		if (CDUG_register.regist(registEmail, registPasswd) == null) {
 			return ERROR;
 		} else {
+			ActionContext.getContext().getSession()
+			.put("userId", UserDAO.getUser(registEmail).getId());
 			return SUCCESS;
 		}
 	}

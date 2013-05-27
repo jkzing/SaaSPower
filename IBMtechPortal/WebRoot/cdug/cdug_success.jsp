@@ -5,6 +5,10 @@
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
+ 	String redirectUrl  =  (String)request.getSession().getAttribute("redirectUrl");
+           if (null != redirectUrl){
+              request.getSession().removeAttribute( "redirectUrl" );
+          }
 %>
 <%@taglib prefix="s" uri="/struts-tags"%>
 
@@ -29,7 +33,7 @@
 		<div class="success-wrapper">
 			<div class="success-inner">
 				<h3>操作成功，3秒后返回操作前页面</h3>
-				<a href="#"><strong>立即返回</strong></a>
+				<a href="<%=redirectUrl%>"><strong>立即返回</strong></a>
 			</div>
 		</div>
 	</div>

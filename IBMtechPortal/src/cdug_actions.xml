@@ -7,6 +7,7 @@
 				/cdug/cdug_index.jsp
 			</result>
 		</action>
+
 		<action name="news" class="edu.tongji.sse.ibm.action.CDUG_NewsAction">
 			<result name="success" type="dispatcher">
 				/cdug/cdug_news.jsp
@@ -27,9 +28,9 @@
 			<result name="success" type="dispatcher">
 				/cdug/cdug_signup.jsp
 			</result>
-			<result name="regist" type="redirectAction">
-				<param name="namespace">/cdug</param>
-				<param name="actionName">regist</param>
+			<result name="logon" type="redirectAction">
+				<param name="namespace">/</param>
+				<param name="actionName">logon</param>
 				<param name="supressEmptyParameters">true</param>
 			</result>
 		</action>
@@ -64,7 +65,7 @@
 
 		<action name="register" class="edu.tongji.sse.ibm.action.RegisterAction">
 			<result name="success" type="dispatcher">
-				/cdug/cdug_index.jsp
+				/cdug/cdug_success.jsp
 			</result>
 			<result name="error" type="chain">
 
