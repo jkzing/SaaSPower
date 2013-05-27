@@ -298,9 +298,6 @@ margin-top: 33px;
 
 /* teaching sidebar
 --------------------------------------------------*/
-.t-sidebar li {
-}
-
 #teacher .nav-item-link {
 	height: 33px;
 	display: block;
@@ -335,4 +332,18 @@ margin-top: 33px;
 	height: 33px;
 	display: block;
 	background-image: url("../../img/teaching/lnb_m07_off.gif");
+}
+
+/* research sidebar
+--------------------------------------------------*/
+#contest .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_n01_off.gif");
+}
+
+#inresearch .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_n02_off.gif");
 }

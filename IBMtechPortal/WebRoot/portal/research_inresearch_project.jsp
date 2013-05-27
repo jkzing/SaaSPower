@@ -24,22 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <s:include value="../layout/portal_header.jsp" />
 
     <div class="container" style="padding:50px">
-        <div id="lnb">
-            <h2>
-                <img src="assets/img/teaching/research_head.png" alt="科研"></h2>
-            <span class="lnb-vs">
-                <img src="assets/img/teaching/lnb_visual02.png" alt="IBM信息门户"></span>
-            <ul class="m-lnb">
-                <li class="first">
-                    <a href="research_contest_project.html" >
-                        <img src="assets/img/teaching/lnb_n01_on.gif" alt="创新项目"></a>
-                </li>
-                <li class="">
-                    <a href="research_inresearch_project.html">
-                        <img src="assets/img/teaching/lnb_n02_off.gif" alt="在研项目"></a>
-                </li>
-            </ul>
-        </div>
+        <s:include value="../layout/portal_research_sider.jsp" />
         <div id="contents">
             <div class="h3-location">
                 <h2>在研项目</h2>
