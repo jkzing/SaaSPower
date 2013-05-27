@@ -3,7 +3,7 @@
   type="WEB"
   name="IBMtechPortal"
   id="myeclipse.1366122820158"
-  context-root="/IBMtechProtal"
+  context-root="/IBMtechPortal"
   j2ee-spec="6.0"
   archive="IBMtechPortal.war">
   <attributes>

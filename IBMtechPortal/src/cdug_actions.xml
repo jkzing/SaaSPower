@@ -59,7 +59,7 @@
 				<param name="namespace">/</param>
 			</result>
 			<result name="success" type="dispatcher">
-				/cdug/cdug_index.jsp
+				/cdug/cdug_success.jsp
 			</result>
 		</action>
 
