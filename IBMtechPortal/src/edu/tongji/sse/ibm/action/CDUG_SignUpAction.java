@@ -95,7 +95,7 @@ public class CDUG_SignUpAction extends ActionSupport {
 			form.setEmail(email[i]);
 			form.setName(name[i]);
 			form.setPhone(phone[i]);
-//			form.setSex(sex[i]);
+			form.setSex(sex[i]);
 			form.setSignUpDate(new Date(System.currentTimeMillis()));
 			form.setCreater(UserDAO.getCurrentUser());
 			if(CDUG_signUp.singUp(form) == null){

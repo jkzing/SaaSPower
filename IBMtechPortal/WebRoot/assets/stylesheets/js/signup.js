@@ -3,36 +3,28 @@ var formCount = 1;
 var validation = true;
 
 $(document).ready(function(){
-	var array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
-	for (var i in array) {
-		$('#showForm_' + i).live("click", {i:i}, showFormHandler);
-		$('#inputName_' + i).live("change", {i:i}, nameChangeHandler);
-	}
-	
-	function showFormHandler(event) {
-		var i = event.data.i;
-		$('#showFormIcon_' + i).toggleClass("icon-chevron-down").toggleClass("icon-chevron-right");
-		$('#signupFormDiv_' + i).toggle(300);
-		alert($(this).parent().children('#inputName_' + i).val());
-		if ($('#inputName_' + i).val() == "") {
-			$('#displayName_' + i).text("请输入姓名...");
+
+	$('#showForm').live("click", function() {
+		$(this).parent().parent().find('#showFormIcon').toggleClass("icon-chevron-down").toggleClass("icon-chevron-right");
+		$(this).parent().parent().find('#signupFormDiv').toggle(300);
+		if ($(this).parent().parent().find('#inputName').val() == "") {
+			$(this).parent().parent().find('#displayName').text("请输入姓名...");
 		} else {
-			$('#displayName_' + i).text($('#inputName_' + i).val());
+			$(this).parent().parent().find('#displayName').text($(this).parent().parent().find('#inputName').val());
 		}
-	}
-	
-	function nameChangeHandler(event) {
-		var i = event.data.i;
+	});
+
+	$('.inputName').live("change", function() {
 		if ($(this).val().length < 1) {
-			$('#icon-name-' + i).removeClass("icon-ok").addClass("icon-remove").show();
-			$('#tip-name-' + i).text("姓名不能为空");
+			$(this).parent().find('#icon-name').removeClass("icon-ok").addClass("icon-remove").show();
+			$(this).parent().find('#tip-name').text("姓名不能为空");
 			validation = validation && false;
 		} else {
-			$('#icon-name-' + i).removeClass("icon-remove").addClass("icon-ok").show();
-			$('#tip-name-' + i).text("");
+			$(this).parent().find('#icon-name').removeClass("icon-remove").addClass("icon-ok").show();
+			$(this).parent().find('#tip-name').text("");
 			validation = validation && true;
 		}
-	}
+	});
 	
 	$('.inputMobile').live("change", function() {
 		var index = $(this).parent().attr('id');
@@ -114,17 +106,30 @@ $(document).ready(function(){
 		$(this).addClass("sform-active");
 		currentActForm = $(this).attr("id");
 	});
+
+	$('#male').live("click", function() {
+		console.log($(this).parent().children('#ih-gender').val());
+		$(this).parent().children('#ih-gender').val("male");
+	})
+
+	$('#female').live("click", function() {
+		console.log($(this).parent().children('#ih-gender').val());
+		$(this).parent().children('#ih-gender').val("female");
+	})
 	
 });
 
-$('#submitFormBtn').click(function() {
-
-	if (validation) {
-		alert("pass");
-	} else {
-		alert("fail");
+$('#signupForm').submit(function(e) {
+	validation = true;
+	$('.inputName').change();
+	$('.inputMobile').change();
+	$('.inputEmail').change();
+	$('.inputWorkdep').change();
+	$('.inputPostcode').change();
+	$('.inputAddress').change();
+	if (!validation) {
+		e.preventDefault();
 	}
-	
 });
 
 // function submitForm(){
@@ -145,24 +150,25 @@ $('#addFormBtn').click(function() {
 	var formTxt = 	"<div class='sform-inner'>" +
 					"<span class='btn-controls'>" +
 						"<button type='button' class='btn btn-mini btn-after' id='removeForm'><i class='icon-minus'></i></button>" +
-						"<button type='button' class='btn btn-mini btn-after' id='showForm_" + formIdCount + "'><i class='icon-chevron-down' id='showFormIcon_" + formIdCount + "'></i></button>" +
-						"<strong id='displayName_" + formIdCount + "'>正在填写...</strong>" +
+						"<button type='button' class='btn btn-mini btn-after' id='showForm'><i class='icon-chevron-down' id='showFormIcon'></i></button>" +
+						"<strong id='displayName'>正在填写...</strong>" +
 				  	"</span>" +
-				  	"<div class='row s-inputfield' id='signupFormDiv_" + formIdCount + "'>" +
+				  	"<div class='row s-inputfield' id='signupFormDiv'>" +
 				  		"<div class='control-group pull-left'>" +
 				  			"<label class='control-label s-leftlabel' for='inputName_" + formIdCount + "'>姓名</label>" +
 				  			"<div class='controls s-leftcontrol'>" +
-				  				"<input type='text' id='inputName_" + formIdCount + "' name='name' placeholder='姓名...'>" +
-				  				"<span><i class='' id='icon-name-" + formIdCount + "'></i></span>" +
-		                  		"<span><small id='tip-name-" + formIdCount + "'></small></span>" +
+				  				"<input type='text' class='inputName' id='inputName_" + formIdCount + "' name='name' placeholder='姓名...'>" +
+				  				"<span><i class='' id='icon-name'></i></span>" +
+		                  		"<span><small id='tip-name'></small></span>" +
 				  			"</div>" +
 				  		"</div>" +
 				  		"<div class='control-group pull-left'>" +
 				  			"<label class='control-label s-rightlabel' for='inputGender_" + formIdCount + "'>性别</label>" +
 				  			"<div class='controls s-rightcontrol'>" +
 				  				"<div class='btn-group' id='inputGender_" + formIdCount + "' data-toggle='buttons-radio'>" +
-				  					"<button type='button' class='btn btn-primary'>男</button>" +
-				  					"<button type='button' class='btn btn-primary'>女</button>" +
+				  					"<button type='button' class='btn btn-primary' id='male'>男</button>" +
+				  					"<button type='button' class='btn btn-primary' id='female'>女</button>" +
+				  					"<input type='hidden' id='ih-gender' name='sex' value='male'>" +
 				  				"</div>" +
 				  			"</div>" +
 				  		"</div>" +
