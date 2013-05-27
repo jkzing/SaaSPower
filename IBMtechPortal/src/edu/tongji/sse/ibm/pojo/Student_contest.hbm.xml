@@ -17,10 +17,5 @@
 		<property name="createTime" type="java.sql.Timestamp">
 			<column name="createTime"></column>
 		</property>
-
-		<set name="files" cascade="all" lazy="false">
-			<key column="file_id" />
-			<one-to-many class="File" />
-		</set>
 	</class>
 </hibernate-mapping>
