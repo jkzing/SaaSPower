@@ -636,27 +636,27 @@ body {
   margin: 10px 0 0 10px;
 }
 
-/* CDUG register
+/* CDUG register and logon
 -------------------------------------------------- */
 
-.register-wrapper {
+.rl-wrapper {
     min-height: 500px;
     padding: 10px 15% 0 15%;
     background-color: #ffffff;
 }
 
-.register-wrapper #r-title {
+.rl-wrapper #r-title {
   margin: 0;
   border-bottom: 4px solid #b8b8b8;
 }
 
-.register-wrapper #r-title h1 {
+.rl-wrapper #r-title h1 {
   padding-top: 10px;
   font-size: 24px;
   display: block;
 }
 
-.register-wrapper .register-inner {
+.rl-wrapper .r-inner {
   min-height: 350px;
   padding-top: 40px;
   box-shadow: -5px 0px 12px -5px #c0c0d5, 
@@ -664,19 +664,33 @@ body {
               0px 5px 12px -5px #c0c0d5;
 }
 
-.register-wrapper .control-group {
+.rl-wrapper .l-inner {
+  min-height: 230px;
+  padding-top: 40px;
+  box-shadow: -5px 0px 12px -5px #c0c0d5, 
+              5px 0px 12px -5px #c0c0d5, 
+              0px 5px 12px -5px #c0c0d5;
+}
+
+.rl-wrapper .control-group {
   padding: 10px 0;
 }
 
-.register-wrapper .control-group label {
+.rl-wrapper .control-group label {
   font-weight: 600;
   font-size: 16px;
   color: #394667;
 }
 
-.register-wrapper button {
+.rl-wrapper button {
   line-height: 26px;
+  width: 100px;
   text-align: center;
+}
+
+.rl-wrapper a {
+  color: gray;
+  padding-left: 20px;
 }
 
 /* CDUG success page

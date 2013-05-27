@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 	<base href="<%=basePath%>
 	">
-	<title>注册 | CDUG</title>
+	<title>登录 | CDUG</title>
 
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -28,47 +28,26 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="rl-wrapper">
 			<div class="" id="rlForm">
 				<div class="row" id="r-title">
-					<h1>个人注册</h1>
+					<h1>登录</h1>
 				</div>
-				<div class="r-inner">
-					<form class="form-horizontal" method="post" action="cdug/user/register">
+				<div class="l-inner">
+					<form class="form-horizontal" method="post" action="cdug/user/logon">
 						<div class="control-group pull-left">
 							<label class="control-label" for="inputEmail">邮箱</label>
 							<div class="controls">
-								<input type="text" id="inputEmail" name="registEmail" placeholder="邮箱...">
-								<span> <i class="" id="icon-email"></i>
-								</span>
-								<span>
-									<small id="tip-email"></small>
-								</span>
+								<input type="text" id="inputEmail" name="userName" placeholder="邮箱...">
 							</div>
 						</div>
 						<div class="control-group pull-left">
 							<label class="control-label" for="inputPasswd">密码</label>
 							<div class="controls">
-								<input type="password" id="inputPasswd" name="registPasswd" placeholder="密码...">
-								<span> <i class="" id="icon-passwd"></i>
-								</span>
-								<span>
-									<small id="tip-passwd"></small>
-								</span>
-							</div>
-						</div>
-						<div class="control-group pull-left">
-							<label class="control-label" for="inputConfirmPwd">确认密码</label>
-							<div class="controls">
-								<input type="password" id="inputConfirmPwd" placeholder="确认密码...">
-								<span>
-									<i class="" id="icon-confirm"></i>
-								</span>
-								<span>
-									<small id="tip-confirm"></small>
-								</span>
+								<input type="password" id="inputPasswd" name="password" placeholder="密码...">
 							</div>
 						</div>
 						<div class="control-group pull-left">
 							<div class="controls">
-								<button type="submit" class="btn btn-primary" id="inputSubmit">立即注册</button>
+								<button type="submit" class="btn btn-primary">登录</button>
+								<a href="cdug/regist">没有账号？立即注册</a>
 							</div>
 						</div>
 					</form>
@@ -79,7 +58,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 	<s:include value="../layout/logon_modal.jsp"/>
 	<s:include value="../include/cdug_scripts.jsp"/>
-	<script type="text/javascript" src="assets/stylesheets/js/rl.js" charset="utf-8"></script>
 
 	<script>
       !function ($) {
