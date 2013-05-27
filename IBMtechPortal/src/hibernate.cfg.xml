@@ -12,11 +12,11 @@
 		thread
 	</property>
 	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-	<property name="connection.url">jdbc:mysql://db4free.net:3306/saasdb</property>
-	<property name="connection.username">jkzhao</property>
-	<property name="connection.password">112113</property>
+	<property name="connection.url">jdbc:mysql://localhost:3306/saasdb</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">232101</property>
 	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-	<property name="myeclipse.connection.profile">mysql Server</property>
+	<property name="myeclipse.connection.profile">mysql local</property>
 
 	<property name="hibernate.show_sql">true</property>
 	<mapping resource="edu/tongji/sse/ibm/pojo/Album.hbm.xml" />
