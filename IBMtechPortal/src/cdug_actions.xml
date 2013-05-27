@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-	<package name="cdug_pages" namespace="/cdug" extends="struts-default">
+	<package name="cdug_pages" namespace="/cdug" extends="interceptor">
 		<action name="index" class="edu.tongji.sse.ibm.action.CDUG_IndexAction">
 			<result name="success" type="dispatcher">
 				/cdug/cdug_index.jsp
 			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
 
 		<action name="news" class="edu.tongji.sse.ibm.action.CDUG_NewsAction">
 			<result name="success" type="dispatcher">
 				/cdug/cdug_news.jsp
 			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
 		<action name="experts" class="edu.tongji.sse.ibm.action.CDUG_ExpertAction">
 			<result name="success" type="dispatcher">
 				/cdug/cdug_experts.jsp
 			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
 		<action name="resources" class="edu.tongji.sse.ibm.action.CDUG_ResourcesAction">
 			<result name="success" type="dispatcher">
 				/cdug/cdug_resources.jsp
 			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
-		<action name="signup"
-			class="edu.tongji.sse.ibm.action.CDUG_SignUpPageAction">
+		<action name="signup" class="edu.tongji.sse.ibm.action.CDUG_SignUpPageAction">
 			<result name="success" type="dispatcher">
 				/cdug/cdug_signup.jsp
 			</result>
@@ -33,26 +36,34 @@
 				<param name="actionName">logon</param>
 				<param name="supressEmptyParameters">true</param>
 			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
 		<action name="regist" class="edu.tongji.sse.ibm.action.CDUG_RegisterAction">
 			<result name="success" type="dispatcher">
 				/cdug/cdug_register.jsp
 			</result>
+			<result name="index" type="redirectAction">
+				<param name="namespace">/cdug</param>
+				<param name="actionName">index</param>
+			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
 	</package>
-	<package name="cdug_infopage" namespace="/cdug/info" extends="struts-default">
+	<package name="cdug_infopage" namespace="/cdug/info" extends="interceptor">
 		<action name="news" class="edu.tongji.sse.ibm.action.CDUG_NewsPageAction">
 			<result name="success" type="dispatcher">
 				/cdug/cdug_newspage.jsp
 			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
 		<action name="expert" class="edu.tongji.sse.ibm.action.CDUG_ExpertInfoAction">
 			<result name="success" type="dispatcher">
 				/cdug/cdug_expinfo.jsp
 			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
 	</package>
-	<package name="cdug_service" namespace="/cdug/user" extends="struts-default">
+	<package name="cdug_service" namespace="/cdug/user" extends="interceptor">
 		<action name="logon" class="edu.tongji.sse.ibm.action.LogonAction">
 			<result name="error" type="chain">
 				<param name="actionName">ErrorPage</param>
@@ -68,7 +79,6 @@
 				/cdug/cdug_success.jsp
 			</result>
 			<result name="error" type="chain">
-
 				<param name="actionName">ErrorPage</param>
 				<param name="namespace">/</param>
 			</result>
@@ -81,6 +91,7 @@
 				<param name="actionName">ErrorPage</param>
 				<param name="namespace">/</param>
 			</result>
+			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
 	</package>
 </struts>    
