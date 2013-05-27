@@ -56,14 +56,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>
 	</div>
 
-	<s:include value="../layout/portal_footer.jsp" />
-	<s:include value="../include/portal_scripts.jsp" />
-	<script type="text/javascript">
-		!function($) {
-			$(function() {
-				iTopbar("top-club");
-			})
-		}(window.jQuery)
-	</script>
+    <s:include value="../layout/portal_footer.jsp" />
+    <s:include value="../include/portal_scripts.jsp" />
+    <script type="text/javascript">
+        !function($) {
+            $(function() {
+                iTopbar("top-club");
+                iSidebar("c-contest");
+            })
+        }(window.jQuery)
+    </script>
 </body>
 </html>

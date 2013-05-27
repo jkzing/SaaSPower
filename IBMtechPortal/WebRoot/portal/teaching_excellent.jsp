@@ -62,6 +62,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         !function($) {
             $(function() {
                 iTopbar("top-teaching");
+                iSidebar("excellent");
             })
         }(window.jQuery)
     </script>

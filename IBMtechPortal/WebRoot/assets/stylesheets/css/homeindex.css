@@ -17,7 +17,8 @@
 	position:relative;
 	/*overflow:hidden;*/
 	width:100%;
-	background:url(../../img/t_bodybg.gif) repeat-x 0 0;
+	/*background:url(../../img/t_bodybg.gif) repeat-x 0 0;*/
+	background-color: #1b1b1b;
 	z-index:5;
 }
 

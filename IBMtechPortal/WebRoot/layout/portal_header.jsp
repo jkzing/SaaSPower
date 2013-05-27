@@ -25,14 +25,6 @@
                   <img src="assets/img/sse_logo.png" height="82" width="400">
                 </a>
             </h1>
-          <ul class="action">
-              <li>
-                  <a href="#">登录</a>
-                </li>
-                <li>
-                  <a href="#">注册</a>
-                </li>
-            </ul>
             <ul class="top-nav" style="margin-top: 60px;">
               <li id="home">
                 <a href="portal/homepage.jsp" class="">首页</a>
@@ -50,7 +42,7 @@
                 <a href="cdug/index">cdug</a>
               </li>
               <li id="top-club">
-                <a href="portal/club_news.jsp">俱乐部</a>
+                <a href="portal/club_into.jsp">俱乐部</a>
               </li>
               <li id="top-server">
                 <a href="portal/server_resource.jsp">服务器</a>

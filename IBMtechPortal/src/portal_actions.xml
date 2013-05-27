@@ -109,9 +109,9 @@
 				<param name="actionName">errorPage</param>
 			</result>
 		</action>
-		<action name="info" class="edu.tongji.sse.ibm.action.Club_InfoAction">
+		<action name="into" class="edu.tongji.sse.ibm.action.Club_InfoAction">
 			<result name="success" type="dispatcher">
-				/portal/club_info.jsp
+				/portal/club_into.jsp
 			</result>
 			<result name="error" type="redirectAction">
 				<param name="namespace">/</param>

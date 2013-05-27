@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <h2>CLUB介绍</h2>
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
             <div class="commitment">
-                <%
+                     <%
                 	ClubInfo info = (ClubInfo) request.getAttribute("info");
                  %>
                  
@@ -47,6 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         !function($) {
             $(function() {
                 iTopbar("top-club");
+                iSidebar("intro");
             })
         }(window.jQuery)
     </script>
