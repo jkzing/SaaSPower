@@ -738,7 +738,6 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 10px 0;
   font-family: inherit;
   font-weight: bold;
   line-height: 20px;
@@ -768,7 +767,8 @@ h1 {
 }
 
 h2 {
-  font-size: 31.5px;
+	font-size: 31.5px;
+	color: #08c;
 }
 
 h3 {
@@ -776,7 +776,8 @@ h3 {
 }
 
 h4 {
-  font-size: 17.5px;
+	font-size: 17.5px;
+	color: #08c;
 }
 
 h5 {
@@ -812,7 +813,7 @@ h4 small {
 ul,
 ol {
   padding: 0;
-  margin: 0 0 10px 25px;
+ 
 }
 
 ul ul,
@@ -894,10 +895,11 @@ dd {
 }
 
 hr {
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid #eeeeee;
-  border-bottom: 1px solid #ffffff;
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #ffffff;
+	color: #000;
 }
 
 abbr[title],
@@ -2284,7 +2286,7 @@ table th[class*="span"],
   vertical-align: text-top;
   background-image: url("../img/glyphicons-halflings.png");
   background-position: 14px 14px;
-  background-repeat: no-repeat;
+  background-repeat:repeat;
 }
 
 /* White icons with optional class, or on hover/focus/active states of certain elements */
@@ -4356,6 +4358,7 @@ input[type="submit"].btn.btn-mini {
 .navbar {
   *position: relative;
   *z-index: 2;
+  /*margin-bottom: 20px;*/
   overflow: visible;
 }
 
@@ -4587,7 +4590,6 @@ input[type="submit"].btn.btn-mini {
   position: relative;
   left: 0;
   display: block;
-  float: left;
   margin: 0 10px 0 0;
 }
 
@@ -6109,7 +6111,7 @@ a.badge:focus {
 }
 
 .hero-unit {
-  padding: 60px;
+  padding: 0px;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;

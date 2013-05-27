@@ -30,7 +30,7 @@ img{
 		padding:0;   
 		max-width:200px;   
 		width:expression(this.width>200?"200px":this.width);   
-		max-height:150px;   
+  
 		height:expression(this.height>200?"  200px":this.height);   
 	} 
 

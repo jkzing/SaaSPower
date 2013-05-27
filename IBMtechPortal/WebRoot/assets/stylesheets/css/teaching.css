@@ -1,0 +1,298 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contents {
+float: left;
+width: 740px;
+margin-left: 30px;
+}
+
+#coursehomeimg{
+			height:10px;
+			width:50px;
+			padding-bottom: 10px;
+						   
+}
+	
+div.link-cont {
+	overflow:hidden;
+	width:740px;
+	margin-top:9px;
+}
+	div.link-cont ul {
+		width:740px;
+		margin-top:-1px;
+	}
+		div.link-cont ul li {
+			overflow:hidden;
+			width:740px;
+			padding:25px 0 32px 0;
+			
+		}
+			div.link-cont ul li h4 {
+				float:left;
+				width:156px;
+				padding-left:19px;
+				
+			}
+			div.link-cont ul li div {
+				float:left;
+				width:565px;
+			}
+				div.link-cont ul li div p {
+					color:#5b6066;
+				}
+					div.link-cont ul li div p.link {
+						margin-top:10px;
+					}
+						div.link-cont ul li div p.link strong {
+							display:inline-block;
+							padding-right:7px;
+							background:url('../images/common/icon/bl_link_in.gif') no-repeat 100% 1px;
+							font-size:0;
+							line-height:0;
+						}
+						   
+						div.link-cont ul li div p.link a {
+							padding-left:3px;
+							font-size:11px;
+							font-family:Arial;
+							color:#e78d00;
+							text-decoration:underline;
+						}
+						
+div.link-cont-type2 {
+	margin-top:30px;
+	background:url('../images/intro/bg_affiliate.gif') no-repeat 100% -20px;
+}
+		div.link-cont-type2 ul li {
+			border-top:none;
+			padding:25px 0 42px 0;
+		}
+			div.link-cont-type2 ul li h4 {
+				width:190px;
+				padding-left:0px;
+			}
+			div.link-cont-type2 ul li div {
+				width:550px;
+			}
+				div.link-cont-type2 ul li div p.link a {
+					padding-left:3px;
+					font-size:13px;
+					font-family:Arial;
+					color:#69717a;
+					text-decoration:underline;
+				}
+
+.h3-location {
+width: 100%;
+overflow: hidden;
+}
+
+.commitment {
+margin-top: 50px;
+}
+
+.location {
+float: right;
+font-size: 11px;
+}
+
+.location em {
+margin-left: 2px;
+padding-left: 10px;
+background: url('../images/common/icon/bl_location_in.gif') no-repeat 0 3px;
+color: #4ea0ff;
+}
+
+.location a {
+margin-left: 2px;
+padding-left: 10px;
+background: url('../images/common/icon/bl_location_in.gif') no-repeat 0 3px;
+color: #979797;
+}
+
+.location .home {
+padding-left: 7px;
+background: url('../images/common/icon/bl_location_dot.gif') no-repeat 0 6px;
+}
+
+a {
+color: #555f60;
+text-decoration: none;
+}
+
+#container {
+position: relative;
+width: 960px;
+margin: 0 auto 0;
+z-index: 5;
+padding: 35px 0 70px 0;
+}
+
+.commitment div {
+overflow: hidden;
+width: 100%;
+padding-bottom: 85px;
+}
+
+.commitment div h4 {
+float: left;
+width: 176px;
+}
+
+#lnb {
+float: left;
+width: 190px;
+}
+
+#lnb h2 {
+margin-top: 8;
+padding: 0;
+font-size: 0;
+}
+
+#lnb span.lnb-vs {
+display: block;
+margin-top: 15px;
+}
+
+.m-lnb {
+width: 179px;
+border-bottom: 1px solid #d7dde4;
+font-size: 0;
+line-height: 0;
+overflow: hidden;
+}
+
+.m-lnb li.first {
+border: none;
+}
+
+.m-lnb li {
+border-top: 1px solid #d7dde4;
+}
+
+.m-lnb li a {
+display: block;
+margin: 0;
+padding: 0;
+font-size: 0;
+}
+
+#container:after {
+content: "";
+clear: both;
+display: block;
+width: 0;
+height: 0;
+font-size: 0;
+line-height: 0;
+}
+
+div.chairman {
+overflow: hidden;
+width: 740px;
+margin-bottom: 36px;
+padding-top: 43px;
+color: #5b6066;
+}
+
+div.chairman {
+color: #5b6066;
+}
+
+div.chairman div.chief-img {
+float: left;
+width: 272px;
+}
+
+div.chairman div.chief-txt {
+float: left;
+width: 428px;
+padding-left: 39px;
+}
+
+.half_word {
+float: left;
+}
+table {
+background: url('assets/img/teaching/dotted.gif') repeat-x 0 0;
+margin: 5px 0 1px 0px;
+width: 650px;
+margin: 0;
+padding: 0;
+border-collapse: separate;
+border-spacing: 2px;
+border-color: gray;
+}
+.tea_brief .right {
+margin-left: 40px;
+}
+
+table.type1 {
+margin-top: 2px;
+background: none;
+}
+
+
+
+
+caption, legend {
+width: 0;
+height: 0;
+line-height: 0;
+overflow: hidden;
+visibility: hidden;
+font-size: 0;
+}
+
+table colgroup {
+background: none;
+}
+
+table thead {
+overflow: hidden;
+visibility: hidden;
+width: 0;
+height: 0;
+font-size: 0;
+line-height: 0;
+}
+
+table th {
+color: #4EA0FF;
+padding: 6px 0 1px 0;
+font-family: Arial;
+text-align: left;
+vertical-align: top;
+}
+
+thead {
+display: table-header-group;
+vertical-align: middle;
+border-color: inherit;
+}
+
+tr {
+display: table-row;
+vertical-align: inherit;
+border-color: inherit;
+}
+
+table {
+background: url('assets/img/teaching/dotted.gif') repeat-x 0 0;
+margin: 5px 0 1px 0px;
+width: 650px;
+margin: 0;
+padding: 0;
+border-collapse: separate;
+border-spacing: 2px;
+border-color: gray;
+}
+
+.message {
+width: 100%;
+margin-top: 33px;
+}
+

@@ -8,8 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML>
 <html>
 <head>
-	<base href="<%=basePath%>
-	">
+	<base href="<%=basePath%>">
 	<title>My JSP 'homepage.jsp' starting page</title>
 
 	<meta http-equiv="pragma" content="no-cache">
@@ -23,11 +22,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <body class="main" marginwidth="0" marginheight="0">
 	<s:include value="../layout/portal_header.jsp" />
-	<div id="index">
-		<div class="container"></div>
-		<div id="frontCloud">
-			<div class="container"></div>
-		</div>
+	<div id="banner" class="slide-1">
+		<ul id="J-slide" style="position:relative;">
+			<li class="slide current" style="z-index:0; position:absolute; left:0px; top:0px;">
+				<div class="bg bg-1" style="background-image:url(assets/img/wallpaper-2794283.jpg);"></div>
+			</li>
+			<li class="slide" style="z-index:0; position:absolute; left:0px; top:0px;">
+				<div class="bg bg-2" style="background-image:url(assets/img/wallpaper-2764837.png);"></div>
+			</li>
+			<li class="slide" style="z-index:0; position:absolute; left:0px; top:0px;">
+				<div class="bg bg-3" style="background-image:url(assets/img/wallpaper-2794283.jpg);"></div>
+			</li>
+			<li class="slide" style="z-index:0; position:absolute; left:0px; top:0px;">
+				<div class="bg bg-4" style="background-image:url(assets/img/wallpaper-2794283.jpg);"></div>
+			</li>
+
+		</ul>
 	</div>
 	<ul class="container" id="guide">
 		<li class="step" id="step1">
@@ -35,7 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="title">IBM技术中心</div>
 			<div class="desc">
 				IBM技术中心建立的目的是加强我校在信息科学技术领域的学科建设和人
-                 才培养，快速跟踪国际先进的IT技术
+                才培养，快速跟踪国际先进的IT技术
 			</div>
 		</li>
 		<li class="step" id="step2">
@@ -46,7 +56,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                  才培养，快速跟踪国际先进的IT技术
 			</div>
 		</li>
-		<li class="step" id="step2">
+		<li class="step" id="step3">
 			<div class="idxIcon"></div>
 			<div class="title">IBM技术中心</div>
 			<div class="desc">
@@ -57,31 +67,90 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</ul>
 	<ul class="container" id="introduce">
 		<li id="push">
-			<img title="新闻" src="assets/img/tongji_logo.jpg">
-			<div class="function">
-				<h2>新闻</h2>
-				<h3>这里找到您最想了解的信息</h3>
-				<p></p>
+			<div class="newstitle">
+				<h2>焦点新闻</h2>
+				<span>
+					<a href="#" target="_blank">
+						<img src="assets/img/more.jpg" width="40" height="9"></a>
+				</span>
 			</div>
+			<ul class="news_text">
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+			</ul>
 		</li>
 		<li id="custom">
-			<img title="活动" src="assets/img/tongji_logo.jpg">
-			<div class="function">
-				<h2>活动</h2>
-				<h3>这里找到您最想参与的活动</h3>
-				<p></p>
+			<div class="newstitle">
+				<h2>活动公告</h2>
+				<span>
+					<a href="#" title="_blank">
+						<img src="assets/img/more.jpg" width="40" height="9"></a>
+				</span>
 			</div>
+			<ul class="news_text">
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+				<li>
+					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+				</li>
+
+			</ul>
 		</li>
 	</ul>
-	<div id="footer">
-		<ul class="container footer-links">
-			<li>
-				<h3>关于我们</h3>
-			</li>
-		</ul>
-		<p>©  同济大学软件学院 2013</p>
-	</div>
-
+	<s:include value="../layout/portal_footer.jsp" />
 	<s:include value="../include/portal_scripts.jsp" />
 </body>
 </html>

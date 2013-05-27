@@ -8,8 +8,8 @@
 }
 .container {
 	clear: both;
-	margin-left:230px;
-	
+	margin-left:200px;
+	width:960px;
 	max-width: 1400px;
 	min-width: 1000px;
 }
@@ -21,6 +21,36 @@
 	z-index:5;
 }
 
+.newstitle {
+	width: 360px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #134b83;
+    float: left;
+	height:28px;
+	line-height:26px;
+	background:url(../../img/title_bg_33.jpg) no-repeat left bottom;
+}
+.newstitle h4 {
+	float:left;
+	font-size:14px;
+	text-indent:5px;
+}
+.newstitle span {
+	float:right;
+	margin-top:-25px;
+}
+
+.news_text{
+	padding-top:8px;
+}
+
+.news_text li{
+	line-height:0px;
+	height:23px;
+	font-size:13px;
+	width:98%;
+}
 /* top Util */
 h1 {
 	position:absolute;
@@ -47,3 +77,56 @@ h1 {
 		.top-util a img {
 			float:left;
 		}
+/*ΩÃ ¶ΩÈ…‹*/		
+div.chairman {
+	overflow:hidden;
+	width:740px;
+	margin-bottom:36px;
+	padding-top:43px; 
+	color:#5b6066;
+}
+	div.chairman div.chief-img {
+		float:left;
+		width:272px;
+	}
+	div.chairman div.chief-txt {
+		float:left;
+		width:428px;
+		padding-left:39px;
+	}
+	div.chairman h5 {
+		padding:5px 0 14px 0;
+	}
+	p.chief-txt {
+		margin-top:22px;
+	}
+	div.chief-name {
+		overflow:hidden;
+		float:right;
+		width:189px;
+	}
+		div.chief-name p {
+			float:left;
+			padding-left:14px;
+		}
+div.name-box {
+	overflow:hidden;
+	width:740px;
+	margin-top:49px;
+}
+div.chairman div.name-box {
+	width:428px;
+	margin-top:0px;
+}
+div.chairman div.name-box div.chief-name {
+	width:182px;
+	padding-top:23px;
+}
+/*????? president*/
+div.chief-txt p {
+	padding-bottom:25px;
+}
+div.chairman strong {
+	padding-top:25px;
+	color:#4ea0ff;
+}
