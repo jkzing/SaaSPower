@@ -373,3 +373,12 @@ margin-top: 33px;
 	display: block;
 	background-image: url("../../img/teaching/lnb_c04_off.gif");
 }
+
+/* server sidebar
+--------------------------------------------------*/
+#server .nav-item-link {
+	height: 33px;
+	display: block;
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_r04_on.gif");
+}

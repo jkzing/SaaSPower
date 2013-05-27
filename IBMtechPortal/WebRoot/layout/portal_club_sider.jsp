@@ -15,7 +15,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <img src="assets/img/teaching/lnb_visual03.png" alt="IBM信息门户">
          </span>
 		<ul class="m-lnb">
-			<li class="first" id="intro">
+			<li class="" id="intro">
 				<a href="portal/club_into.jsp" class="nav-item-link">CLUB介绍</a>
 			</li>
 			<li class="" id="news">
