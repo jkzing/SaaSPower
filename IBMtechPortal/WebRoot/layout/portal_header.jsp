@@ -32,7 +32,7 @@
 				
 				 %>
 				<li>
-					<a href="#signin"><%=user.getName()%></a>
+					<a ><%=user.getEmail()%></a>
 				</li>
 				<li>
 					<a href="logout">退出</a>

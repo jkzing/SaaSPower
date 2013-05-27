@@ -46,7 +46,7 @@
 					if(isLogon){
 				
 				 %>
-					<a data-toggle="modal" href="#signin" data-keyboard="false" data-backdrop="false"><%=user.getName()%></a>
+					<a data-toggle="modal" data-keyboard="false" data-backdrop="false"><%=user.getEmail()%></a>
 					 <b>-</b>
 					<a href="logout">退出</a>
 					

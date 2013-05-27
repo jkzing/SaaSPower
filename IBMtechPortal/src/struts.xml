@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-	<package name="global_pages" namespace="/cdug/errorpage"
+	<package name="global_pages" namespace="/"
 		extends="struts-default">
 		<action name="ErrorPage" class="edu.tongji.sse.ibm.action.ErrorPageAction">
 			<result name="success" type="dispatcher">
@@ -9,12 +9,14 @@
 			</result>
 		</action>
 	</package>
-	<include file="cdug_actions.xml"></include>
-	<include file="portal_actions.xml"></include>
-	<package name="global_service" extends="struts-default">
+	<package name="global_service" extends="struts-default" namespace="/">
 		<action name="logout"
 			class="edu.tongji.sse.ibm.action.LogoutAction">
 			<result name="success" type="dispatcher">
-				/portal/homepage.jsp
+				/test/test_success.jsp
 			</result>
-		</action></package></struts>    
+		</action>
+	</package>
+	<include file="cdug_actions.xml"></include>
+	<include file="portal_actions.xml"></include>
+</struts>    
