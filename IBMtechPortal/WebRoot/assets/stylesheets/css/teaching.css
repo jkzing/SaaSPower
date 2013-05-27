@@ -304,10 +304,20 @@ margin-top: 33px;
 	background-image: url("../../img/teaching/lnb_m01_off.gif");
 }
 
+#teacher .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_m01_on.gif");
+}
+
 #excellent .nav-item-link {
 	height: 33px;
 	display: block;
 	background-image: url("../../img/teaching/lnb_m03_off.gif");
+}
+
+#excellent .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_m03_on.gif");
 }
 
 #research .nav-item-link {
@@ -316,10 +326,20 @@ margin-top: 33px;
 	background-image: url("../../img/teaching/lnb_m04_off.gif");
 }
 
+#research .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_m04_on.gif");
+}
+
 #course .nav-item-link {
 	height: 33px;
 	display: block;
 	background-image: url("../../img/teaching/lnb_m05_off.gif");
+}
+
+#course .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_m05_on.gif");
 }
 
 #textbook .nav-item-link {
@@ -328,10 +348,20 @@ margin-top: 33px;
 	background-image: url("../../img/teaching/lnb_m06_off.gif");
 }
 
+#textbook .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_m06_on.gif");
+}
+
 #expert .nav-item-link {
 	height: 33px;
 	display: block;
 	background-image: url("../../img/teaching/lnb_m07_off.gif");
+}
+
+#expert .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_m07_on.gif");
 }
 
 /* research sidebar
@@ -342,10 +372,20 @@ margin-top: 33px;
 	background-image: url("../../img/teaching/lnb_n01_off.gif");
 }
 
+#contest .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_n01_on.gif");
+}
+
 #inresearch .nav-item-link {
 	height: 33px;
 	display: block;
 	background-image: url("../../img/teaching/lnb_n02_off.gif");
+}
+
+#inresearch .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_n02_on.gif");
 }
 
 /* club sidebar
@@ -356,10 +396,20 @@ margin-top: 33px;
 	background-image: url("../../img/teaching/lnb_c01_off.gif");
 }
 
+#intro .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_c01_on.gif");
+}
+
 #news .nav-item-link {
 	height: 33px;
 	display: block;
 	background-image: url("../../img/teaching/lnb_c02_off.gif");
+}
+
+#news .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_c02_on.gif");
 }
 
 #c-contest .nav-item-link {
@@ -368,10 +418,20 @@ margin-top: 33px;
 	background-image: url("../../img/teaching/lnb_c03_off.gif");
 }
 
+#c-contest .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_c03_on.gif");
+}
+
 #innovation .nav-item-link {
 	height: 33px;
 	display: block;
 	background-image: url("../../img/teaching/lnb_c04_off.gif");
+}
+
+#innovation .active {
+	border-top: 1px solid rgb(84, 153, 227);
+	background-image: url("../../img/teaching/lnb_c04_on.gif");
 }
 
 /* server sidebar

@@ -50,7 +50,7 @@
                 <a href="cdug/index">cdug</a>
               </li>
               <li id="top-club">
-                <a href="portal/club_news.jsp">俱乐部</a>
+                <a href="portal/club_intro.jsp">俱乐部</a>
               </li>
               <li id="top-server">
                 <a href="portal/server_resource.jsp">服务器</a>
