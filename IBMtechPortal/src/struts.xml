@@ -1,90 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-	<package name="cdug_pages" namespace="/cdug" extends="struts-default">
-		<action name="index" class="edu.tongji.sse.ibm.action.CDUG_IndexAction">
-			<result name="success" type="dispatcher">
-				/cdug/cdug_index.jsp
-			</result>
-		</action>
-		<action name="news" class="edu.tongji.sse.ibm.action.CDUG_NewsAction">
-			<result name="success" type="dispatcher">
-				/cdug/cdug_news.jsp
-			</result>
-		</action>
-		<action name="experts" class="edu.tongji.sse.ibm.action.CDUG_ExpertAction">
-			<result name="success" type="dispatcher">
-				/cdug/cdug_experts.jsp
-			</result>
-		</action>
-		<action name="resources" class="edu.tongji.sse.ibm.action.CDUG_ResourcesAction">
-			<result name="success" type="dispatcher">
-				/cdug/cdug_resources.jsp
-			</result>
-		</action>
-		<action name="signup" class="edu.tongji.sse.ibm.action.CDUG_SignUpPageAction">
-			<result name="success" type="dispatcher">
-				/cdug/cdug_signup.jsp
-			</result>
-		</action>
-		<action name="regist" class="edu.tongji.sse.ibm.action.CDUG_RegisterAction">
-			<result name="success" type="dispatcher">
-				/cdug/cdug_register.jsp
-			</result>
-		</action>
-	</package>
-	<package name="cdug_infopage" namespace="/cdug/info" extends="struts-default">
-		<action name="news" class="edu.tongji.sse.ibm.action.CDUG_NewsPageAction">
-			<result name="success" type="dispatcher">
-				/cdug/cdug_newspage.jsp
-			</result>
-		</action>
-		<action name="expert" class="edu.tongji.sse.ibm.action.CDUG_ExpertInfoAction">
-			<result name="success" type="dispatcher">
-				/cdug/cdug_expinfo.jsp
-			</result>
-		</action>
-	</package>
-	<package name="cdug_service" namespace="/cdug/user" extends="struts-default">
-		<action name="logon" class="edu.tongji.sse.ibm.action.LogonAction">
-			<result name="error" type="chain">
-				<param name="actionName">ErrorPage</param>
-				<param name="namespace">/cdug/errorpage</param>
-			</result>
-			<result name="success" type="dispatcher">
-				/cdug/cdug_index.jsp
-			</result>
-		</action>
-
-		<action name="register" class="edu.tongji.sse.ibm.action.RegisterAction">
-			<result name="success" type="dispatcher">
-				/cdug/cdug_index.jsp
-			</result>
-			<result name="error" type="chain">
-
-				<param name="actionName">ErrorPage</param>
-				<param name="namespace">/cdug/errorpage</param>
-			</result>
-		</action>
-		<action name="signup" class="edu.tongji.sse.ibm.action.CDUG_SignUpAction">
-			<result name="success" type="dispatcher">
-				/cdug/cdug_index.jsp
-			</result>
-			<result name="error" type="chain">
-
-				<param name="actionName">ErrorPage</param>
-				<param name="namespace">/cdug/errorpage</param>
-			</result>
-		</action>
-	</package>
-	<package name="education_pages" namespace="/edu" extends="struts-default">
-		<action name="teacher" class="edu.tongji.sse.ibm.action.Edu_teacherInfoAction">
-			<result name="success" type="dispatcher">
-				/portal/teaching_teacher.jsp
-			</result>
-		</action>
-	</package>
-	<package name="global_pages" namespace="/cdug/errorpage"
+	<package name="global_pages" namespace="/"
 		extends="struts-default">
 		<action name="ErrorPage" class="edu.tongji.sse.ibm.action.ErrorPageAction">
 			<result name="success" type="dispatcher">
@@ -92,4 +9,14 @@
 			</result>
 		</action>
 	</package>
+	<package name="global_service" extends="struts-default" namespace="/">
+		<action name="logout"
+			class="edu.tongji.sse.ibm.action.LogoutAction">
+			<result name="success" type="dispatcher">
+				/test/test_success.jsp
+			</result>
+		</action>
+	</package>
+	<include file="cdug_actions.xml"></include>
+	<include file="portal_actions.xml"></include>
 </struts>    

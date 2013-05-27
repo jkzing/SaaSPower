@@ -11,7 +11,6 @@ public class CDUG_res {
 	private User creater;
 	private CDUG_resSort sort;
 
-
 	public Integer getId() {
 		return id;
 	}

@@ -2,6 +2,8 @@ package edu.tongji.sse.ibm.pojo;
 
 import java.util.Set;
 
+import edu.tongji.sse.ibm.tools.PasswordCrypter;
+
 public class User {
 	private Integer id;
 	private String name;
@@ -65,6 +67,10 @@ public class User {
 
 	public void setMyResources(Set<CDUG_res> myResources) {
 		this.myResources = myResources;
+	}
+	
+	public String getEmail(){
+		return PasswordCrypter.string_decrypt(getUsername());
 	}
 
 

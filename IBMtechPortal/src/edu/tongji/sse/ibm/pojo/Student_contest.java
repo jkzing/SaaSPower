@@ -8,7 +8,6 @@ public class Student_contest {
 	private String title;
 	private String content;
 	private Date createTime;
-	private Set<Res> files;
 	
 	public Integer getId() {
 		return id;
@@ -42,13 +41,6 @@ public class Student_contest {
 		this.createTime = createTime;
 	}
 
-	public Set<Res> getFiles() {
-		return files;
-	}
-
-	public void setFiles(Set<Res> files) {
-		this.files = files;
-	}
 
 
 }

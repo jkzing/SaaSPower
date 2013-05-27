@@ -1,9 +1,18 @@
+<%@page import="edu.tongji.sse.ibm.dao.UserDAO"%>
+<%@page import="edu.tongji.sse.ibm.pojo.User"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://"
             + request.getServerName() + ":" + request.getServerPort()
             + path + "/";
+   	Integer userId =(Integer) request.getSession().getAttribute("userId");
+   	Boolean isLogon = false;
+   	User user = null;
+   	if(null != userId){
+   		user = UserDAO.getUser(userId);
+		isLogon = true;
+   	}
 %>
 
 <!DOCTYPE HTML>
@@ -17,12 +26,29 @@
 				</a>
 			</h1>
 			<ul class="action">
+				
+				<%
+					if(isLogon){
+				
+				 %>
 				<li>
-					<a href="#">登录</a>
+					<a ><%=user.getEmail()%></a>
 				</li>
 				<li>
-					<a href="#">注册</a>
+					<a href="logout">退出</a>
+				</li>	
+				<%
+				}else{
+				 %>
+				 <li>
+				 	<a href="#signin" >登录</a>
+				 </li>
+				<li>
+					<a href="cdug/regist">注册</a>
 				</li>
+				 <%
+				 }
+				  %>
 			</ul>
 			<ul class="top-nav" style="margin-top: 60px;">
 				<li id="home">

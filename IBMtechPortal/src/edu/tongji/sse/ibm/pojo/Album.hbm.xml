@@ -12,7 +12,7 @@
 			<column name="name"></column>
 		</property>
 		<property name="profile" type="java.lang.String">
-			<column name="profile"></column>
+			<column name="profile" sql-type="TEXT"></column>
 		</property>
 
 		<set name="pics" cascade="all" lazy="false">
