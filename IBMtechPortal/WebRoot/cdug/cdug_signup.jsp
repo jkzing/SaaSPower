@@ -37,19 +37,19 @@
 						<span class="btn-controls">
 							<button type="button" class="btn btn-mini" id="removeForm"> <i class="icon-minus"></i>
 							</button>
-							<button type="button" class="btn btn-mini" id="showForm_0"> <i class="icon-chevron-down" id="showFormIcon_0"></i>
-							</button> <strong id="displayName_0">正在填写...</strong>
+							<button type="button" class="btn btn-mini" id="showForm"> <i class="icon-chevron-down" id="showFormIcon"></i>
+							</button> <strong id="displayName">正在填写...</strong>
 						</span>
-						<div class="row s-inputfield" id="signupFormDiv_0">
+						<div class="row s-inputfield" id="signupFormDiv">
 							<div class="control-group pull-left">
-								<label class="control-label s-leftlabel" for="inputName">姓名</label>
+								<label class="control-label s-leftlabel" for="inputName_0">姓名</label>
 								<div class="controls s-leftcontrol">
-									<input type="text" id="inputName_0" name="name" placeholder="姓名...">
+									<input type="text" class="inputName" id="inputName_0" name="name" placeholder="姓名...">
 									<span>
-										<i class="" id="icon-name-0"></i>
+										<i class="" id="icon-name"></i>
 									</span>
 									<span>
-										<small id="tip-name-0"></small>
+										<small id="tip-name"></small>
 									</span>
 								</div>
 							</div>
@@ -58,8 +58,9 @@
 								<div class="controls s-rightcontrol">
 									<div class="btn-group" id="inputGender"
 											data-toggle="buttons-radio">
-										<button type="button" class="btn btn-primary">男</button>
-										<button type="button" class="btn btn-primary">女</button>
+										<button type="button" class="btn btn-primary active" id="male">男</button>
+										<button type="button" class="btn btn-primary" id="female">女</button>
+										<input type="hidden" id="ih-gender" name="sex" value="male">
 									</div>
 								</div>
 							</div>
@@ -130,7 +131,7 @@
 						</a>
 					</div>
 					<div class="sf-submit">
-						<button class="btn btn-primary" id="submitFormBtn">提交</button>
+						<button type="submit" class="btn btn-primary" id="submitFormBtn">提交</button>
 						<button type="reset" class="btn btn-warning">重置</button>
 					</div>
 				</form>
