@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
-	<package name="global_pages" namespace="/cdug/errorpage"
-		extends="struts-default">
-		<action name="ErrorPage" class="edu.tongji.sse.ibm.action.ErrorPageAction">
+	<package name="education_pages" namespace="/edu" extends="struts-default">
+		<action name="teacher" class="edu.tongji.sse.ibm.action.Edu_teacherInfoAction">
 			<result name="success" type="dispatcher">
-				/errorPage.jsp
+				/portal/teaching_teacher.jsp
 			</result>
 		</action>
 	</package>
-	<include file="cdug_actions.xml"></include>
-	<include file="portal_actions.xml"></include>
 </struts>    
