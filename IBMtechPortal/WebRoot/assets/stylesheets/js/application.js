@@ -1,7 +1,7 @@
-!function ($) {
+$(document).ready(function() {
 
-  $(function(){
-  	$('#myCarousel').carousel()
-  })
+})
 
-}(window.jQuery)
+function iTopbar(page) {
+	$('#' + page).children("a").addClass("active");
+}

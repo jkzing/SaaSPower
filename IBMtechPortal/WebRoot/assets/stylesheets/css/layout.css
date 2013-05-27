@@ -129,7 +129,7 @@ a.btn_green:active {
 	list-style-type: none;
 	margin: 0px 0 0 30px;
 	padding: 0;
-	width: 60px;
+	width: 50px;
 	position: relative;
 	vertical-align: middle;
 	/*border-right: 2px solid #abdeff;*/
@@ -157,6 +157,11 @@ a.btn_green:active {
 	border-bottom: 2px solid #9fef0f;
 }
 
+#header .top-nav>li>.active {
+	color: #9fef0f;
+	border-bottom: 2px solid #9fef0f;
+}
+
 #header .top-nav>li>a.selected {
 	border-bottom: 2px solid #9fef0f;
 }
@@ -170,8 +175,6 @@ a.btn_green:active {
 	position: relative;
 	vertical-align: middle;
 	text-align: center;
-	color: #9fef0f;
-	border-bottom: 2px solid #9fef0f;
 }
 /* end of header */
 

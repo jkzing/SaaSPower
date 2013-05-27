@@ -51,5 +51,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
     <s:include value="../layout/portal_footer.jsp" />
     <s:include value="../include/portal_scripts.jsp" />
+    <script type="text/javascript">
+        !function($) {
+            $(function() {
+                iTopbar("top-teaching");
+            })
+        }(window.jQuery)
+    </script>
 </body>
 </html>
