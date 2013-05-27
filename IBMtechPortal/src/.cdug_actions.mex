@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="cdug_pages" location="257,11" size="1260,245">
+    <action name="index" location="800,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_index.jsp" />
+      </result>
+    </action>
+    <action name="news" location="555,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_news.jsp" />
+      </result>
+    </action>
+    <action name="experts" location="310,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_experts.jsp" />
+      </result>
+    </action>
+    <action name="resources" location="65,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_resources.jsp" />
+      </result>
+    </action>
+    <action name="signup" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_signup.jsp" />
+      </result>
+      <result name="regist">
+        <resourceEdge source="regist" routing="0" target="regist" namespace="/cdug" />
+      </result>
+    </action>
+    <action name="regist" location="1045,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_register.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="cdug_infopage" location="225,815" size="280,245">
+    <action name="news" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_newspage.jsp" />
+      </result>
+    </action>
+    <action name="expert" location="65,162" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_expinfo.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="cdug_service" location="930,465" size="560,245">
+    <action name="logon" location="100,47" size="150,62">
+      <result name="error" />
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_index.jsp" />
+      </result>
+    </action>
+    <action name="register" location="100,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_index.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+    <action name="signup" location="345,152" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="cdug_index.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+  </package>
+  <webResource name="cdug_index.jsp" path="/cdug/cdug_index.jsp" location="1030,367" size="150,55" />
+  <webResource name="cdug_news.jsp" path="/cdug/cdug_news.jsp" location="785,297" size="150,55" />
+  <webResource name="cdug_experts.jsp" path="/cdug/cdug_experts.jsp" location="540,297" size="150,55" />
+  <webResource name="cdug_resources.jsp" path="/cdug/cdug_resources.jsp" location="295,297" size="150,55" />
+  <webResource name="cdug_signup.jsp" path="/cdug/cdug_signup.jsp" location="15,52" size="150,55" />
+  <webResource name="cdug_register.jsp" path="/cdug/cdug_register.jsp" location="1275,297" size="150,55" />
+  <webResource name="cdug_newspage.jsp" path="/cdug/cdug_newspage.jsp" location="10,857" size="150,55" />
+  <webResource name="cdug_expinfo.jsp" path="/cdug/cdug_expinfo.jsp" location="570,962" size="150,55" />
+</Struts2Diagram>
+
