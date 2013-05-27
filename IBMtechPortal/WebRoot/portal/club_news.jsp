@@ -24,30 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <s:include value="../layout/portal_header.jsp" />
 
     <div class="container" style="padding:50px">
-        <div id="lnb">
-            <h2>
-                <img src="assets/img/teaching/club_head.png" alt="俱乐部"></h2>
-            <span class="lnb-vs">
-                <img src="assets/img/teaching/lnb_visual03.png" alt="IBM信息门户"></span>
-            <ul class="m-lnb">
-                <li class="">
-                    <a href="club_into.html">
-                        <img src="assets/img/teaching/lnb_c01_off.gif" alt="CLUB介绍"></a>
-                </li>
-                <li class="">
-                    <a href="club_news.html">
-                        <img src="assets/img/teaching/lnb_c02_off.gif" alt="CLUB新闻"></a>
-                </li>
-                <li class="slc" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgb(84, 153, 227);">
-                    <a href="club_contest.html">
-                        <img src="assets/img/teaching/lnb_c03_on.gif" alt="学生竞赛"></a>
-                </li>
-                <li class="">
-                    <a href="club_innovation_project.html">
-                        <img src="assets/img/teaching/lnb_c04_off.gif" alt="创新项目"></a>
-                </li>
-            </ul>
-        </div>
+        <s:include value="../layout/portal_club_sider.jsp" />
         <div id="contents">
             <div class="h3-location">
                 <h2>CLUB新闻</h2>

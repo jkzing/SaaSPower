@@ -347,3 +347,29 @@ margin-top: 33px;
 	display: block;
 	background-image: url("../../img/teaching/lnb_n02_off.gif");
 }
+
+/* club sidebar
+--------------------------------------------------*/
+#intro .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_c01_off.gif");
+}
+
+#news .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_c02_off.gif");
+}
+
+#c-contest .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_c03_off.gif");
+}
+
+#innovation .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_c04_off.gif");
+}

@@ -8,7 +8,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <body>
     <div id="lnb">
-        <h2><img src="assets/img/teaching/research_head.png" alt="科研"></h2>
+        <h2>
+        	<img src="assets/img/teaching/research_head.png" alt="科研">
+        </h2>
         <span class="lnb-vs">
             <img src="assets/img/teaching/lnb_visual02.png" alt="IBM信息门户">
          </span>
