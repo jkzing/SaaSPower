@@ -27,7 +27,10 @@
 	<div class="container">
 		<s:include value="../layout/cdug_header.jsp" />
 		<div class="success-wrapper">
-			
+			<div class="success-inner">
+				<h3>操作成功，3秒后返回操作前页面</h3>
+				<a href="#"><strong>立即返回</strong></a>
+			</div>
 		</div>
 	</div>
 

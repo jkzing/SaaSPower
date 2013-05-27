@@ -687,6 +687,26 @@ body {
   background-color: #ffffff;
 }
 
+.success-wrapper .success-inner {
+  width: 450px;
+  height: 120px;
+  padding: 40px 20px 20px 90px;
+  margin: 140px 50px;
+  box-shadow: 0 0 12px #c0c0d5;
+}
+
+.success-inner h3 {
+  color: #2668b4;
+  font-weight: 500;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.success-inner a {
+  color: gray;
+}
+
+
 /* CDUG Conference 
 -------------------------------------------------*/
 h2.ibm-rule, h3.ibm-rule, ul.ibm-rule, ol.ibm-rule {

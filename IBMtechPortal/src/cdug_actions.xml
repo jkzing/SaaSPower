@@ -55,7 +55,7 @@
 		<action name="logon" class="edu.tongji.sse.ibm.action.LogonAction">
 			<result name="error" type="chain">
 				<param name="actionName">ErrorPage</param>
-				<param name="namespace">/cdug/errorpage</param>
+				<param name="namespace">/</param>
 			</result>
 			<result name="success" type="dispatcher">
 				/cdug/cdug_index.jsp
@@ -78,7 +78,7 @@
 			</result>
 			<result name="error" type="chain">
 				<param name="actionName">ErrorPage</param>
-				<param name="namespace">/cdug/errorpage</param>
+				<param name="namespace">/</param>
 			</result>
 		</action>
 	</package>
