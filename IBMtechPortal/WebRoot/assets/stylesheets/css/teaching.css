@@ -296,3 +296,43 @@ width: 100%;
 margin-top: 33px;
 }
 
+/* teaching sidebar
+--------------------------------------------------*/
+.t-sidebar li {
+}
+
+#teacher .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_m01_off.gif");
+}
+
+#excellent .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_m03_off.gif");
+}
+
+#research .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_m04_off.gif");
+}
+
+#course .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_m05_off.gif");
+}
+
+#textbook .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_m06_off.gif");
+}
+
+#expert .nav-item-link {
+	height: 33px;
+	display: block;
+	background-image: url("../../img/teaching/lnb_m07_off.gif");
+}

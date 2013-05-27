@@ -36,7 +36,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<li class="slide" style="z-index:0; position:absolute; left:0px; top:0px;">
 				<div class="bg bg-4" style="background-image:url(assets/img/wallpaper-2794283.jpg);"></div>
 			</li>
-
 		</ul>
 	</div>
 	<ul class="container" id="guide">

@@ -25,38 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <s:include value="../layout/portal_header.jsp" />
 
     <div class="container" style="padding:50px">
-        <div id="lnb">
-            <h2>
-                <img src="assets/img/teaching/teach_head.png" alt="教学"></h2>
-            <span class="lnb-vs">
-                <img src="assets/img/teaching/lnb_visual01.png" alt="IBM信息门户"></span>
-            <ul class="m-lnb">
-                <li class="first">
-                    <a href="teaching_teacher.html">
-                        <img src="assets/img/teaching/lnb_m01_off.gif" alt="教师简介"></a>
-                </li>
-                <li class="">
-                    <a href="teaching_excellent.html">
-                        <img src="assets/img/teaching/lnb_m03_off.gif" alt="精品课程"></a>
-                </li>
-                <li class="">
-                    <a href="teaching_research.html">
-                        <img src="assets/img/teaching/lnb_m04_off.gif" alt="研究改革"></a>
-                </li>
-                <li class="slc" style="border-top-width: 1px; border-top-style: solid; border-top-color: rgb(84, 153, 227);">
-                    <a href="teaching_course.html">
-                        <img src="assets/img/teaching/lnb_m05_on.gif" alt="课程体系"></a>
-                </li>
-                <li class="">
-                    <a href="teaching_textbook.html">
-                        <img src="assets/img/teaching/lnb_m06_off.gif" alt="教材建设"></a>
-                </li>
-                <li class="">
-                    <a href="teaching_expert.html">
-                        <img src="assets/img/teaching/lnb_m07_off.gif" alt="专家演讲"></a>
-                </li>
-            </ul>
-        </div>
+        <s:include value="../layout/portal_teaching_sider.jsp" />
         <div id="contents">
             <div class="h3-location">
                 <h2>课程体系</h2>
