@@ -60,12 +60,16 @@ a.btn_green:active {
 }
 
 #header .logo {
-	background: transparent url('../images/site/logo.png') no-repeat 0px 0px;
 	cursor: pointer;
 	display: block;
 	float: left;
 	height: 68px;
-	width: 271px;
+	width: 350px;
+}
+
+#header .top-figure {
+	float: left;
+	padding: 23px 0 0px 0;
 }
 #header .logo img{
 	  width: auto\9;
@@ -117,10 +121,10 @@ a.btn_green:active {
 }
 
 #header .top-nav {
-	float: right;
-	margin-top: 42px;
-	margin-right:-45px;
-	display: inline;
+	float: left;
+	margin-top: 35px;
+	margin-left: 10px;
+	display: block;
 }
 
 #header .top-nav>li {
@@ -129,7 +133,6 @@ a.btn_green:active {
 	list-style-type: none;
 	margin: 0px 0 0 30px;
 	padding: 0;
-	width: 50px;
 	position: relative;
 	vertical-align: middle;
 	/*border-right: 2px solid #abdeff;*/
@@ -141,11 +144,11 @@ a.btn_green:active {
 
 /*#header .top-nav > li:last-child{ border-right: none; }*/
 #header .top-nav>li>a {
-	color: #abdeff;
+	color: #ffffff;
 	display: block;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24px;
 	position: relative;
 	vertical-align: middle;
 	text-align: center;
@@ -153,13 +156,13 @@ a.btn_green:active {
 }
 
 #header .top-nav>li>a:hover {
-	color: #9fef0f;
-	border-bottom: 2px solid #9fef0f;
+	color: #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 }
 
 #header .top-nav>li>.active {
-	color: #9fef0f;
-	border-bottom: 2px solid #9fef0f;
+	color: #eeeeee;
+	border-bottom: 2px solid #eeeeee;
 }
 
 #header .top-nav>li>a.selected {
@@ -412,7 +415,7 @@ ul#introduce li>.function>p {
 #footer {
     margin-top: 75px;
 	width: 100%;
-	background:url(../../img/t_bodybg.gif) repeat;
+	background-color: #1e1e1e;
 }
 #footer ul.footer-links{
 	margin-left:350px;
