@@ -67,7 +67,7 @@
 		</action>
 	</package>
 	<package name="server_res" namespace="/server" extends="struts-default">
-		<action name="course" class="edu.tongji.sse.ibm.action.Server_ResAction">
+		<action name="res" class="edu.tongji.sse.ibm.action.Server_ResAction">
 			<result name="success" type="dispatcher">
 				/portal/server_resource.jsp
 			</result>

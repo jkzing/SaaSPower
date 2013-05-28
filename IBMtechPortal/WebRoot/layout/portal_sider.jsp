@@ -12,39 +12,39 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<ul class="m-lnb">
 				<li class="">教学</li>
 				<li>
-					<a href="teaching_teacher.html">教师简介</a>
+					<a href="edu/teacherList">教师简介</a>
 				</li>
 				<li>
-					<a href="teaching_excellent.html">精品课程</a>
+					<a href="edu/excellent">精品课程</a>
 				</li>
 				<li>
-					<a href="teaching_research.html">教学研究改革</a>
+					<a href="edu/research">教学研究改革</a>
 				</li>
 				<li>
-					<a href="teaching_course.html">课程体系</a>
+					<a href="edu/course">课程体系</a>
 				</li>
 				<li>
-					<a href="teaching_textbook.html">教材建设</a>
+					<a href="edu/textbook">教材建设</a>
 				</li>
 				<li>
-					<a href="teaching_expert.html">专家演讲</a>
+					<a href="edu/expert">专家演讲</a>
 				</li>
 				<li class="">科研</li>
 				<li>
-					<a href="research_contest_project.html">创新项目</a>
+					<a href="research/inresearchProjects">创新项目</a>
 				</li>
 				<li>
-					<a href="research_inresearch_project.html">在研项目</a>
+					<a href="research/contestProject">在研项目</a>
 				</li>
 				<li class="">服务</li>
 				<li>
 					<a href="#">Mainframe Cloud</a>
 				</li>
 				<li class="">
-					<a href="cdug_home.html">CDUG</a>
+					<a href="cdug/index">CDUG</a>
 				</li>
 				<li>
-					<a href="cdug_home.html">CDUG介绍</a>
+					<a href="cdug/">CDUG介绍</a>
 				</li>
 				<li>
 					<a href="cdug_expert.html">CDUG专家</a>

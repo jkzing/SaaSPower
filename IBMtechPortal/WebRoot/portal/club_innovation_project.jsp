@@ -40,7 +40,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                  %>
                   <%=project.getContent() %>
 
-            </div>
+                </div>
+              </div>
         </div>
     </div>
 

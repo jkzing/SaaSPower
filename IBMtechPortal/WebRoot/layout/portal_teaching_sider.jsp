@@ -16,22 +16,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</span>
 		<ul class="m-lnb">
 			<li class="" id="teacher">
-				<a href="portal/teaching_teacher.jsp" class="nav-item-link">教师简介</a>
+				<a href="edu/teacherList" class="nav-item-link">教师简介</a>
 			</li>
 			<li class="" id="excellent">
-				<a href="portal/teaching_excellent.jsp" class="nav-item-link">精品课程</a>
+				<a href="edu/excellent" class="nav-item-link">精品课程</a>
 			</li>
 			<li class="" id="research">
-				<a href="portal/teaching_research.jsp" class="nav-item-link">研究改革</a>
+				<a href="edu/research" class="nav-item-link">研究改革</a>
 			</li>
 			<li class="" id="course">
-				<a href="portal/teaching_course.jsp" class="nav-item-link">课程体系</a>
+				<a href="edu/course" class="nav-item-link">课程体系</a>
 			</li>
 			<li class="" id="textbook">
-				<a href="portal/teaching_textbook.jsp" class="nav-item-link">教材建设</a>
+				<a href="edu/textbook" class="nav-item-link">教材建设</a>
 			</li>
 			<li class="" id="expert">
-				<a href="portal/teaching_expert.jsp" class="nav-item-link">专家演讲</a>
+				<a href="edu/expert" class="nav-item-link">专家演讲</a>
 			</li>
 		</ul>
 	</div>
