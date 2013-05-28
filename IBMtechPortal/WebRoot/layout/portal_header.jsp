@@ -39,7 +39,7 @@
             <a href="#">主机云</a>
           </li>              
           <li id="top-cdug">
-            <a href="cdug/index">cdug</a>
+            <a href="cdug/index">CDUG</a>
           </li>
           <li id="top-club">
             <a href="club/into">俱乐部</a>

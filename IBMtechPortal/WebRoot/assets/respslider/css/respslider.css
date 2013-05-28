@@ -31,4 +31,3 @@ a { color: #39f; text-decoration: none; }
         #banner_ctr li.last-item { background: #fff; width: 20px; -webkit-border-radius: 0 20px 20px 0; -moz-border-radius: 0 20px 20px 0; border-radius: 0 20px 20px 0; cursor: default; }
 #drag_ctr { position: absolute; top: -14px; left: 20px; width: 115px; height: 156px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; bottom: 170px; background: #0084cf; }
 #drag_arrow { position: absolute; top: -14px; left: 20px; width: 115px; height: 156px; background: url(../images/drag_banner_arrow.gif) center 14px no-repeat; }
-/* 酷站代码整理 http://www.5icool.org */
