@@ -28,13 +28,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <li class="item1">
                 <div class="wrapper">
                     <div class="ad_txt">
-                        <h2>Web应用(B/S)定制开发</h2>
+                        <h2>中国DB2用户组</h2>
                         <p>
                             自主研发、完善的开发框架。<br />
                             详细的需求调研及解决方案。<br />
                             实施项目经验丰富的项目团队。
                         </p>
-                        <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
+                        <a href="cdug/index" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
                         <img src="assets/respslider/images/20120830015430148.png" width="506" height="404" alt="Web应用(B/S)定制开发" />
@@ -44,13 +44,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <li class="item2">
                 <div class="wrapper">
                     <div class="ad_txt">
-                        <h2>互联网时代的整合营销</h2>
+                        <h2>活跃的学生俱乐部</h2>
                         <p>
                             基于互联网的品牌营销策略的定制与执行。<br />
                             品牌形象挖掘、梳理、包装、表现与传播。<br />
                             坐拥着最为丰富的行业经验与优势资源。
                         </p>
-                        <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
+                        <a href="club/into" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
                         <img src="assets/respslider/images/20120830015446637.png" width="506" height="404" alt="互联网时代的整合营销" />
@@ -60,13 +60,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <li class="item3">
                 <div class="wrapper">
                     <div class="ad_txt">
-                        <h2>您的网站全职管家</h2>
+                        <h2>多样化的服务器资源</h2>
                         <p>
                             成熟的监控与报警机制。<br />
                             丰富的整合营销的能力和经验。<br />
                             专业数据分析、开发和维护部门。
                         </p>
-                        <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
+                        <a href="server/res" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
                         <img src="assets/respslider/images/20120830015615324.png" width="506" height="404" alt="您的网站全职管家" />
@@ -76,14 +76,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <li class="item4">
                 <div class="wrapper">
                     <div class="ad_txt">
-                        <h2>全新的学术会议体验</h2>
+                        <h2>全新的学术体验</h2>
                         <p>
                             工作更高效，主办方更轻松。<br />
                             线上报名，让主办方不再为报名的事而费尽脑筋。<br />
                             线上投稿、审稿，为主办方提高收寄、审稿效率。<br />
                             酒店预订，会议行程更加轻松。
                         </p>
-                        <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
+                        <a href="research/contestProject" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
                         <img src="assets/respslider/images/20120830015651273.png" width="506" height="404" alt="全新的学术会议体验" />
