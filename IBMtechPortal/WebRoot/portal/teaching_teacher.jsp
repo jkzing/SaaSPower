@@ -12,7 +12,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
 	<base href="<%=basePath%>
 	">
-	<title>My JSP 'homepage.jsp' starting page</title>
+	<title>教学 - 教师简介</title>
 
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -45,7 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="chief-txt">
 					<%=info.getInfo() %>
 					<p>
-						<a href="teacherinfo?id=<%=info.getId()%>">
+						<a href="edu/teacherinfo?id=<%=info.getId()%>">
 							<img src="assets/img/more.jpg" align="right"></a>
 					</p>
 				</div>
