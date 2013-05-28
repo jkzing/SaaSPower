@@ -27,13 +27,13 @@
         </div>
         <ul class="top-nav" style="margin-top: 60px;">
           <li id="home">
-            <a href="portal/homepage.jsp" class="">首页</a>
+            <a href="home" class="">首页</a>
           </li>
           <li id="top-teaching">
-             <a href="portal/teaching_teacher.jsp">教学</a>
+             <a href="edu/teacherList">教学</a>
           </li>
           <li id="top-research">
-            <a href="portal/research_contest_project.jsp">科研</a>
+            <a href="research/contestProject">科研</a>
           </li>
           <li id="top-zcloud">
             <a href="#">主机云</a>
@@ -42,10 +42,10 @@
             <a href="cdug/index">cdug</a>
           </li>
           <li id="top-club">
-            <a href="portal/club_into.jsp">俱乐部</a>
+            <a href="club/into">俱乐部</a>
           </li>
           <li id="top-server">
-            <a href="portal/server_resource.jsp">服务器</a>
+            <a href="server/res">服务器</a>
           </li>
         </ul>
       </div>
