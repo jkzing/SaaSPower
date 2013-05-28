@@ -16,16 +16,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
          </span>
 		<ul class="m-lnb">
 			<li class="" id="intro">
-				<a href="portal/club_into.jsp" class="nav-item-link">CLUB介绍</a>
+				<a href="club/into" class="nav-item-link">CLUB介绍</a>
 			</li>
 			<li class="" id="news">
-				<a href="portal/club_news.jsp" class="nav-item-link">CLUB新闻</a>
+				<a href="club/news" class="nav-item-link">CLUB新闻</a>
 			</li>
 			<li class="" id="c-contest">
-				<a href="portal/club_contest.jsp" class="nav-item-link">学生竞赛</a>
+				<a href="club/contest" class="nav-item-link">学生竞赛</a>
 			</li>
 			<li class="" id="innovation">
-				<a href="portal/club_innovation_project.jsp" class="nav-item-link">创新项目</a>
+				<a href="club/innovationProject" class="nav-item-link">创新项目</a>
 			</li>
 		</ul>
 	</div>

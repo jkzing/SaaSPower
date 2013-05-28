@@ -8,7 +8,7 @@ import edu.tongji.sse.ibm.pojo.Portal_info;
 public class Edu_researchAction extends ActionSupport {
 	private Portal_info info;
 	public String execute(){
-		setInfo(Portal_infoDAO.getInfo("research"));
+		setInfo(Portal_infoDAO.getInfo("eduResearch"));
 		return SUCCESS;
 	}
 	public Portal_info getInfo() {

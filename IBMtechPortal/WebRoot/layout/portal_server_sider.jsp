@@ -16,7 +16,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
          </span>
 		<ul class="m-lnb">
 			<li class="" id="server">
-				<a href="portal/server_resource.jsp" class="nav-item-link">服务器资源</a>
+				<a href="server/res" class="nav-item-link">服务器资源</a>
 			</li>
 		</ul>
 	</div>

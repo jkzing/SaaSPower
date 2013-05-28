@@ -1,19 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Struts2Diagram version="2.0">
-  <package name="education_pages" location="225,10" size="280,245">
-    <action name="teacherList" location="65,57" size="150,68">
+  <package name="education_pages" location="323,8" size="237,743">
+    <action name="teacherList" location="81,73" size="150,62">
       <result name="success">
         <resourceEdge source="success" routing="0" target="teaching_teacher.jsp" />
       </result>
       <result name="error" />
     </action>
-    <action name="teacherInfo" location="65,162" size="150,67">
+    <action name="teacherInfo" location="81,178" size="150,62">
       <result name="success">
         <resourceEdge source="success" routing="0" target="teaching_teacher_mainpage.jsp" />
       </result>
+      <result name="error" />
+    </action>
+    <action name="research" location="26,276" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="teaching_research.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+    <action name="textbook" location="26,376" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="teaching_textbook.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+    <action name="expert" location="26,476" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="teaching_textbook.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+    <action name="excellent" location="26,576" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="teaching_excellent.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+    <action name="course" location="27,669" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="teaching_course.jsp" />
+      </result>
+      <result name="error" />
     </action>
   </package>
-  <webResource name="teaching_teacher.jsp" path="/portal/teaching_teacher.jsp" location="10,52" size="150,55" />
-  <webResource name="teaching_teacher_mainpage.jsp" path="/portal/teaching_teacher_mainpage.jsp" location="570,157" size="150,55" />
+  <package name="server_res" location="47,210" size="182,102">
+    <action name="res" location="26,34" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="server_resource.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+  </package>
+  <package name="research" location="727,241" size="182,193">
+    <action name="inresearchProjects" location="26,34" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="research_inresearch_project.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+    <action name="contestProject" location="26,126" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="research_contest_project.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+  </package>
+  <package name="club" location="58,383" size="182,393">
+    <action name="news" location="26,34" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="club_news.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+    <action name="into" location="19,116" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="club_into.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+    <action name="contest" location="19,194" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="club_contest.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+    <action name="innovationProject" location="20,286" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="club_innovation_project.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+  </package>
+  <package name="portal" location="749,525" size="182,102">
+    <action name="home" location="26,34" size="150,62">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="homepage.jsp" />
+      </result>
+      <result name="error" />
+    </action>
+  </package>
+  <webResource name="teaching_teacher.jsp" path="/portal/teaching_teacher.jsp" location="23,52" size="150,55" />
+  <webResource name="teaching_teacher_mainpage.jsp" path="/portal/teaching_teacher_mainpage.jsp" location="583,157" size="150,55" />
+  <webResource name="teaching_research.jsp" path="/portal/teaching_research.jsp" location="358,875" size="150,55" />
+  <webResource name="teaching_textbook.jsp" path="/portal/teaching_textbook.jsp" location="363,800" size="150,55" />
+  <webResource name="teaching_excellent.jsp" path="/portal/teaching_excellent.jsp" location="63,950" size="150,55" />
+  <webResource name="teaching_course.jsp" path="/portal/teaching_course.jsp" location="363,950" size="150,55" />
+  <webResource name="server_resource.jsp" path="/portal/server_resource.jsp" location="63,1100" size="150,55" />
+  <webResource name="research_inresearch_project.jsp" path="/portal/research_inresearch_project.jsp" location="363,1100" size="150,55" />
+  <webResource name="research_contest_project.jsp" path="/portal/research_contest_project.jsp" location="63,1250" size="150,55" />
+  <webResource name="club_news.jsp" path="/portal/club_news.jsp" location="363,1250" size="150,55" />
+  <webResource name="club_into.jsp" path="/portal/club_into.jsp" location="54,1400" size="150,55" />
+  <webResource name="club_contest.jsp" path="/portal/club_contest.jsp" location="354,1400" size="150,55" />
+  <webResource name="club_innovation_project.jsp" path="/portal/club_innovation_project.jsp" location="50,1550" size="150,55" />
+  <webResource name="homepage.jsp" path="/portal/homepage.jsp" location="350,1550" size="150,55" />
 </Struts2Diagram>
 
