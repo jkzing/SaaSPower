@@ -26,4 +26,4 @@ function show(index) {
         adImg.eq(index).css({ right: "-50px", opacity: "0" }).stop(false, true).animate({ right: "10px", opacity: "1" }, time);
     }, 200)
     curIndex = index;
-}/* 酷站代码整理 http://www.5icool.org */
+}
