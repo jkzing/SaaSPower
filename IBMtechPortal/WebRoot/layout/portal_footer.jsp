@@ -8,6 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <body>
 	<div id="footer">
+		<div class="f-headline"></div>
 		<ul class="container footer-links">
 			<li>
 				<h3>赞助方</h3>

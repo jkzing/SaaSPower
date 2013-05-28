@@ -7,9 +7,9 @@ body { font-family: Microsoft YaHei,Segoe UI,Tahoma,Arial,Verdana,sans-serif; fo
 a { color: #39f; text-decoration: none; }
     a:hover { text-decoration: underline; }
 .wrapper { width: 986px; margin: 0 auto; position: relative; }
-#banner { width: 100%; height: 650px; background: #000; overflow: hidden; position: relative; }
+#banner { width: 100%; height: 560px; background: #000; overflow: hidden; position: relative; }
 #banner_img { display: block; position: relative; }
-    #banner_img li { position: absolute; top: 0; left: 0; width: 100%; height: 650px; background-position: center; background-size: cover; display: none; }
+    #banner_img li { position: absolute; top: 0; left: 0; width: 100%; height: 560px; background-position: center; background-size: cover; display: none; }
         /*ñͼƬ-------ʼ*/
         #banner_img li.item1 { background-image: url(../images/banner_bg1.jpg); display: block; }
         #banner_img li.item2 { background-image: url(../images/banner_bg2.jpg); }
@@ -20,7 +20,7 @@ a { color: #39f; text-decoration: none; }
         #banner_img li.item7 { background-image: url(../images/banner_bg7.jpg); }
         #banner_img li.item8 { background-image: url(../images/banner_bg8.jpg); }
     /*ñͼƬ--------*/
-    #banner_img .ad_img { position: absolute; right: 10px; top: 80px; width: 506px; height: 404px; }
+    #banner_img .ad_img { position: absolute; right: 10px; top: 50px; width: 375px; height: 300px; }
     #banner_img .ad_txt { position: absolute; left: 10px; top: 170px; color: #fff; text-shadow: 1px 1px rgba(51,51,51,0.3); }
         #banner_img .ad_txt h2 { font: bold 36px/60px Microsoft YaHei; }
         #banner_img .ad_txt a { display: block; width: 100px; height: 25px; line-height: 25px; text-align: center; margin-top: 10px; background: #fff; color: #666; text-decoration: none; text-shadow: none; }

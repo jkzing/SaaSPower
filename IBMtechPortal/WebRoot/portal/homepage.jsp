@@ -38,7 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120905092323647.png" width="506" height="404" alt="互联网品牌传播解决方案" />
+                        <img src="assets/respslider/images/20120905092323647.png" width="375" height="300" alt="互联网品牌传播解决方案" />
                     </div>
                 </div>
             </li>
@@ -54,7 +54,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015430148.png" width="506" height="404" alt="Web应用(B/S)定制开发" />
+                        <img src="assets/respslider/images/20120830015430148.png" width="375" height="300" alt="Web应用(B/S)定制开发" />
                     </div>
                 </div>
             </li>
@@ -70,7 +70,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015446637.png" width="506" height="404" alt="互联网时代的整合营销" />
+                        <img src="assets/respslider/images/20120830015446637.png" width="375" height="300" alt="互联网时代的整合营销" />
                     </div>
                 </div>
             </li>
@@ -86,7 +86,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015615324.png" width="506" height="404" alt="您的网站全职管家" />
+                        <img src="assets/respslider/images/20120830015615324.png" width="375" height="300" alt="您的网站全职管家" />
                     </div>
                 </div>
             </li>
@@ -102,7 +102,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015631560.png" width="506" height="404" alt="不可忽略的移动终端" />
+                        <img src="assets/respslider/images/20120830015631560.png" width="375" height="300" alt="不可忽略的移动终端" />
                     </div>
                 </div>
             </li>
@@ -119,7 +119,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015651273.png" width="506" height="404" alt="全新的学术会议体验" />
+                        <img src="assets/respslider/images/20120830015651273.png" width="375" height="300" alt="全新的学术会议体验" />
                     </div>
                 </div>
             </li>
@@ -135,7 +135,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015711808.png" width="506" height="404" alt="医院网站管理系统(HMS)" />
+                        <img src="assets/respslider/images/20120830015711808.png" width="375" height="300" alt="医院网站管理系统(HMS)" />
                     </div>
                 </div>
             </li>
@@ -151,7 +151,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015726137.png" width="506" height="404" alt="智慧点亮网络(RUIFOX-LAB)" />
+                        <img src="assets/respslider/images/20120830015726137.png" width="375" height="300" alt="智慧点亮网络(RUIFOX-LAB)" />
                     </div>
                 </div>
             </li>
