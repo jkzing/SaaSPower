@@ -9,7 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
 	<base href="<%=basePath%>">
-	<title>My JSP 'homepage.jsp' starting page</title>
+	<title>同济大学IBM技术中心 - 首页</title>
 
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -28,23 +28,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <li class="item1">
                 <div class="wrapper">
                     <div class="ad_txt">
-                        <h2>互联网品牌传播解决方案</h2>
-                        <p>
-                            成都顶级品牌网站建设公司-锐狐网络！<br />
-                            基于互联网的品牌行销策略的策划与执行。<br />
-                            品牌形象挖掘、梳理、包装、表现与传播。<br />
-                            辅助企业实现品牌战略目标的互联网解决方案。
-                        </p>
-                        <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
-                    </div>
-                    <div class="ad_img">
-                        <img src="assets/respslider/images/20120905092323647.png" width="375" height="300" alt="互联网品牌传播解决方案" />
-                    </div>
-                </div>
-            </li>
-            <li class="item2">
-                <div class="wrapper">
-                    <div class="ad_txt">
                         <h2>Web应用(B/S)定制开发</h2>
                         <p>
                             自主研发、完善的开发框架。<br />
@@ -54,11 +37,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015430148.png" width="375" height="300" alt="Web应用(B/S)定制开发" />
+                        <img src="assets/respslider/images/20120830015430148.png" width="506" height="404" alt="Web应用(B/S)定制开发" />
                     </div>
                 </div>
             </li>
-            <li class="item3">
+            <li class="item2">
                 <div class="wrapper">
                     <div class="ad_txt">
                         <h2>互联网时代的整合营销</h2>
@@ -70,11 +53,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015446637.png" width="375" height="300" alt="互联网时代的整合营销" />
+                        <img src="assets/respslider/images/20120830015446637.png" width="506" height="404" alt="互联网时代的整合营销" />
                     </div>
                 </div>
             </li>
-            <li class="item4">
+            <li class="item3">
                 <div class="wrapper">
                     <div class="ad_txt">
                         <h2>您的网站全职管家</h2>
@@ -86,27 +69,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015615324.png" width="375" height="300" alt="您的网站全职管家" />
+                        <img src="assets/respslider/images/20120830015615324.png" width="506" height="404" alt="您的网站全职管家" />
                     </div>
                 </div>
             </li>
-            <li class="item5">
-                <div class="wrapper">
-                    <div class="ad_txt">
-                        <h2>不可忽略的移动终端</h2>
-                        <p>
-                            IOS系统、Android系统应用开发。<br />
-                            App Store、Google Play 发布。<br />
-                            APP推广服务 酷站代码。
-                        </p>
-                        <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
-                    </div>
-                    <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015631560.png" width="375" height="300" alt="不可忽略的移动终端" />
-                    </div>
-                </div>
-            </li>
-            <li class="item6">
+            <li class="item4">
                 <div class="wrapper">
                     <div class="ad_txt">
                         <h2>全新的学术会议体验</h2>
@@ -119,39 +86,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015651273.png" width="375" height="300" alt="全新的学术会议体验" />
-                    </div>
-                </div>
-            </li>
-            <li class="item7">
-                <div class="wrapper">
-                    <div class="ad_txt">
-                        <h2>医院网站管理系统(HMS)</h2>
-                        <p>
-                            与大型医院密切合作。<br />
-                            诊疗挂号很轻松，检验结果实时查询，在线医患服务。<br />
-                            便捷的数据处理能力，稳定的软件基础架构。
-                        </p>
-                        <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
-                    </div>
-                    <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015711808.png" width="375" height="300" alt="医院网站管理系统(HMS)" />
-                    </div>
-                </div>
-            </li>
-            <li class="item8">
-                <div class="wrapper">
-                    <div class="ad_txt">
-                        <h2>智慧点亮网络(RUIFOX-LAB)</h2>
-                        <p>
-                            互联网改变世界，我们改变互联网。<br />
-                            精彩前沿技术演练场。<br />
-                            锐狐新产品尝鲜体验。
-                        </p>
-                        <a href="http://www.5icool.org/" target="_blank">了解详细&gt;</a>
-                    </div>
-                    <div class="ad_img">
-                        <img src="assets/respslider/images/20120830015726137.png" width="375" height="300" alt="智慧点亮网络(RUIFOX-LAB)" />
+                        <img src="assets/respslider/images/20120830015651273.png" width="506" height="404" alt="全新的学术会议体验" />
                     </div>
                 </div>
             </li>
@@ -161,14 +96,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <ul>
                 <li class="first-item">网站建设</li>
                 <li>品牌网站建设</li>
+                <li>品牌网站建设</li>
+                <li>品牌网站建设</li>
                 <li>应用系统开发</li>
-                <li>网络整合营销</li>
-                <li>网络运维托管</li>
-                <li>手机APP开发</li>
-                <li>学术会议系统</li>
-                <li>医院网站系统</li>
-                <li>实验室</li>
-                <li class="last-item">网站设计</li>
+                <li class="last-item">网站建设</li>
             </ul>
             <div id="drag_arrow"></div>
         </div>

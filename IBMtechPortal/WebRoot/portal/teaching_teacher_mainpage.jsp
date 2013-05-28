@@ -1,8 +1,9 @@
 <%@page import="edu.tongji.sse.ibm.pojo.Edu_teacherInfo"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+    Edu_teacherInfo info =(Edu_teacherInfo) request.getAttribute("info");
 %>
 <%@taglib prefix="s" uri="/struts-tags"%>
 
@@ -10,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
     <base href="<%=basePath%>">
-    <title>My JSP 'homepage.jsp' starting page</title>
+    <title>教师主页 - <%=info.getName_ch() %></title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
@@ -30,9 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="h3-location">
                 <h2>教师简介</h2>
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
-           				<%
-					Edu_teacherInfo info =(Edu_teacherInfo) request.getAttribute("info");
-				 %>
+
            
             <div class="chairman">
                 <div class="chief-img">
