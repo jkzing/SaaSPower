@@ -45,7 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="chief-txt">
 					<%=info.getInfo() %>
 					<p>
-						<a href="edu/teacherinfo?id=<%=info.getId()%>">
+						<a href="edu/teacherInfo?id=<%=info.getId()%>">
 							<img src="assets/img/more.jpg" align="right"></a>
 					</p>
 				</div>
