@@ -1,3 +1,4 @@
+<%@page import="edu.tongji.sse.ibm.pojo.Pic"%>
 <%@page import="edu.tongji.sse.ibm.pojo.News"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
@@ -43,7 +44,7 @@
 				%>
 
 				<ul class="news-list pull-left">
-					<li class="pull-left"><img src="assets/img/tongji_logo.jpg">
+					<li class="pull-left"><img src="<%=news.getPic().getURL()%>">
 					</li>
 					<li>
 						<h4>
