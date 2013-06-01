@@ -1,3 +1,4 @@
+<%@page import="edu.tongji.sse.ibm.pojo.Research_project"%>
 <%@page import="edu.tongji.sse.ibm.pojo.Portal_info"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
@@ -33,7 +34,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="message">
                 <img src="assets/img/teaching/img_1.png"  height="230" width="740"></div>
             <div class="commitment">
-                <%=((Portal_info)request.getAttribute("info")).getContent()%>
+               <%
+					List<Research_project> projectlist = (List<Research_project>) request.getAttribute("projectlist");
+					Research_project project = new Research_project();
+					Iterator<Research_project> it = projectlist.iterator();
+					while(it.hasNext()){
+					project = it.next();
+				%>
+				<%=project.getName() %><br>
+				<%=project.getContent() %><br>
+				<%} %>
             </div>
         </div>
     </div>

@@ -16,7 +16,8 @@ public class test_CDUG_signUp {
 	 */
 	public static void main(String[] args) {
 		CDUG_signUpForm form = new CDUG_signUpForm();
-		String str = "test";
+		for(int i = 0; i < 10;i++){
+		String str = "test" + i;
 		form.setCom_address(str);
 		form.setCom_postCode(str);
 		form.setCompany(str);
@@ -25,9 +26,7 @@ public class test_CDUG_signUp {
 		form.setPhone(str);
 		form.setSex(str);
 		form.setSignUpDate(new Date(System.currentTimeMillis()));
-		form.setCreater(UserDAO.getUser(1));
-
 		CDUG_signUp.singUp(form);
-		CDUG_exportEXCEL.export();
+		}
 	}
 }
