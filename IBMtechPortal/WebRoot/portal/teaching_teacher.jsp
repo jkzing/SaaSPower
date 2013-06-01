@@ -2,8 +2,11 @@
 <%@page import="edu.tongji.sse.ibm.pojo.Edu_teacherInfo"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	List<Edu_teacherInfo> infolist =(List<Edu_teacherInfo>) request.getAttribute("infolist");
+	Iterator<Edu_teacherInfo> it = infolist.iterator();
+	Edu_teacherInfo info;
 %>
 <%@taglib prefix="s" uri="/struts-tags"%>
 
@@ -33,15 +36,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<h2 id="c-title">教师简介</h2>
 				<img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
 				<%
-					List<Edu_teacherInfo> infolist =(List<Edu_teacherInfo>) request.getAttribute("infolist");
-					Iterator<Edu_teacherInfo> it = infolist.iterator();
-					Edu_teacherInfo info;
 					while(it.hasNext()){
 					info = it.next();
 				 %>
 			<div class="chairman">
-				<div class="chief-img">
-					<img src="<%=info.getPicURL() %>" height="234" width="173"></div>
+				<div class="chief-img" style="background-image: url(<%=info.getPicURL() %>)">
+					<div class="chief-img-bottom">
+						<div class="tf-line">
+							<b id="tname-ch"><%=info.getName_ch() %></b>
+							<small id="tname-en"><%=info.getName_en() %></small>
+						</div>
+					</div>
+				</div>
 				<div class="chief-txt">
 					<%=info.getInfo() %>
 					<p>

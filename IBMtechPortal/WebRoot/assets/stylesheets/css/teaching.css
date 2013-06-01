@@ -190,29 +190,6 @@ font-size: 0;
 line-height: 0;
 }
 
-div.chairman {
-overflow: hidden;
-width: 740px;
-margin-bottom: 36px;
-padding-top: 43px;
-color: #5b6066;
-}
-
-div.chairman {
-color: #5b6066;
-}
-
-div.chairman div.chief-img {
-float: left;
-width: 272px;
-}
-
-div.chairman div.chief-txt {
-float: left;
-width: 428px;
-padding-left: 39px;
-}
-
 .half_word {
 float: left;
 }
