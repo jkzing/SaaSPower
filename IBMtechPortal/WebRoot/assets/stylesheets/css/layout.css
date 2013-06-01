@@ -21,8 +21,12 @@ body {
 }
 
 .container {
-	/*width: 960px;*/
-	min-width: 960px;
+	margin: 0 auto;
+	width: 960px;
+}
+
+#main-cont {
+	padding-top: 50px;
 }
 
 a.btn_green {
@@ -307,8 +311,6 @@ h1.container {
 
 ul#introduce {
     list-style: none;
-	margin-right:300px;
-	margin-left:200px;
 }
 
 ul#guide li {
@@ -438,10 +440,10 @@ ul#introduce li>.function>p {
     display: inline;
 }
 #footer ul.container {
-position: relative;
-width: 960px;
-z-index: 5;
-padding: 20px 0 20px 0;
+	position: relative;
+	width: 960px;
+	z-index: 5;
+	padding: 10px 0 10px 0;
 }
 #footer ul.footer-links>li.contacts,
 #footer ul.footer-links>li.keeptouch {
@@ -460,7 +462,7 @@ padding: 20px 0 20px 0;
 }
 
 #footer .copyright {
-	padding: 25px 0;
+	padding: 15px 0;
 	text-align: center;
 }
 

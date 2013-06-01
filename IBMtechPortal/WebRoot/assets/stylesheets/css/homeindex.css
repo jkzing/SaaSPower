@@ -6,13 +6,6 @@
 	height: 0;
 	visibility: hidden;
 }
-.container {
-	clear: both;
-	margin-left:200px;
-	width:960px;
-	max-width: 1400px;
-	min-width: 1000px;
-}
 #wrap_main {
 	position:relative;
 	/*overflow:hidden;*/
@@ -130,4 +123,11 @@ div.chief-txt p {
 div.chairman strong {
 	padding-top:25px;
 	color:#4ea0ff;
+}
+
+/* portal inline elements style */
+#c-title {
+	color: #08c;
+	font-size: 31.5px;
+	line-height: 40px;
 }

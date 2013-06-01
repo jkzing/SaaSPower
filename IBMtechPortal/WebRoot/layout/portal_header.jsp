@@ -33,7 +33,7 @@
              <a href="edu/teacherList">教学</a>
           </li>
           <li id="top-research">
-            <a href="research/contestProject">科研</a>
+            <a href="research/contestProjects">科研</a>
           </li>
           <li id="top-zcloud">
             <a href="#">主机云</a>

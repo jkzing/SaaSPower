@@ -40,7 +40,7 @@
 		</action>
 		<action name="expert" class="edu.tongji.sse.ibm.action.Edu_expertAction">
 			<result name="success" type="dispatcher">
-				/portal/teaching_textbook.jsp
+				/portal/teaching_expert.jsp
 			</result>
 			<result name="error" type="redirectAction">
 				<param name="namespace">/</param>
@@ -88,7 +88,7 @@
 				<param name="actionName">errorPage</param>
 			</result>
 		</action>
-		<action name="contestProject"
+		<action name="contestProjects"
 			class="edu.tongji.sse.ibm.action.Research_contestProjectAction">
 			<result name="success" type="dispatcher">
 				/portal/research_contest_project.jsp

@@ -19,16 +19,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <meta http-equiv="description" content="This is my page">
 
     <s:include value="../include/portal_links.jsp" />
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css"></head>
+</head>
 
 <body class="main" marginwidth="0" marginheight="0">
     <s:include value="../layout/portal_header.jsp" />
 
-    <div class="container" style="padding:50px">
+    <div class="container" id="main-cont">
         <s:include value="../layout/portal_club_sider.jsp" />
         <div id="contents">
             <div class="h3-location">
-                <h2>学生创新项目</h2>
+                <h2 id="c-title">学生创新项目</h2>
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
             <div class="commitment">
                 <div>

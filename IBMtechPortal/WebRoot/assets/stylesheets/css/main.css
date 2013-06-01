@@ -6,6 +6,7 @@ body.main {
 	height:98%;
 	font-family: 'Microsoft YaHei','微软雅黑', Helvetica, Sans-serif;
   	font-size:12px;
+  	background-color: #ffffff;
 }
 body.main #container {
 	background:none;

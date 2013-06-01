@@ -16,10 +16,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
          </span>
 		<ul class="m-lnb">
 			<li class="" id="contest">
-				<a href="research/inresearchProjects" class="nav-item-link">创新项目</a>
+				<a href="research/contestProjects" class="nav-item-link">创新项目</a>
 			</li>
 			<li class="" id="inresearch">
-				<a href="research/contestProject" class="nav-item-link">在研项目</a>
+				<a href="research/inresearchProjects" class="nav-item-link">在研项目</a>
 			</li>
 		</ul>
 	</div>
