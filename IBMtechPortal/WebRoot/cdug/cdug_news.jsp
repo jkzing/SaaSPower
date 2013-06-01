@@ -44,8 +44,18 @@
 				%>
 
 				<ul class="news-list pull-left">
+				<%
+					Pic pic = news.getPic();
+					if(pic == null){
+				 %>
+					<li class="pull-left"><img src="">
+					</li>
+					
+					<%}else{ %>
+
 					<li class="pull-left"><img src="<%=news.getPic().getURL()%>">
 					</li>
+					<%} %>
 					<li>
 						<h4>
 							<a href="cdug/info/news?id=<%=news.getId()%>"><%=news.getTitle()%></a>
