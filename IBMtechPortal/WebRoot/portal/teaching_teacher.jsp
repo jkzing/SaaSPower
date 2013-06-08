@@ -42,9 +42,13 @@
 			<div class="chairman">
 				<div class="chief-img" style="background-image: url(<%=info.getPicURL() %>)">
 					<div class="chief-img-bottom">
-						<div class="tf-line">
+						<div class="t-line">
 							<b id="tname-ch"><%=info.getName_ch() %></b>
 							<small id="tname-en"><%=info.getName_en() %></small>
+							<small id="tname-en"><%=info.getCourses() %></small>
+							<small id="tname-en"><%=info.getPositions() %></small>
+							<b>Email: </b>
+							<small id="t-email"><%=info.getEmail() %></small>
 						</div>
 					</div>
 				</div>
