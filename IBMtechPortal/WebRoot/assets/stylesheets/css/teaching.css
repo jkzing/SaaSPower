@@ -10,8 +10,6 @@ margin-left: 30px;
 #coursehomeimg{
 			height:10px;
 			width:50px;
-			padding-bottom: 10px;
-						   
 }
 	
 div.link-cont {
@@ -66,16 +64,31 @@ div.link-cont-type2 {
 	background:url('../images/intro/bg_affiliate.gif') no-repeat 100% -20px;
 }
 		div.link-cont-type2 ul li {
-			border-top:none;
-			padding:25px 0 42px 0;
+			border-top: none;
+			padding: 20px 0;
+			color: #4d4d4e;
+			display: table;
+			border-bottom: 1px solid #ccc;
 		}
+			div.link-cont-type2 ul li.el-last {
+				border: none;
+			}
 			div.link-cont-type2 ul li h4 {
-				width:190px;
-				padding-left:0px;
+				font-size: 18px;
+				color: #2668b4;
+				width:175px;
+				line-height: 26px;
+				padding: 0 15px 0 0;
 			}
 			div.link-cont-type2 ul li div {
 				width:550px;
 			}
+				div.link-cont-type2 ul li div h5 {
+					font-size: 14px;
+					padding-bottom: 3px;
+					line-height: 18px;
+					font-weight: 500;
+				}
 				div.link-cont-type2 ul li div p.link a {
 					padding-left:3px;
 					font-size:13px;
@@ -193,79 +206,8 @@ line-height: 0;
 .half_word {
 float: left;
 }
-table {
-background: url('assets/img/teaching/dotted.gif') repeat-x 0 0;
-margin: 5px 0 1px 0px;
-width: 650px;
-margin: 0;
-padding: 0;
-border-collapse: separate;
-border-spacing: 2px;
-border-color: gray;
-}
 .tea_brief .right {
 margin-left: 40px;
-}
-
-table.type1 {
-margin-top: 2px;
-background: none;
-}
-
-
-
-
-caption, legend {
-width: 0;
-height: 0;
-line-height: 0;
-overflow: hidden;
-visibility: hidden;
-font-size: 0;
-}
-
-table colgroup {
-background: none;
-}
-
-table thead {
-overflow: hidden;
-visibility: hidden;
-width: 0;
-height: 0;
-font-size: 0;
-line-height: 0;
-}
-
-table th {
-color: #4EA0FF;
-padding: 6px 0 1px 0;
-font-family: Arial;
-text-align: left;
-vertical-align: top;
-}
-
-thead {
-display: table-header-group;
-vertical-align: middle;
-border-color: inherit;
-}
-
-tr {
-display: table-row;
-vertical-align: inherit;
-border-color: inherit;
-}
-
-table {
-background: url('assets/img/teaching/dotted.gif') repeat-x 0 0;
-margin: 5px 0 1px 0px;
-width: 650px;
-margin: 0;
-padding: 0;
-border-collapse: separate;
-border-spacing: 2px;
-border-color: gray;
 }
 
 .message {

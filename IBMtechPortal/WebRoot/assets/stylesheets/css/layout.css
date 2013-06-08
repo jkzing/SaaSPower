@@ -7,7 +7,6 @@ body {
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
     background: transparent
 }
@@ -366,7 +365,7 @@ ul#introduce li>.function>p {
 	background-image: url(../../img/footer-headline.png);
 }
 #footer ul.footer-links{
-	margin-left:350px;
+	margin-left: 160px;
 }
 #footer ul.footer-links>li {
     float: left;

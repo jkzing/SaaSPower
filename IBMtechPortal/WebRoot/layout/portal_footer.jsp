@@ -9,7 +9,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 	<div id="footer">
 		<div class="f-headline"></div>
-		<ul class="container footer-links">
+		<div class="container">
+		<ul class="footer-links">
 			<li>
 				<h3>赞助方</h3>
 				<div>
@@ -54,6 +55,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</li>
 		</ul>
+		</div>
 		<div class="copyright">同济大学IBM技术中心 版权所有 &copy;2013</div>
 	</div>
 </body>

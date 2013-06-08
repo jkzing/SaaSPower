@@ -3,6 +3,7 @@
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+List<Edu_courseInfo> courselist = (List<Edu_courseInfo>) request.getAttribute("courselist");
 %>
 <%@taglib prefix="s" uri="/struts-tags"%>
 
@@ -32,21 +33,24 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <h2 id="c-title">精品课程</h2>
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
             <div class="link-cont link-cont-type2">
-                <ul>
+                <ul id="e-ul">
                 
                 <%
-                List<Edu_courseInfo> courselist = (List<Edu_courseInfo>) request.getAttribute("courselist");
                 Iterator<Edu_courseInfo> it = courselist.iterator();
 					Edu_courseInfo info;
 					while(it.hasNext()){
 					info = it.next();
                  %>
                     <li>
-                        <h4>
-                            <img src="<%=info.getURL() %>" style="height:50px; width:190px;"></h4>
+                        <h4><%=info.getName() %></h4>
                         <div>
-                            <%=info.getInfo() %>
-                            <p class="link"> <strong><img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home"></strong>
+                        	<h5><strong>项目名称: </strong><%=info.getProjectName() %></h5>
+                        	<h5><strong>年度: </strong><%=info.getYear() %></h5>
+                            <h5><strong>课程介绍: </strong><%=info.getInfo() %></h5>
+                            <p class="link"> 
+                            	<strong>
+                            		<img id="coursehomeimg" src="assets/img/teaching/crouse_main.png" alt="course_home">
+                            	</strong>
                                 <a href="<%=info.getLink()%>" target="_blank" title="<%=info.getName()%>"><%=info.getLink()%></a>
                             </p>
                         </div>
