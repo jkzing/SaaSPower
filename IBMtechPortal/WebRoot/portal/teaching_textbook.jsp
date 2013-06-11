@@ -1,8 +1,11 @@
-<%@page import="edu.tongji.sse.ibm.pojo.Portal_info"%>
+<%@page import="edu.tongji.sse.ibm.pojo.Edu_textBook"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	List<Edu_textBook> infolist =(List<Edu_textBook>) request.getAttribute("infolist");
+	Iterator<Edu_textBook> it = infolist.iterator();
+	Edu_textBook info;
 %>
 <%@taglib prefix="s" uri="/struts-tags"%>
 
@@ -31,7 +34,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <h2 id="c-title">教材建设</h2>
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
             <div class="commitment">
-              <%=((Portal_info)request.getAttribute("info")).getContent() %>
+            	<%
+					while(it.hasNext()){
+					info = it.next();
+				 %>
+				 	<%=info.getName() %>
+				 <%
+				  } 
+				  %>
             </div>
         </div>
     </div>
