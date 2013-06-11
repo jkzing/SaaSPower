@@ -353,6 +353,7 @@ ul#introduce li>.function>p {
 }
 
 #footer {
+	font-size: 12px;
     margin-top: 75px;
 	width: 100%;
 	color: #aaa;

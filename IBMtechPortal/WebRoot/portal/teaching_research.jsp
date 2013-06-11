@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <h2 id="c-title">研究改革</h2>
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
             <div class="commitment">
-                <%=((Portal_info)request.getAttribute("info")).getContent() %>
+				<%=((Portal_info)request.getAttribute("info")).getContent() %>
             </div>
         </div>
     </div>

@@ -165,10 +165,3 @@ div.chairman strong {
 .newstitle h2 {
 	font-size: 100%;
 }
-
-table {
-	caption-side: top; 
-	width: auto; 
-	border-collapse: collapse; 
-	empty-cells: hide; 
-}

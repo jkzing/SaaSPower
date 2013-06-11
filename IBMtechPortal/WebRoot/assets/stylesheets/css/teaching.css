@@ -154,6 +154,17 @@ float: left;
 width: 176px;
 }
 
+.commitment table {
+	border-collapse:collapse;
+	border: 1px solid #ddd;
+}
+
+.commitment th, td {
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+}
+
+
 #lnb {
 float: left;
 width: 190px;
