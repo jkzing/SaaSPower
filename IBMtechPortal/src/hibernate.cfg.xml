@@ -46,6 +46,7 @@
 		resource="edu/tongji/sse/ibm/pojo/InnovationProject.hbm.xml" />
 	<mapping
 		resource="edu/tongji/sse/ibm/pojo/Research_project.hbm.xml" />
+	<mapping resource="edu/tongji/sse/ibm/pojo/Edu_textBook.hbm.xml" />
 
 
 </session-factory>
