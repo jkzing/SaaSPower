@@ -329,45 +329,45 @@ margin-top: 33px;
 #intro .nav-item-link {
 	height: 33px;
 	display: block;
-	background-image: url("../../img/teaching/lnb_c01_off.gif");
+	background-image: url("../../img/teaching/lnb_c01_off.png");
 }
 
 #intro .active {
 	border-top: 1px solid rgb(84, 153, 227);
-	background-image: url("../../img/teaching/lnb_c01_on.gif");
+	background-image: url("../../img/teaching/lnb_c01_on.png");
 }
 
 #news .nav-item-link {
 	height: 33px;
 	display: block;
-	background-image: url("../../img/teaching/lnb_c02_off.gif");
+	background-image: url("../../img/teaching/lnb_c02_off.png");
 }
 
 #news .active {
 	border-top: 1px solid rgb(84, 153, 227);
-	background-image: url("../../img/teaching/lnb_c02_on.gif");
+	background-image: url("../../img/teaching/lnb_c02_on.png");
 }
 
 #c-contest .nav-item-link {
 	height: 33px;
 	display: block;
-	background-image: url("../../img/teaching/lnb_c03_off.gif");
+	background-image: url("../../img/teaching/lnb_c03_off.png");
 }
 
 #c-contest .active {
 	border-top: 1px solid rgb(84, 153, 227);
-	background-image: url("../../img/teaching/lnb_c03_on.gif");
+	background-image: url("../../img/teaching/lnb_c03_on.png");
 }
 
 #innovation .nav-item-link {
 	height: 33px;
 	display: block;
-	background-image: url("../../img/teaching/lnb_c04_off.gif");
+	background-image: url("../../img/teaching/lnb_c04_off.png");
 }
 
 #innovation .active {
 	border-top: 1px solid rgb(84, 153, 227);
-	background-image: url("../../img/teaching/lnb_c04_on.gif");
+	background-image: url("../../img/teaching/lnb_c04_on.png");
 }
 
 /* server sidebar

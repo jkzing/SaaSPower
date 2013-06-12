@@ -3,22 +3,22 @@ import java.util.List;
 
 import com.opensymphony.xwork2.ActionSupport;
 import edu.tongji.sse.ibm.dao.ClubInfoDAO;
+import edu.tongji.sse.ibm.dao.Portal_infoDAO;
 import edu.tongji.sse.ibm.dao.Student_contestDAO;
 import edu.tongji.sse.ibm.pojo.ClubInfo;
+import edu.tongji.sse.ibm.pojo.Portal_info;
 import edu.tongji.sse.ibm.pojo.Student_contest;
 
 public class Club_ContestAction extends ActionSupport {
-	private List<Student_contest> contestlist;
-	public String execute(){
-		setContestlist(Student_contestDAO.getList());
-		return SUCCESS;
-	}
-	public List<Student_contest> getContestlist() {
-		return contestlist;
-	}
-	public void setContestlist(List<Student_contest> contestlist) {
-		this.contestlist = contestlist;
-	}
-
-
+    private Portal_info info;
+    public String execute(){
+        setInfo(Portal_infoDAO.getInfo("stuContest"));
+        return SUCCESS;
+    }
+    public Portal_info getInfo() {
+        return info;
+    }
+    public void setInfo(Portal_info info) {
+        this.info = info;
+    }
 }

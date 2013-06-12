@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
     <base href="<%=basePath%>">
-    <title>学生俱乐部 - CLUB新闻</title>
+    <title>学生俱乐部 - 俱乐部新闻</title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
@@ -28,7 +28,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <s:include value="../layout/portal_club_sider.jsp" />
         <div id="contents">
             <div class="h3-location">
-                <h2 id="c-title">CLUB新闻</h2>
+                <h2 id="c-title">俱乐部新闻</h2>
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
             <div class="commitment">
                 <%

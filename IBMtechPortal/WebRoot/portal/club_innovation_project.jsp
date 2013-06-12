@@ -1,4 +1,4 @@
-<%@page import="edu.tongji.sse.ibm.pojo.InnovationProject"%>
+<%@page import="edu.tongji.sse.ibm.pojo.Portal_info"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
     <base href="<%=basePath%>">
-    <title>学生俱乐部 - 创新项目</title>
+    <title>学生俱乐部 - 创新培养基地</title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
@@ -28,20 +28,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <s:include value="../layout/portal_club_sider.jsp" />
         <div id="contents">
             <div class="h3-location">
-                <h2 id="c-title">学生创新项目</h2>
-                <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
-            <div class="commitment">
-                <div>
-                
-                <% 
-                		InnovationProject project = (InnovationProject) request.getAttribute("project");
-                		
-                
-                 %>
-                  <%=project.getContent() %>
-
-                </div>
-              </div>
+                <h2 id="c-title">卓越工程师创新培养基地</h2>
+                <img src="assets/img/teaching/img_text.gif" alt="分割线">
+            </div>
+			<div class="c-content">
+	    		<img src="assets/img/teaching/img_1.png" height="230" width="740">
+	    		<%=((Portal_info)request.getAttribute("info")).getContent() %>
+    		</div>
         </div>
     </div>
 
