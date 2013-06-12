@@ -33,13 +33,46 @@
 				<h2 id="c-title">教材建设</h2>
 				<img src="assets/img/teaching/img_text.gif" alt="分割线">
 			</div>
-			<div class="commitment">
+			<div class="chairman">
 				<%
-					while(it.hasNext()){
-					textbook = it.next();
-				 %>
-				 	<%=textbook.getName() %>
-				 <%
+				    while (it.hasNext()) {
+				        textbook = it.next();
+				%>
+					<div class="chair-row">
+						<div class="textbook-img">
+							<img src=<%=textbook.getPicURL() %> >
+						</div>
+						<div class="textbook-txt">
+							<ul>
+								<li>
+									<h5>
+										<strong>教材名称: </strong>
+										<%=textbook.getName() %>
+									</h5>
+								</li>
+								<li>
+									<h5>
+										<strong>主编: </strong>
+										<%=textbook.getMainEditor() %>
+									</h5>
+								</li>
+								<li>
+									<h5>
+										<strong>出版时间: </strong>
+										<%=textbook.getPublishDate() %>
+									</h5>
+								</li>
+								<li>
+									<h5>
+										<strong>简介: </strong>
+										<%=textbook.getProfile() %>
+									</h5>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				<%
 				 }
 				  %>
 			</div>

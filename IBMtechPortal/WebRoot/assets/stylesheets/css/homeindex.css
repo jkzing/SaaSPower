@@ -79,6 +79,35 @@ div.chairman {
 	padding-top:43px; 
 	color:#5b6066;
 }
+
+	div.chairman div.chair-row {
+		min-height: 245px;
+		padding: 15px 0 20px 0;
+		border-bottom: 1px solid #ccc;
+	}
+	div.chairman div.textbook-img {
+		width: 175px;
+		height: 245px;
+		float: left;
+		box-shadow: 5px 5px 5px gray;
+	}
+		.textbook-img img {
+			width: 175px;
+			height: 245px;
+		}
+	div.chairman div.textbook-txt {
+		float:left;
+		width: 500px;
+		padding-left: 50px;
+	}
+		.textbook-txt ul {
+			list-style: none;
+			color: #1b1b1b;
+		}
+		.textbook-txt h5 {
+			font-weight: 500;
+			font-size:14px;
+		}
 	div.chairman div.chief-img {
 		float:left;
 		height: 235px;
@@ -134,9 +163,11 @@ div.chairman div.name-box div.chief-name {
 div.chief-txt p {
 	padding-bottom:25px;
 }
-div.chairman strong {
-	padding-top:25px;
-	color:#4ea0ff;
+
+/* Supplementary stylesheet by jingkaizhao */
+.intro-gallery {
+	padding-top: 20px;
+	margin-left: 60px;
 }
 
 /* portal inline elements style */

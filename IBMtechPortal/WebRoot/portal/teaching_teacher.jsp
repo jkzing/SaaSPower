@@ -35,32 +35,32 @@
 			<div class="h3-location">
 				<h2 id="c-title">教师简介</h2>
 				<img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
+				<div class="chairman">
 				<%
 					while(it.hasNext()){
 					info = it.next();
 				 %>
-			<div class="chairman">
-				<div class="chief-img" style="background-image: url(<%=info.getPicURL() %>)">
-					<div class="chief-img-bottom">
-						<div class="t-line">
-							<b id="tname-ch"><%=info.getName_ch() %></b>
-							<small id="tname-en"><%=info.getName_en() %></small>
-							<small id="tname-en"><%=info.getCourses() %></small>
-							<small id="tname-en"><%=info.getPositions() %></small>
-							<b>Email: </b>
-							<small id="t-email"><%=info.getEmail() %></small>
+					<div class="chief-img" style="background-image: url(<%=info.getPicURL() %>)">
+						<div class="chief-img-bottom">
+							<div class="t-line">
+								<b id="tname-ch"><%=info.getName_ch() %></b>
+								<small id="tname-en"><%=info.getName_en() %></small>
+								<small id="tname-en"><%=info.getCourses() %></small>
+								<small id="tname-en"><%=info.getPositions() %></small>
+								<b>Email: </b>
+								<small id="t-email"><%=info.getEmail() %></small>
+							</div>
 						</div>
 					</div>
+					<div class="chief-txt">
+						<%=info.getInfo() %>
+						<p>
+							<a href="edu/teacherInfo?id=<%=info.getId()%>">
+								<img src="assets/img/more.jpg" align="right"></a>
+						</p>
+					</div>
+				<%} %>
 				</div>
-				<div class="chief-txt">
-					<%=info.getInfo() %>
-					<p>
-						<a href="edu/teacherInfo?id=<%=info.getId()%>">
-							<img src="assets/img/more.jpg" align="right"></a>
-					</p>
-				</div>
-			</div>
-			<%} %>
 		</div>
 	</div>
 
