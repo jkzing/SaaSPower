@@ -102,6 +102,11 @@ width: 100%;
 overflow: hidden;
 }
 
+#news-title div{
+font-size= 15px;
+line-height=40px;
+}
+
 .commitment {
 margin-top: 50px;
 }

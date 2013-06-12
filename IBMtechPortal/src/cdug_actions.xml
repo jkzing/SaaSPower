@@ -66,7 +66,7 @@
 	<package name="cdug_service" namespace="/cdug/user" extends="interceptor">
 		<action name="logon" class="edu.tongji.sse.ibm.action.LogonAction">
 			<result name="error" type="chain">
-				<param name="actionName">ErrorPage</param>
+				<param name="actionName">errorPage</param>
 				<param name="namespace">/</param>
 			</result>
 			<result name="success" type="dispatcher">
@@ -79,7 +79,7 @@
 				/cdug/cdug_success.jsp
 			</result>
 			<result name="error" type="chain">
-				<param name="actionName">ErrorPage</param>
+				<param name="actionName">errorPage</param>
 				<param name="namespace">/</param>
 			</result>
 		</action>
@@ -88,7 +88,7 @@
 				/cdug/cdug_index.jsp
 			</result>
 			<result name="error" type="chain">
-				<param name="actionName">ErrorPage</param>
+				<param name="actionName">errorPage</param>
 				<param name="namespace">/</param>
 			</result>
 			<interceptor-ref name="myStack"></interceptor-ref>

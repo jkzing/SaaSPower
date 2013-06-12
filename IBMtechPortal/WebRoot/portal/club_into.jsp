@@ -30,6 +30,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="h3-location">
                 <h2 id="c-title">CLUB介绍</h2>
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
+            <div class="message">
+                <img src="assets/img/teaching/img_1.png"  height="230" width="740"></div>
             <div class="commitment">
                      <%
                 	ClubInfo info = (ClubInfo) request.getAttribute("info");
