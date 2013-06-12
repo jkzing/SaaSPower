@@ -8,16 +8,23 @@ import edu.tongji.sse.ibm.dao.NewsDAO;
 import edu.tongji.sse.ibm.pojo.News;
 
 public class Portal_HomePageAction extends ActionSupport {
-	private List<News> newslist;
+	private List<News> portalNewsList;
+	private List<News> activityList;
 	public String execute(){
-		setNewslist(NewsDAO.getNewsList("club"));
+		setPortalNewsList(NewsDAO.getNewsList("portal"));
+		setActivityList(NewsDAO.getNewsList("activity"));
 		return SUCCESS;
 	}
-	public List<News> getNewslist() {
-		return newslist;
+	public List<News> getPortalNewsList() {
+		return portalNewsList;
 	}
-	public void setNewslist(List<News> newslist) {
-		this.newslist = newslist;
+	public void setPortalNewsList(List<News> portalNewsList) {
+		this.portalNewsList = portalNewsList;
 	}
-
+	public List<News> getActivityList() {
+		return activityList;
+	}
+	public void setActivityList(List<News> activityList) {
+		this.activityList = activityList;
+	}
 }
