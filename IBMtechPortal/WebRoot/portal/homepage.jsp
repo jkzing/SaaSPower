@@ -7,7 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	List<News> activityList =(List<News>) request.getAttribute("activityList");
 	Iterator<News> portalNewsListIt = portalNewsList.iterator();
 	Iterator<News> activityListIt = activityList.iterator();
-	News protalNews;
+	News portalNews;
 	News activity;
 %>
 <%@taglib prefix="s" uri="/struts-tags"%>
@@ -140,37 +140,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<img src="assets/img/more.jpg" width="40" height="9"></a>
 				</span>
 			</div>
-			<ul class="news_text">
+			<ul class="news_text">			
+				<% while (portalNewsListIt.hasNext()) {
+					portalNews = portalNewsListIt.next(); 
+				%>
 				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+					<a title="<%=portalNews.getTitle() %>" href="#" target="_blank"><%=portalNews.getTitle() %></a>
 				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
+				<%
+				}
+				 %>
 			</ul>
 		</li>
 		<li id="custom">
@@ -182,37 +161,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</span>
 			</div>
 			<ul class="news_text">
+				<% while (activityListIt.hasNext()) {
+					activity = activityListIt.next();
+				 %>
 				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
+					<a title="<%=activity.getTitle() %>" href="#" target="_blank"><%=activity.getTitle() %></a>
 				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-				<li>
-					<a title="#" href="#" target="_blank">诚挚邀请您参加2013年秋季中国DB2用户大会...</a>
-				</li>
-
+				<%
+				}
+				 %>
 			</ul>
 		</li>
 	</ul>
