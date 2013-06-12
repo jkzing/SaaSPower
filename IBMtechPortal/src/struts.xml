@@ -10,6 +10,19 @@
 			</result>
 			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
+		<action name="download"
+			class="edu.tongji.sse.ibm.action.DownloadAction">
+			<result name="success" type="stream">
+				<param name="contentType">
+					application/octet-stream
+				</param>
+				<param name="contentDisposition">
+					attachment;filename=&quot;${fileName}&quot;
+				</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">4096</param>
+			</result>
+		</action>
 	</package>
 	<package name="global_service" extends="interceptor"
 		namespace="/">

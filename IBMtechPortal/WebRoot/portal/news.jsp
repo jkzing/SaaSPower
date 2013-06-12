@@ -52,7 +52,7 @@
             			resource = it.next();
             	 %>
             	 	<li>
-            	 		<a href="/PortalAdmin/<%=resource.getURL() %>">附件：<%=resource.getName() %></a>
+            	 		<a href="download?id=<%=resource.getId()%>">附件：<%=resource.getName() %></a>
             	 	</li>
             	 <%
             	 }
