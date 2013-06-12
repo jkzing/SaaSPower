@@ -1,7 +1,14 @@
+<%@page import="edu.tongji.sse.ibm.pojo.News"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	List<News> portalNewsList =(List<News>) request.getAttribute("portalNewsList");
+	List<News> activityList =(List<News>) request.getAttribute("activityList");
+	Iterator<News> portalNewsListIt = portalNewsList.iterator();
+	Iterator<News> activityListIt = activityList.iterator();
+	News protalNews;
+	News activity;
 %>
 <%@taglib prefix="s" uri="/struts-tags"%>
 
