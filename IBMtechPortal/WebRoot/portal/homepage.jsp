@@ -106,27 +106,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </div>
 	<ul class="container" id="guide">
 		<li class="step" id="step1">
-			<div class="idxIcon"></div>
-			<div class="title">IBM技术中心</div>
+			<div class="title">IBM技术中心简介</div>
 			<div class="desc">
-				IBM技术中心建立的目的是加强我校在信息科学技术领域的学科建设和人
-                才培养，快速跟踪国际先进的IT技术
+				&nbsp;&nbsp;&nbsp;&nbsp;<strong>同济大学IBM国家级工程实践教育中心</strong>(简称同济大学IBM技术中心)是同济大学与国际商业机器公司(简称IBM)合作设立的教育机构，下辖“IBM主机教育中心(上海)”和“IBM Power System教育中心(上海)”，其职能是将业界先进的计算机、软件与信息服务技术成果转化为可资传授的知识(体系)及相应的大学课程，面向本校及华东地区兄弟高校提供基于主机平台的教学实践、科技项目预研、师资培训及教学环境等服务。
 			</div>
 		</li>
 		<li class="step" id="step2">
-			<div class="idxIcon"></div>
-			<div class="title">IBM技术中心</div>
+			<div class="title">大中华区大型主机用户组 (CDUG)</div>
 			<div class="desc">
-				IBM技术中心建立的目的是加强我校在信息科学技术领域的学科建设和人
-                 才培养，快速跟踪国际先进的IT技术
+				&nbsp;&nbsp;&nbsp;&nbsp;2007年本中心发起组织“大中华区大型主机用户组 (CDUG)”，自2008年至今连年组织承办“大中华区大型主机用户组 (CDUG)年会”等技术交流活动，目前CDUG已有包括工、农、中、建、交(五大行)、大型企事业单位、国内相关高校及港台主机用户等60余家成员单位。CDUG的目标是成为跨行业的教育合作生态社区(Ecosystem)，推动本地区主机技术及人才培养之发展。
 			</div>
 		</li>
 		<li class="step" id="step3">
-			<div class="idxIcon"></div>
-			<div class="title">IBM技术中心</div>
+			<div class="title">中心团队特色</div>
 			<div class="desc">
-				IBM技术中心建立的目的是加强我校在信息科学技术领域的学科建设和人
-                 才培养，快速跟踪国际先进的IT技术
+				&nbsp;&nbsp;&nbsp;&nbsp;依托学科、特色专业、国家教学实验示范中心平台等资源的支持，中心团队成员同舟共济、持续努力，以期将同济大学IBM技术中心建设成为示范性工程实践教育中心。
 			</div>
 		</li>
 	</ul>
