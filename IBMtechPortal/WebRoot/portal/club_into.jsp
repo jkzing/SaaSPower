@@ -1,4 +1,4 @@
-<%@page import="edu.tongji.sse.ibm.pojo.ClubInfo"%>
+<%@page import="edu.tongji.sse.ibm.pojo.Portal_info"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 <head>
     <base href="<%=basePath%>">
-    <title>学生俱乐部 - CLUB介绍</title>
+    <title>学生俱乐部 - 俱乐部介绍</title>
 
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
@@ -29,8 +29,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<s:include value="../layout/portal_club_sider.jsp" />    
     	<div id="contents">
     		<div class="h3-location">
-    			<h2 id="c-title">CLUB介绍</h2>
-    			<img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
+    			<h2 id="c-title">俱乐部介绍</h2>
+    			<img src="assets/img/teaching/img_text.gif" alt="分割线">
+    		</div>
+    		<div class="c-content">
+	    		<img src="assets/img/teaching/img_1.png" height="230" width="740">
+	    		<%=((Portal_info)request.getAttribute("info")).getContent() %>
+    		</div>
     		<div class="intro-gallery">
     			<div class="tn3 album">
     				<h4>Fixed Dimensions</h4>
@@ -160,6 +165,40 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             $(function() {
                 iTopbar("top-club");
                 iSidebar("intro");
+                
+                var introAlbum = $('.intro-gallery').tn3({
+					skinDir:"assets/tn3album/skins",
+					skin: "tn3e",
+					delay: 3000,
+					autoplay: true,
+					imageClick:"fullscreen",
+					image:{
+						maxZoom:1.5,
+						crop:true,
+						clickEvent:"dblclick",
+						transitions:[{
+							type:"blinds"
+							},{
+							type:"grid"
+							},{
+							type:"grid",
+							duration:460,
+							easing:"easeInQuad",
+							gridX:1,
+							gridY:8,
+							// flat, diagonal, circle, random
+							sort:"random",
+							sortReverse:false,
+							diagonalStart:"bl",
+							// fade, scale
+							method:"scale",
+							partDuration:360,
+							partEasing:"easeOutSine",
+							partDirection:"left"
+						}]
+					}
+				});
+				$('.tn3-gallery div:last').remove();
             })
         }(window.jQuery)
     </script>

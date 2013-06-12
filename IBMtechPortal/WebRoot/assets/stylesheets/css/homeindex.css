@@ -165,9 +165,14 @@ div.chief-txt p {
 }
 
 /* Supplementary stylesheet by jingkaizhao */
-.intro-gallery {
+.intro-gallery, .contest-gallery {
 	padding-top: 20px;
 	margin-left: 60px;
+}
+
+
+.c-content {
+	padding-top: 50px;
 }
 
 /* portal inline elements style */
