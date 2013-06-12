@@ -148,6 +148,10 @@
 				<param name="actionName">errorPage</param>
 			</result>
 		</action>
-
+		<action name="news" class="edu.tongji.sse.ibm.action.NewsPageAction">
+			<result name="success" type="dispatcher">
+				/portal/news.jsp
+			</result>
+		</action>
 	</package>
 </struts>
