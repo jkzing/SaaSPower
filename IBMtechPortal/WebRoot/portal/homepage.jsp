@@ -143,9 +143,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<ul class="news_text">			
 				<% while (portalNewsListIt.hasNext()) {
 					portalNews = portalNewsListIt.next(); 
+					String displayTitle = portalNews.getTitle();
+					if (displayTitle.length() > 27) {
+						displayTitle = displayTitle.substring(0, 27) + "...";
+					}
 				%>
 				<li>
-					<a title="<%=portalNews.getTitle() %>" href="#" target="_blank"><%=portalNews.getTitle() %></a>
+					<a title="<%=portalNews.getTitle() %>" href="news?id=<%=portalNews.getId() %>" target="_blank"><%=displayTitle %></a>
 				</li>
 				<%
 				}
@@ -163,9 +167,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<ul class="news_text">
 				<% while (activityListIt.hasNext()) {
 					activity = activityListIt.next();
+					String displayTitle = activity.getTitle();
+					if (displayTitle.length() > 27) {
+						displayTitle = displayTitle.substring(0, 27) + "...";
+					}
 				 %>
 				<li>
-					<a title="<%=activity.getTitle() %>" href="#" target="_blank"><%=activity.getTitle() %></a>
+					<a title="<%=activity.getTitle() %>" href="news?id=<%=activity.getId() %>" target="_blank"><%=displayTitle %></a>
 				</li>
 				<%
 				}

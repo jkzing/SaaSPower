@@ -40,8 +40,7 @@
 }
 
 .news_text li{
-	line-height:0px;
-	height:23px;
+	list-style-type: circle;
 	font-size:13px;
 	width:98%;
 }
@@ -200,4 +199,38 @@ div.chief-txt p {
 
 .newstitle h2 {
 	font-size: 100%;
+}
+
+#nt-wrapper {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+#n-content {
+	padding-top: 20px;
+}
+
+#n-res {
+	padding: 20px 0 0 28px;
+}
+
+#n-res ul {
+	list-style: none;
+}
+
+#n-res a {
+	font-size: 12px;
+	color: blue;
+}
+
+#news-title {
+	font-size: 18px;
+	font-weight: 600;
+	color: #2668b4;
+}
+
+#news-date {
+	font-size: 14px;
+	padding: 20px 0 10px 0;
+	color: #ff4e00;
 }
