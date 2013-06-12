@@ -164,6 +164,12 @@ div.chief-txt p {
 	padding-bottom:25px;
 }
 
+/* Supplementary stylesheet by jingkaizhao */
+.intro-gallery {
+	padding-top: 20px;
+	margin-left: 60px;
+}
+
 /* portal inline elements style */
 #c-title {
 	color: #4b494a;
