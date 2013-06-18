@@ -91,7 +91,6 @@
 				<param name="actionName">errorPage</param>
 				<param name="namespace">/</param>
 			</result>
-			<interceptor-ref name="myStack"></interceptor-ref>
 		</action>
 	</package>
 </struts>    

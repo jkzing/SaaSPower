@@ -39,8 +39,8 @@ public class LogonInterceptor implements Interceptor {
 				else 
 					session.setAttribute( "redirectUrl" , request.getRequestURL().toString());
 		}
+		System.out.println("intercepter:" + session.getAttribute("redirectUrl"));
 		String result = arg0.invoke();
 		return result;
 	}
-
 }
