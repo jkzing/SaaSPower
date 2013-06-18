@@ -21,13 +21,15 @@ public class CDUG_resDAO {
 
 	public static List<CDUG_res> getResList(CDUG_resSort sort, int first,
 			int max) {
+		List<CDUG_res> list;
 		if (sort != null) {
 			String params[] = { "" + sort.getId() };
-			List<CDUG_res> list = HibernateUtil.executeQuery(
+			list = HibernateUtil.executeQuery(
 					"from CDUG_res where ressort_id=? order by uploadDate desc", params, first, max);
-		}
-		List<CDUG_res> list = HibernateUtil.executeQuery(
+		}else{
+			list= HibernateUtil.executeQuery(
 				"from CDUG_res order by uploadDate desc", null, first, max);
+		}
 		return list;
 	}
 

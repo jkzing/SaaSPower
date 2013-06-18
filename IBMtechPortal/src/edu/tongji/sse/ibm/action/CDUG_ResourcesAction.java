@@ -48,6 +48,7 @@ public class CDUG_ResourcesAction extends ActionSupport {
 		}
 		CDUG_resSort speechsort = CDUG_resSortDAO.getResSort("speech");//temp
 		CDUG_resSort otherssort = CDUG_resSortDAO.getResSort("others");//temp
+		System.out.println(speechsort.getSortname());
 		setSpeechlist(CDUG_resDAO.getResList(speechsort,curpage * pageSize, pageSize));
 		setOtherslist(CDUG_resDAO.getResList(otherssort,curpage * pageSize, pageSize));
 		setReslist(CDUG_resDAO.getResList(sort,curpage * pageSize, pageSize));
