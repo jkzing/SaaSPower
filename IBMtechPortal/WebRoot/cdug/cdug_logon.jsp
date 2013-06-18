@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<h1>登录</h1>
 				</div>
 				<div class="l-inner">
-					<form class="form-horizontal" method="post" action="cdug/user/logon">
+					<form class="form-horizontal" id="l-form" method="post" action="cdug/user/logon">
 						<div class="control-group pull-left">
 							<label class="control-label" for="inputEmail">邮箱</label>
 							<div class="controls">
@@ -46,7 +46,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</div>
 						<div class="control-group pull-left">
 							<div class="controls">
-								<button type="submit" class="btn btn-primary">登录</button>
+								<button type="button" class="btn btn-primary" id="b-logon">登录</button>
 								<a href="cdug/regist">没有账号？立即注册</a>
 							</div>
 						</div>

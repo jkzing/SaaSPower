@@ -24,7 +24,7 @@
 	</property>
 	<property name="myeclipse.connection.profile">mysql local</property>
 
-	<property name="hibernate.show_sql">true</property>
+	<property name="hibernate.show_sql">false</property>
 	<mapping resource="edu/tongji/sse/ibm/pojo/Album.hbm.xml" />
 	<mapping resource="edu/tongji/sse/ibm/pojo/CDUG_expert.hbm.xml" />
 	<mapping resource="edu/tongji/sse/ibm/pojo/CDUG_res.hbm.xml" />
