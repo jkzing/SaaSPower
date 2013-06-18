@@ -48,7 +48,7 @@
 					Pic pic = news.getPic();
 					if(pic == null){
 				 %>
-					<li class="pull-left"><img src="">
+					<li class="pull-left"><img src="assets/img/news_default.jpg">
 					</li>
 					
 					<%}else{ %>
@@ -69,15 +69,14 @@
 				%>
 				<div class="pagination news-pagination">
 					<ul>
-					
-						<li><a href="cdug/news?curpage=<%=curpage - 1%>">Prev</a>
+						<li><a href="cdug/news?curpage=<%=curpage - 1%>">上一页</a>
 						</li>
 						
 						<%for(int i = 0; i < pageCount;i++){ %>
 						<li><a href="cdug/news?curpage=<%=i%>"><%=i+1%></a>
 						</li>
 						<%} %>
-						<li><a href="cdug/news?curpage=<%=curpage + 1%>">Next</a>
+						<li><a href="cdug/news?curpage=<%=curpage + 1%>">下一页</a>
 						</li>
 						
 					</ul>
