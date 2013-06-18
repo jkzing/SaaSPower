@@ -26,8 +26,8 @@ public class NewsDAO {
 	}
 	
 	public static List<News> getNewsListByKey(String key){
-		String[] params = {"" + key};
-		List<News> list = HibernateUtil.executeQuery("from News where sort=cdug and title like '%?%'", params);
+		String[] params = {"cdug","%" + key + "%"};
+		List<News> list = HibernateUtil.executeQuery("from News where sort=? and title like ?", params);
 		return list;
 	}
 	

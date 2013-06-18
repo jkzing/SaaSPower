@@ -96,7 +96,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<tbody>
 							<%
 								List<CDUG_res> lectureResources =  (List<CDUG_res>)  request.getAttribute("speechlist");
-								System.out.println(lectureResources.size());
 								CDUG_res _resL = new CDUG_res();
 							  	Iterator<CDUG_res> _itL = lectureResources.iterator();
 							  		while(_itL.hasNext()){

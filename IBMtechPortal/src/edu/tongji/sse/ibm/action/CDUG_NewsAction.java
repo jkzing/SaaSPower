@@ -2,11 +2,9 @@ package edu.tongji.sse.ibm.action;
 
 import java.util.List;
 
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 import edu.tongji.sse.ibm.dao.NewsDAO;
-import edu.tongji.sse.ibm.pojo.News;
 import edu.tongji.sse.ibm.pojo.News;
 
 public class CDUG_NewsAction extends ActionSupport {
@@ -25,7 +23,6 @@ public class CDUG_NewsAction extends ActionSupport {
 	private List<News> newsList;
 
 	public String execute() {
-
 		rowCount = NewsDAO.getNewsCount("cdug");
 		if (rowCount % pageSize == 0) {
 			pageCount = rowCount / pageSize;
