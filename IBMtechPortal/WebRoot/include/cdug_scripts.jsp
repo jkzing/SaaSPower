@@ -16,5 +16,6 @@
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap-carousel.js"></script>
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap-typeahead.js"></script>
     <script type="text/javascript" src="assets/bootstrap/js/holder.js"></script>
+    <script type="text/javascript" src="assets/stylesheets/js/cdugapp.js"></script>
   </body>
 </html>

@@ -14,13 +14,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<h4>登录</h4>
 			</div>
 			<div class="modal-body">
-				<form style="display: block; margin-left: 75px;" method="post"
+				<form id="ml-form" style="display: block; margin-left: 75px;" method="post"
 					action="cdug/user/logon">
-					<input type="text" name="userName" class="input" placeholder="邮件">
-					<input type="password" name="password" class="input"
+					<input type="text" name="userName" id="usrname" class="input" placeholder="邮件">
+					<input type="password" name="password" id="passwd" class="input"
 						placeholder="密码"> <label class="checkbox"> <input
 						type="checkbox"> 记住我 </label>
-					<button type="submit" class="btn">登录</button>
+					<button type="button" class="btn" id="mb-logon">登录</button>
 				</form>
 			</div>
 		</div>
