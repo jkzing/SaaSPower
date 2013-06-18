@@ -21,7 +21,7 @@
 	<div id="wrap_main">
       <div class="container" id="header">
         <div class="top-figure">
-          <a class="logo" href="homepage.html">
+          <a class="logo" href="home">
             <img src="assets/img/sse_logo.png">
           </a>
         </div>
@@ -36,7 +36,7 @@
             <a href="research/contestProjects">科研</a>
           </li>
           <li id="top-zcloud">
-            <a href="#">主机云</a>
+            <a href="javascript:void(0)">主机云</a>
           </li>              
           <li id="top-cdug">
             <a href="cdug/index">CDUG</a>
