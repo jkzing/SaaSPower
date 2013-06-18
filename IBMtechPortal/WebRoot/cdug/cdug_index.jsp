@@ -71,7 +71,6 @@
 			<ul class="unstyled index-nav">
 				<li class="nav-item"><a href="cdug/index" class="nav-item-link" id="index">首页</a></li>
 				<li class="nav-item"><a href="cdug/news" class="nav-item-link">新闻</a></li>
-				<li class="nav-item"><a href="#" class="nav-item-link">会议</a></li>
 				<li class="nav-item"><a href="cdug/experts" class="nav-item-link">专家</a></li>
 				<li class="nav-item"><a href="cdug/resources" class="nav-item-link">资料</a></li>
 				<li class="nav-item"><a href="cdug/signup" class="nav-item-link">报名</a></li>

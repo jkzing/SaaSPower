@@ -1,7 +1,60 @@
 var trueStr = new String('true');
 
 $(document).ready(function() {
-	console.log('hi');
+	$('#nbtn-search').live('click', function() {
+		$.post('cdug/ajax/cdugkeynews', 
+				{
+					key: $('#appendedPrependedInput').val()
+				}, function(data, status) {
+					if (status == 'success') {
+						console.log(data);
+						newsList = data.newslist;
+						$('#n-list').empty();
+						$.each(newsList, function(i, item) {
+							var newsHTML = '<ul class="news-list pull-left">'; 
+							if(item.pic == null) {
+								newsHTML += '<li class="pull-left"><img src="assets/img/news_default.jpg"></li>';
+							} else {
+								newsHTML += '<li class="pull-left"><img src="' + item.pic.URL + '"></li>';
+							}
+							newsHTML += '<li><h4><a href="cdug/info/news?id=' + item.id + '">' + item.title + '</a></h4></li>' +
+										'<li><strong>发布时间：' + item.createTime + '</strong></li>' +
+										'<li>' + item.content + '</li></ul>';
+							$('#n-list').append(newsHTML);
+						});
+					} else {
+						
+					}
+		});
+	});
+	
+	$('#nslc-span').live('change', function() {
+		$.post('cdug/ajax/cdugspannews', 
+				{
+					span: $(this).val()
+				}, function(data, status) {
+					if (status == 'success') {
+						console.log(data);
+						newsList = data.newslist;
+						$('#n-list').empty();
+						$.each(newsList, function(i, item) {
+							var newsHTML = '<ul class="news-list pull-left">'; 
+							if(item.pic == null) {
+								newsHTML += '<li class="pull-left"><img src="assets/img/news_default.jpg"></li>';
+							} else {
+								newsHTML += '<li class="pull-left"><img src="' + item.pic.URL + '"></li>';
+							}
+							newsHTML += '<li><h4><a href="cdug/info/news?id=' + item.id + '">' + item.title + '</a></h4></li>' +
+										'<li><strong>发布时间：' + item.createTime + '</strong></li>' +
+										'<li>' + item.content + '</li></ul>';
+							$('#n-list').append(newsHTML);
+						});
+					} else {
+						
+					}
+		});
+	});
+
 	$('#mb-logon').live('click', function() {
 		$.post('cdug/ajax/checkusr', 
 				{
