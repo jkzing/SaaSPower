@@ -97,5 +97,8 @@
 		<action name="checkusr" class="edu.tongji.sse.ibm.action.UserCheckAjaxAction">
 			<result name="success" type="json" />
 		</action>
+		<action name="cdugkeynews" class="edu.tongji.sse.ibm.action.CDUGNewsListByKeyAjaxAction">
+			<result name="success" type="json" />
+		</action>
 	</package>
 </struts>    

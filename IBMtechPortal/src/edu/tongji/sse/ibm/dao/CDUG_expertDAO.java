@@ -4,6 +4,7 @@ import java.util.List;
 
 import edu.tongji.sse.ibm.hibernateUtils.HibernateUtil;
 import edu.tongji.sse.ibm.pojo.CDUG_expert;
+import edu.tongji.sse.ibm.pojo.CDUG_resSort;
 
 public class CDUG_expertDAO {
 	
@@ -18,6 +19,16 @@ public class CDUG_expertDAO {
 	public static List<CDUG_expert> getExpertList(){
 		List<CDUG_expert> list = HibernateUtil.executeQuery("from CDUG_expert", null);
 		return list;
+	}
+	
+	public static List<CDUG_expert> getExpertList(int first,int max){
+		List<CDUG_expert> list = HibernateUtil.executeQuery("from CDUG_expert", null,first,max);
+		return list;
+	}
+	
+	public static int getExpertCount() {
+		return ((Long) HibernateUtil.uniqueQuery(
+				"select count(*) from CDUG_expert", null)).intValue();
 	}
 	
 	public static CDUG_expert insertExpert(CDUG_expert expert) {

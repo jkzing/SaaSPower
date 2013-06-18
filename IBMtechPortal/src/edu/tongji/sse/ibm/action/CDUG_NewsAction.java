@@ -41,14 +41,6 @@ public class CDUG_NewsAction extends ActionSupport {
 		return SUCCESS;
 	}
 
-	public static int getPageSize() {
-		return pageSize;
-	}
-
-	public static void setPageSize(int pageSize) {
-		CDUG_NewsAction.pageSize = pageSize;
-	}
-
 	public int getPageCount() {
 		return pageCount;
 	}

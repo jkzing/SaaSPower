@@ -20,6 +20,12 @@ public class NewsDAO {
 
 	}
 	
+	public static List<News> getNewsListByKey(String key){
+		String[] params = {"" + key};
+		List<News> list = HibernateUtil.executeQuery("from News where sort=cdug and title like '%?%'", params);
+		return list;
+	}
+	
 	public static int getNewsCount(String sort){
 		String[] params = {"" + sort};
         return ((Long)HibernateUtil.uniqueQuery(

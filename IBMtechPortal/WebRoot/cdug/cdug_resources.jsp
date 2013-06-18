@@ -54,7 +54,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<table class="table table-hover table-bordered">
 							<tbody>
 							<%
-								List<CDUG_res> allResources =  CDUG_resDAO.getResList();
+					 int pageSize = (Integer) request.getAttribute("pageSize"); //每页显示的新闻个数
+					 int curpage =  (Integer) request.getAttribute("curpage");
+					 int pageCount =  (Integer) request.getAttribute("pageCount");
+								List<CDUG_res> allResources =  (List<CDUG_res>)  request.getAttribute("reslist");
 								CDUG_res _resA = new CDUG_res();
 							  	Iterator<CDUG_res> _itA = allResources.iterator();
 							  		while(_itA.hasNext()){
@@ -73,11 +76,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</div>
 					<div class="pagination r-pagination">
 						<ul>
-							<li><a href="#">Prev</a></li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">Next</a></li>
+						<li><a href="cdug/resources?sortname=all&curpage=<%=curpage - 1%>">上一页</a>
+						</li>
+						<%for(int i = 0; i < pageCount;i++){ %>
+						<li><a href="cdug/resources?sortname=all&curpage=<%=i%>"><%=i+1%></a>
+						</li>
+						<%} %>
+						<li><a href="cdug/resources?sortname=all&curpage=<%=curpage + 1%>">下一页</a>
+						</li>
 						</ul>
 					</div>
 				</div>
@@ -89,7 +95,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<table class="table table-hover table-bordered">
 							<tbody>
 							<%
-								List<CDUG_res> lectureResources =  CDUG_resDAO.getResList();
+								List<CDUG_res> lectureResources =  (List<CDUG_res>)  request.getAttribute("reslist");
 								CDUG_res _resL = new CDUG_res();
 							  	Iterator<CDUG_res> _itL = lectureResources.iterator();
 							  		while(_itL.hasNext()){
@@ -107,13 +113,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</table>
 					</div>
 					<div class="pagination r-pagination">
-						<ul>
-							<li><a href="#">Prev</a></li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">Next</a></li>
-						</ul>
+					<ul>
+						<li><a href="cdug/resources?sortname=speech&curpage=<%=curpage - 1%>">上一页</a>
+						</li>
+						<%for(int i = 0; i < pageCount;i++){ %>
+						<li><a href="cdug/resources?sortname=speech&curpage=<%=i%>"><%=i+1%></a>
+						</li>
+						<%} %>
+						<li><a href="cdug/resources?sortname=speech&curpage=<%=curpage + 1%>">下一页</a>
+						</li>
+					</ul>
 					</div>
 				</div>
 				<div class="tab-pane" id="r-other">
@@ -124,7 +133,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<table class="table table-hover table-bordered">
 							<tbody>
 							<%
-								List<CDUG_res> otherResources =  CDUG_resDAO.getResList();
+								List<CDUG_res> otherResources =  (List<CDUG_res>)  request.getAttribute("reslist");
 								CDUG_res _resO = new CDUG_res();
 							  	Iterator<CDUG_res> _itO = otherResources.iterator();
 							  		while(_itO.hasNext()){
@@ -143,11 +152,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</div>
 					<div class="pagination r-pagination">
 						<ul>
-							<li><a href="#">Prev</a></li>
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">Next</a></li>
+						<li><a href="cdug/resources?sortname=others&curpage=<%=curpage - 1%>">上一页</a>
+						</li>
+						<%for(int i = 0; i < pageCount;i++){ %>
+						<li><a href="cdug/resources?sortname=others&curpage=<%=i%>"><%=i+1%></a>
+						</li>
+						<%} %>
+						<li><a href="cdug/resources?sortname=others&curpage=<%=curpage + 1%>">下一页</a>
+						</li>
 						</ul>
 					</div>
 				</div>

@@ -34,12 +34,12 @@
 			<p class="byline">这里汇聚了国内外知名DB2方面专家</p>
 			<div class="clearfix">
 				<%
-						List<CDUG_expert>
-				allExperts =  CDUG_expertDAO.getExpertList();
+					 int pageSize = (Integer) request.getAttribute("pageSize"); //每页显示的新闻个数
+					 int curpage =  (Integer) request.getAttribute("curpage");
+					 int pageCount =  (Integer) request.getAttribute("pageCount");
+						List<CDUG_expert> allExperts =  (List<CDUG_expert>)  request.getAttribute("expertlist");
 						CDUG_expert expert = new CDUG_expert();
-					  		Iterator
-				<CDUG_expert>
-					it = allExperts.iterator();
+					  		Iterator<CDUG_expert> it = allExperts.iterator();
 					  		while(it.hasNext()){
 					  		expert = it.next();
 				 %>
@@ -66,27 +66,15 @@
 			</div>
 				<div class="pagination expert-pagination">
 					<ul>
-						<li>
-							<a href="#">Prev</a>
+						<li><a href="cdug/experts?curpage=<%=curpage - 1%>">上一页</a>
 						</li>
-						<li>
-							<a href="#">1</a>
+						<%for(int i = 0; i < pageCount;i++){ %>
+						<li><a href="cdug/experts?curpage=<%=i%>"><%=i+1%></a>
 						</li>
-						<li>
-							<a href="#">2</a>
+						<%} %>
+						<li><a href="cdug/experts?curpage=<%=curpage + 1%>">下一页</a>
 						</li>
-						<li>
-							<a href="#">3</a>
-						</li>
-						<li>
-							<a href="#">4</a>
-						</li>
-						<li>
-							<a href="#">5</a>
-						</li>
-						<li>
-							<a href="#">Next</a>
-						</li>
+						
 					</ul>
 				</div>
 			</div>
