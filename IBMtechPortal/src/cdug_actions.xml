@@ -93,4 +93,9 @@
 			</result>
 		</action>
 	</package>
+	<package name="AjaxAction" namespace="/cdug/ajax" extends="json-default">
+		<action name="checkusr" class="edu.tongji.sse.ibm.action.UserCheckAjaxAction">
+			<result name="success" type="json" />
+		</action>
+	</package>
 </struts>    
