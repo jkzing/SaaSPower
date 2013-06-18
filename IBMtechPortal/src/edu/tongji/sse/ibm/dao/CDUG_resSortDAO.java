@@ -9,7 +9,7 @@ public class CDUG_resSortDAO {
 	public static CDUG_resSort getResSort(String name){
 		String param[]  = {"" + name};
         return (CDUG_resSort) HibernateUtil.uniqueQuery(
-        		"from CDUG_resSort where name=?", param);
+        		"from CDUG_resSort where sortname=?", param);
 	}
 	
 	

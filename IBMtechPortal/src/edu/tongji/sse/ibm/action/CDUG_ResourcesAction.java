@@ -25,6 +25,8 @@ public class CDUG_ResourcesAction extends ActionSupport {
 	private int pageCount = 0;
 	private int rowCount = 0;
 	private List<CDUG_res> reslist;
+	private List<CDUG_res> speechlist;//temp
+	private List<CDUG_res> otherslist;//temp
 	
 	public String execute() {
 		CDUG_resSort sort;
@@ -44,6 +46,10 @@ public class CDUG_ResourcesAction extends ActionSupport {
 		}else if (curpage >= pageCount) {
 			curpage = pageCount -1;
 		}
+		CDUG_resSort speechsort = CDUG_resSortDAO.getResSort("speech");//temp
+		CDUG_resSort otherssort = CDUG_resSortDAO.getResSort("others");//temp
+		setSpeechlist(CDUG_resDAO.getResList(speechsort,curpage * pageSize, pageSize));
+		setOtherslist(CDUG_resDAO.getResList(otherssort,curpage * pageSize, pageSize));
 		setReslist(CDUG_resDAO.getResList(sort,curpage * pageSize, pageSize));
 		
 		return SUCCESS;
@@ -79,5 +85,21 @@ public class CDUG_ResourcesAction extends ActionSupport {
 
 	public void setSortname(String sortname) {
 		this.sortname = sortname;
+	}
+
+	public List<CDUG_res> getOtherslist() {
+		return otherslist;
+	}
+
+	public void setOtherslist(List<CDUG_res> otherslist) {
+		this.otherslist = otherslist;
+	}
+
+	public List<CDUG_res> getSpeechlist() {
+		return speechlist;
+	}
+
+	public void setSpeechlist(List<CDUG_res> speechlist) {
+		this.speechlist = speechlist;
 	}
 }

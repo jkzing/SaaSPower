@@ -95,7 +95,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<table class="table table-hover table-bordered">
 							<tbody>
 							<%
-								List<CDUG_res> lectureResources =  (List<CDUG_res>)  request.getAttribute("reslist");
+								List<CDUG_res> lectureResources =  (List<CDUG_res>)  request.getAttribute("speechlist");
 								CDUG_res _resL = new CDUG_res();
 							  	Iterator<CDUG_res> _itL = lectureResources.iterator();
 							  		while(_itL.hasNext()){
@@ -133,7 +133,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<table class="table table-hover table-bordered">
 							<tbody>
 							<%
-								List<CDUG_res> otherResources =  (List<CDUG_res>)  request.getAttribute("reslist");
+								List<CDUG_res> otherResources =  (List<CDUG_res>)  request.getAttribute("otherslist");
 								CDUG_res _resO = new CDUG_res();
 							  	Iterator<CDUG_res> _itO = otherResources.iterator();
 							  		while(_itO.hasNext()){

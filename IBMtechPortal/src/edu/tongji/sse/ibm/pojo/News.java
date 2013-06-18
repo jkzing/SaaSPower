@@ -8,7 +8,7 @@ public class News {
 	private String title;
 	private String content;
 	private Date createTime;
-	private Pic pic;;
+	private Pic pic;
 	private String sort;
 	private Set<Res> resources;
 	public Integer getId() {

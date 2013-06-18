@@ -100,5 +100,8 @@
 		<action name="cdugkeynews" class="edu.tongji.sse.ibm.action.CDUGNewsListByKeyAjaxAction">
 			<result name="success" type="json" />
 		</action>
+		<action name="cdugspannews" class="edu.tongji.sse.ibm.action.CDUGNewsListBySpanAjaxAction">
+			<result name="success" type="json" />
+		</action>
 	</package>
 </struts>    
