@@ -22,7 +22,6 @@ body {
 
 h1, h2, h3, h4, b {
 	font-weight: 300;
-	font-family: bree-web, Bree, sans-serif;
 }
 	h2 {
 		font-size: 28px;
@@ -316,11 +315,6 @@ h1, h2, h3, h4, b {
 	}
 	pre {
 		overflow: auto;
-	}
-	.features li {
-		width: 100%;
-		margin-left: 10px;
-		margin-bottom: 30px;
 	}
 	.how li {
 		width: 90%;

@@ -28,7 +28,7 @@
 		namespace="/">
 		<action name="logout" class="edu.tongji.sse.ibm.action.LogoutAction">
 			<result name="success" type="dispatcher">
-				/test/test_success.jsp
+				/cdug/cdug_success.jsp
 			</result>
 		</action>
 		<action name="logon" class="edu.tongji.sse.ibm.action.PageAction">
