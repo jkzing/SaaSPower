@@ -11,7 +11,7 @@ import edu.tongji.sse.ibm.pojo.Research_project;
 public class Research_contestProjectAction extends ActionSupport {
 		private Portal_info info;
 		public String execute(){
-			setInfo(Portal_infoDAO.getInfo("contest"));
+			setInfo(Portal_infoDAO.getInfo("contestProject"));
 			return SUCCESS;
 		}
 		public Portal_info getInfo() {

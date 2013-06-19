@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <h2 id="c-title">创新项目</h2>
                 <img src="assets/img/teaching/img_text.gif" alt="分割线"></div>
             <div class="commitment">
-                 <%=((Portal_info)request.getAttribute("contest")).getContent() %>
+                 <%=((Portal_info)request.getAttribute("info")).getContent() %>
             </div>
         </div>
     </div>
