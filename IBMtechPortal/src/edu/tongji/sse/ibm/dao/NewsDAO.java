@@ -43,22 +43,21 @@ public class NewsDAO {
 			cal.set(Calendar.SECOND, 0);
 			startDate = cal.getTime();
 		}else if(span.equals("week")){
-			cal.set(Calendar.DAY_OF_WEEK, 0);
+			cal.set(Calendar.DAY_OF_WEEK, 1);
 			cal.set(Calendar.HOUR_OF_DAY, 0);
 			cal.set(Calendar.MINUTE, 0);
 			cal.set(Calendar.SECOND, 0);
 			startDate = cal.getTime();
 		}else if(span.equals("month")){
-			cal.set(Calendar.WEEK_OF_MONTH,0);
-			cal.set(Calendar.DAY_OF_WEEK, 0);
+			cal.set(Calendar.DAY_OF_MONTH, 1);
 			cal.set(Calendar.HOUR_OF_DAY, 0);
 			cal.set(Calendar.MINUTE, 0);
 			cal.set(Calendar.SECOND, 0);
 			startDate = cal.getTime();
 		}
 		String start = new Timestamp(startDate.getTime()).toString();
-		String[] params = {start,end};
-		List<News> list = HibernateUtil.executeQuery("from News where sort=cdug and createTime between ? and ?", params);
+		String[] params = {"cdug",start,end};
+		List<News> list = HibernateUtil.executeQuery("from News where sort=? and createTime between ? and ?", params);
 		return list;
 	}
 	
