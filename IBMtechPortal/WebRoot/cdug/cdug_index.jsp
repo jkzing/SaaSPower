@@ -66,7 +66,7 @@
 	<div class="index-header">
 		<div class="grid-990 iheader-wrapper">
 			<figure class="pull-left">
-				<a href="cdug/index" class="ui-logo"></a>
+				<a href="home" class="ui-logo" target="_blank"></a>
 			</figure>
 			<ul class="unstyled index-nav">
 				<li class="nav-item"><a href="cdug/index" class="nav-item-link" id="index">首页</a></li>

@@ -136,7 +136,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="newstitle">
 				<h2>焦点新闻</h2>
 				<span>
-					<a href="#" target="_blank">
+					<a href="javascript:void(0)" target="_blank">
 						<img src="assets/img/more.jpg" width="40" height="9"></a>
 				</span>
 			</div>
@@ -160,7 +160,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="newstitle">
 				<h2>活动公告</h2>
 				<span>
-					<a href="#" title="_blank">
+					<a href="javascript:void(0)" title="_blank">
 						<img src="assets/img/more.jpg" width="40" height="9"></a>
 				</span>
 			</div>

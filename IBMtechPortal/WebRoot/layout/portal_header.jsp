@@ -36,10 +36,10 @@
             <a href="research/contestProjects">科研</a>
           </li>
           <li id="top-zcloud">
-            <a href="javascript:void(0)">主机云</a>
+            <a href="../Zcloud" target="_blank">主机云</a>
           </li>              
           <li id="top-cdug">
-            <a href="cdug/index">CDUG</a>
+            <a href="cdug/index" target="_blank">CDUG</a>
           </li>
           <li id="top-club">
             <a href="club/into">俱乐部</a>
