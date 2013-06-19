@@ -32,6 +32,7 @@
 				<div class="news-list-title">
 					<h1>CDUG新闻</h1>
 				</div>
+				<div id="n-list">
 				<%
 					 int pageSize = (Integer) request.getAttribute("pageSize"); //每页显示的新闻个数
 					 int curpage =  (Integer) request.getAttribute("curpage");
@@ -67,6 +68,7 @@
 				<%
 					}
 				%>
+				</div>
 				<div class="pagination news-pagination">
 					<ul>
 						<li><a href="cdug/news?curpage=<%=curpage - 1%>">上一页</a>
@@ -87,13 +89,13 @@
 					<div class="input-prepend input-append">
 						<span class="add-on">关键字</span> <input class="span2"
 							id="appendedPrependedInput" type="text">
-						<button type="submit" class="btn btn-primary">搜索</button>
+						<button type="button" id="nbtn-search" class="btn btn-primary">搜索</button>
 					</div>
-					<select>
-						<option>查看全部</option>
-						<option>今日新闻</option>
-						<option>本周新闻</option>
-						<option>本月新闻</option>
+					<select id="nslc-span">
+						<option value="all">查看全部</option>
+						<option value="day">今日新闻</option>
+						<option value="week">本周新闻</option>
+						<option value="month">本月新闻</option>
 					</select>
 				</form>
 			</div>
