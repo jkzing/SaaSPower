@@ -34,16 +34,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="message">
                 <img src="assets/img/teaching/img_1.png"  height="230" width="740"></div>
             <div class="commitment">
-                 <%
-					List<Research_project> projectlist = (List<Research_project>) request.getAttribute("projectlist");
-					Research_project project = new Research_project();
-					Iterator<Research_project> it = projectlist.iterator();
-					while(it.hasNext()){
-					project = it.next();
-				%>
-				<%=project.getName() %><br>
-				<%=project.getContent() %><br>
-				<%} %>
+                 <%=((Portal_info)request.getAttribute("contest")).getContent() %>
             </div>
         </div>
     </div>

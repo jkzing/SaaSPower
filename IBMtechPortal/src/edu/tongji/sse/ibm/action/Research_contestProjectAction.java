@@ -9,16 +9,16 @@ import edu.tongji.sse.ibm.pojo.Portal_info;
 import edu.tongji.sse.ibm.pojo.Research_project;
 
 public class Research_contestProjectAction extends ActionSupport {
-	private List<Research_project> projectlist;
-	public String execute(){
-		projectlist = Research_projectDAO.getProjectList("contest");
-		return SUCCESS;
-	}
-	public List<Research_project> getProjectlist() {
-		return projectlist;
-	}
-	public void setProjectlist(List<Research_project> projectlist) {
-		this.projectlist = projectlist;
-	}
+		private Portal_info info;
+		public String execute(){
+			setInfo(Portal_infoDAO.getInfo("contest"));
+			return SUCCESS;
+		}
+		public Portal_info getInfo() {
+			return info;
+		}
+		public void setInfo(Portal_info info) {
+			this.info = info;
+		}
 
 }
