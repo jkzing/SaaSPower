@@ -36,7 +36,7 @@
             <a href="research/contestProjects">科研</a>
           </li>
           <li id="top-zcloud">
-            <a href="../Zcloud" target="_blank">主机云</a>
+            <a href="http://localhost:2080/Zcloud" target="_blank">主机云</a>
           </li>              
           <li id="top-cdug">
             <a href="cdug/index" target="_blank">CDUG</a>

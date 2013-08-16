@@ -326,7 +326,7 @@ body {
 #h-logo a {
   display: block;
   text-indent: -9999em;
-  background: url(../../img/sse_logo_mmini.png) no-repeat 0 0;
+  background: url(../../img/sse_logo_mmini.png);
   outline: none;
   width: 205px;
   height: 42px;
