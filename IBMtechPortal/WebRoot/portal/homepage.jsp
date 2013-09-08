@@ -90,7 +90,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                             线上投稿、审稿，为主办方提高收寄、审稿效率。<br />
                             酒店预订，会议行程更加轻松。
                         </p>
-                        <a href="research/contestProject" target="_blank">了解详细&gt;</a>
+                        <a href="research/contestProjects" target="_blank">了解详细&gt;</a>
                     </div>
                     <div class="ad_img">
                         <img src="assets/respslider/images/20120830015651273.png" width="506" height="404" alt="全新的学术会议体验" />
